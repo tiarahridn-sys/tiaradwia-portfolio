@@ -1,26 +1,64 @@
 # Tiara Dwi Ananda Saputri Portfolio
 
-Static GitHub Pages portfolio for Tiara Dwi Ananda Saputri, focused on early-career recruitment, AI-assisted talent sourcing, Boolean search, candidate screening, and HR operations documentation.
+Personal portfolio website for Tiara Dwi Ananda Saputri, focused on early-career HR recruitment, AI-assisted sourcing, people operations, HR administration, and HRIS learning.
 
-## Files
+## Live Website
 
-- `index.html` - Main portfolio page
+This portfolio is prepared for GitHub Pages:
+
+`https://tiarahridn-sys.github.io/tiaradwia-portfolio/`
+
+## Portfolio Focus
+
+- HR recruitment support
+- AI-assisted talent sourcing
+- Boolean search planning
+- Candidate screening support
+- HR administration and documentation
+- Attendance tracking and program coordination
+- Odoo and HRIS learning
+
+## Featured Case Study
+
+### AI-Assisted Sourcing Workflow
+
+This case study shows how AI can support recruitment research without replacing recruiter judgment. The workflow covers role analysis, keyword discovery, Boolean search planning, candidate comparison notes, and profile validation.
+
+The ethical position is simple: AI helps structure the work, but final candidate assessment still needs human review, context, and accountability.
+
+## Pages
+
+- `index.html` - Main portfolio landing page
+- `services.html` - Recruitment, HR operations, and admin support areas
+- `projects.html` - Portfolio projects and case study summaries
+- `ai-sourcing-case-study.html` - Detailed AI-assisted sourcing case study
+- `resume.html` - Resume highlights, certificates, and contact details
 - `styles.css` - Visual design and responsive layout
 - `script.js` - Small interaction for the back-to-top button
 
-## Suggested GitHub Pages Setup
+## Tech Stack
 
-1. Create a new GitHub repository, for example `tiara-portfolio`.
-2. Upload these files to the repository root.
-3. Open repository `Settings`.
-4. Go to `Pages`.
-5. Under `Build and deployment`, choose `Deploy from a branch`.
-6. Select branch `main` and folder `/root`.
-7. Save, then wait for GitHub to publish the site.
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
 
-## Suggested Next Updates
+## Suggested Repository Settings
 
-- Add screenshots from the AI-assisted sourcing PDF.
-- Add a downloadable CV.
-- Add case study pages for sourcing, payroll, Odoo HRIS, and SOP projects.
-- Replace placeholder project descriptions with metrics when available.
+For a stronger GitHub profile, add this repository metadata:
+
+- Description: `Personal portfolio for HR recruitment, AI-assisted sourcing, and people operations support.`
+- Website: `https://tiarahridn-sys.github.io/tiaradwia-portfolio/`
+- Topics: `portfolio`, `hr-recruitment`, `people-operations`, `ai-sourcing`, `github-pages`, `hris`
+
+## Next Improvements
+
+- Add a public PDF version of the CV.
+- Add screenshots or sample outputs from the AI-assisted sourcing workflow.
+- Expand HRIS and Odoo learning into a separate case study.
+- Add measurable outcomes when available, such as number of records handled, sessions supported, or documents prepared.
+
+## Contact
+
+- Email: `tiaradwia1506@gmail.com`
+- LinkedIn: `https://www.linkedin.com/in/tiaradwia/`
