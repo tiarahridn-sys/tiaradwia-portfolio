@@ -50,9 +50,9 @@ The ethical position is simple: AI helps structure the work, but final candidate
 
 For a stronger GitHub profile, add this repository metadata:
 
-- Description: `Personal portfolio for HR recruitment, AI-assisted sourcing, and people operations support.`
+- Description: `Personal portfolio for HR recruitment, AI-assisted sourcing, e-commerce administration, and people operations support.`
 - Website: `https://tiarahridn-sys.github.io/tiaradwia-portfolio/`
-- Topics: `portfolio`, `hr-recruitment`, `people-operations`, `ai-sourcing`, `github-pages`, `hris`
+- Topics: `portfolio`, `hr-recruitment`, `people-operations`, `ecommerce-admin`, `ai-sourcing`, `github-pages`, `hris`
 
 ## Next Improvements
 
