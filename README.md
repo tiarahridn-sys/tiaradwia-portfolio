@@ -1,6 +1,6 @@
 # Tiara Dwi Ananda Saputri Portfolio
 
-Personal portfolio website for Tiara Dwi Ananda Saputri, focused on early-career HR recruitment, AI-assisted sourcing, people operations, strategic HRM learning, e-commerce administration, HR administration, and HRIS learning.
+Personal portfolio website for Tiara Dwi Ananda Saputri, an experienced admin professional and continuous HR operations learner focused on early-career HR recruitment, AI-assisted sourcing, people operations, strategic HRM learning, e-commerce administration, HR administration, and HRIS learning.
 
 ## Live Website
 
@@ -21,6 +21,7 @@ This portfolio is prepared for GitHub Pages:
 - Marketplace customer support
 - Attendance tracking and program coordination
 - Odoo and HRIS learning
+- Workflow optimization and operational coordination
 
 ## Featured Case Study
 
@@ -61,6 +62,7 @@ For a stronger GitHub profile, add this repository metadata:
 - Add screenshots or sample outputs from the AI-assisted sourcing workflow.
 - Add a short marketplace operations case study from Shopee and TikTok campaign support.
 - Expand the Strategic HRM case study with course project details when ready.
+- Add deeper case study pages for Odoo, market research, and class assistant projects when source materials are ready.
 - Expand HRIS and Odoo learning into a separate case study.
 - Add measurable outcomes when available, such as number of records handled, sessions supported, or documents prepared.
 
