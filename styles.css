@@ -94,6 +94,40 @@
   }
 }
 
+.project-testimonial {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--teal);
+  background: rgba(18, 111, 103, 0.06);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.94rem;
+}
+
+.project-card.featured .project-testimonial {
+  border-left-color: #f1ce89;
+  background: rgba(241, 206, 137, 0.08);
+}
+
+.project-testimonial-text {
+  margin: 0 0 8px 0 !important;
+  font-style: italic;
+  line-height: 1.5;
+  color: inherit !important;
+}
+
+.project-testimonial-author {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--teal);
+}
+
+.project-card.featured .project-testimonial-author {
+  color: #f1ce89;
+}
+
 * {
   box-sizing: border-box;
 }
