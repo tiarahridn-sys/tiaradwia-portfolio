@@ -247,6 +247,13 @@ h1 {
   letter-spacing: 0;
 }
 
+.gradient-text {
+  background: linear-gradient(135deg, #be123c 0%, #d946ef 60%, #C8A2C8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 h2 {
   margin: 0;
   font-size: clamp(2rem, 5vw, 4.4rem);
@@ -305,14 +312,13 @@ h3 {
 }
 
 .button.primary {
-  background: var(--teal);
+  background: linear-gradient(135deg, #be123c 0%, #d946ef 60%, #C8A2C8 100%);
   color: var(--deep);
-  border-color: var(--teal);
+  border: none;
 }
 
 .button.primary:hover {
-  background: var(--gold);
-  border-color: var(--gold);
+  background: linear-gradient(135deg, #d946ef 0%, #be123c 100%);
 }
 
 .button.secondary {
@@ -576,6 +582,124 @@ h3 {
 
 .certificate-card div {
   padding: 20px;
+}
+
+.skills-section {
+  padding: clamp(64px, 8vw, 112px) clamp(18px, 6vw, 88px);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.skills-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: clamp(24px, 4vw, 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--teal);
+  box-shadow: 0 15px 35px rgba(200, 162, 200, 0.15), var(--shadow);
+}
+
+.skills-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #be123c, #d946ef, #C8A2C8);
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.skills-card:hover::before {
+  opacity: 1;
+}
+
+.skills-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.skills-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--deep);
+  color: var(--teal);
+  border: 1px solid var(--line);
+  transition: color 200ms ease, border-color 200ms ease, background 200ms ease;
+}
+
+.skills-card:hover .skills-icon {
+  color: var(--ink);
+  border-color: var(--teal);
+  background: linear-gradient(135deg, #be123c 0%, #d946ef 60%, #C8A2C8 100%);
+}
+
+.skills-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.skills-card-desc {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--deep);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  transition: border-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.skill-badge:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(200, 162, 200, 0.1);
+}
+
+@media (max-width: 960px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .contact-section {
