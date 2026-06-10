@@ -1,7 +1,7 @@
 const profileImage = document.querySelector('.photo-frame img');
 const topButton = document.querySelector('.top-button');
 
-if (profileImage) {
+if (profileImage && profileImage.alt.includes('Odoo')) {
   profileImage.src = 'assets/profile-odoo.jpg?v=2';
   profileImage.onerror = () => {
     profileImage.onerror = null;
