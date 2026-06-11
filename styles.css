@@ -197,7 +197,7 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.72fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(400px, 0.72fr);
   gap: clamp(28px, 5vw, 78px);
   align-items: center;
   min-height: calc(100vh - 78px);
@@ -349,7 +349,7 @@ h3 {
 .photo-card {
   position: relative;
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
   aspect-ratio: 1 / 1;
   background: var(--bg);
   border-radius: 20px;
@@ -364,7 +364,7 @@ h3 {
 
 .photo-card img {
   display: block;
-  height: 90%;
+  height: 95%;
   width: auto;
   object-fit: contain;
   z-index: 3;
