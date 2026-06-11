@@ -570,6 +570,42 @@ h3 {
   padding: 26px;
 }
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid currentColor;
+}
+
+.project-tag.real-work {
+  color: #a7f3d0;
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.project-tag.case-study {
+  color: #bfdbfe;
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.project-tag.learning-project {
+  color: #fef08a;
+  background: rgba(234, 179, 8, 0.08);
+  border-color: rgba(234, 179, 8, 0.3);
+}
+
 .project-card.featured {
   grid-column: span 2;
   background: var(--deep);
