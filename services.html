@@ -5,301 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Services | Tiara Dwi Ananda Saputri</title>
   <meta name="description" content="HR and recruitment services by Tiara Dwi Ananda Saputri — AI-assisted sourcing, talent acquisition support, HR operations, program coordination, e-commerce operations, and virtual assistant services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=multi-page-3" />
   <script src="lang-switch.js"></script>
-  <style>
-
-    /* ── Reset & Base ───────────────────────────── */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --bg:           #0b0308;
-      --card-bg:      #170a0d;
-      --card-border:  #2a1318;
-      --accent:       #c4a0aa;
-      --text-title:   #f0ecee;
-      --text-body:    #9a8890;
-      --text-num:     #b89099;
-      --chip-border:  #b89099;
-      --chip-text:    #c4a0aa;
-      --green:        #4ade80;
-      --green-dark:   #052e16;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text-body);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-
-    a { text-decoration: none; color: inherit; }
-
-    /* ── Navigation ─────────────────────────────── */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.1rem 2.5rem;
-      background: var(--bg);
-      border-bottom: 1px solid var(--card-border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .nav-brand {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--text-title);
-      letter-spacing: 0.02em;
-    }
-
-    .nav-brand .initials {
-      color: var(--accent);
-      margin-right: 0.35rem;
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-    }
-
-    .nav-links a {
-      font-size: 0.875rem;
-      color: var(--text-body);
-      transition: color 0.15s;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: var(--text-title);
-    }
-
-    /* ── Page Header ─────────────────────────────── */
-    .page-header {
-      padding: 3.5rem 2.5rem 1.5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .section-label {
-      font-size: 0.7rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-num);
-      margin-bottom: 0.6rem;
-    }
-
-    .page-header h1 {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 1.9rem;
-      font-weight: normal;
-      color: var(--text-title);
-      line-height: 1.25;
-    }
-
-    /* ── Services Grid ───────────────────────────── */
-    .services-section {
-      padding: 1.5rem 2.5rem 5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-    }
-
-    /* ── Service Card ────────────────────────────── */
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 5px;
-      padding: 1.75rem;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      transition: border-color 0.2s;
-    }
-
-    .card:hover {
-      border-color: var(--accent);
-    }
-
-    /* VA card: green left accent instead of default border */
-    .card.va {
-      border-left: 3px solid var(--green);
-    }
-
-    .card-num {
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      color: var(--text-num);
-      margin-bottom: 0.8rem;
-    }
-
-    /* NEW badge */
-    .badge-new {
-      position: absolute;
-      top: 1.25rem;
-      right: 1.25rem;
-      background: var(--green);
-      color: var(--green-dark);
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.18rem 0.5rem;
-      border-radius: 3px;
-    }
-
-    .card-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--text-title);
-      margin-bottom: 0.6rem;
-      line-height: 1.3;
-      /* Give space on right so title doesn't clash with badge */
-      padding-right: 3rem;
-    }
-
-    .card.va .card-title {
-      padding-right: 3.5rem;
-    }
-
-    .card-desc {
-      font-size: 0.845rem;
-      color: var(--text-body);
-      line-height: 1.7;
-      flex: 1;
-      margin-bottom: 1.25rem;
-    }
-
-    /* ── Chips ───────────────────────────────────── */
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: auto;
-    }
-
-    .chip {
-      display: inline-block;
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      padding: 0.18rem 0.5rem;
-      border: 1px solid var(--chip-border);
-      border-radius: 3px;
-      color: var(--chip-text);
-    }
-
-    /* ── Footer ──────────────────────────────────── */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.78rem;
-      color: var(--text-body);
-      border-top: 1px solid var(--card-border);
-      opacity: 0.6;
-    }
-
-    /* ── Responsive ──────────────────────────────── */
-    @media (max-width: 960px) {
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @media (max-width: 600px) {
-      nav { padding: 1rem 1.25rem; }
-      .nav-links { gap: 1.1rem; }
-      .nav-links li:nth-child(2),
-      .nav-links li:nth-child(3) { display: none; }
-      .page-header,
-      .services-section { padding-left: 1.25rem; padding-right: 1.25rem; }
-      .services-grid { grid-template-columns: 1fr; }
-      .page-header h1 { font-size: 1.5rem; }
-    }
-
-    /* Multi-language styling rules */
-    html[lang="en"] .lang-id {
-      display: none !important;
-    }
-    html[lang="id"] .lang-en {
-      display: none !important;
-    }
-
-    /* Language Switcher Button */
-    .lang-toggle-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--bg);
-      color: var(--text-body);
-      border: 1px solid var(--card-border);
-      border-radius: 4px;
-      padding: 4px 8px;
-      font-family: inherit;
-      font-size: 0.76rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 150ms ease;
-      user-select: none;
-      gap: 3px;
-      margin-left: 0.5rem;
-    }
-
-    .lang-toggle-btn:hover {
-      color: var(--text-title);
-      border-color: var(--accent);
-      background: var(--card-bg);
-    }
-
-    html[lang="en"] .lang-toggle-btn .lang-text-en {
-      color: var(--accent);
-      font-weight: 700;
-    }
-    html[lang="en"] .lang-toggle-btn .lang-text-id {
-      color: var(--text-body);
-      font-weight: normal;
-    }
-    html[lang="id"] .lang-toggle-btn .lang-text-id {
-      color: var(--accent);
-      font-weight: 700;
-    }
-    html[lang="id"] .lang-toggle-btn .lang-text-en {
-      color: var(--text-body);
-      font-weight: normal;
-    }
-
-  </style>
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav>
-    <a href="index.html" class="nav-brand">
-      <span class="initials">TS</span> Tiara Saputri
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Go to home">
+      <span class="brand-mark">TS</span>
+      <span>Tiara Saputri</span>
     </a>
-    <ul class="nav-links">
-      <li><a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a></li>
-      <li><a href="services.html" class="active"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a></li>
-      <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a></li>
-      <li>
-        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
-          <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
-        </button>
-      </li>
-    </ul>
-  </nav>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a>
+      <a href="services.html" class="active"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a>
+      <a href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a>
+      <a href="resume.html">Resume</a>
+      <a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a>
+      <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
+        <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
+      </button>
+    </nav>
+  </header>
 
   <!-- Page Header -->
   <header class="page-header">
@@ -536,11 +267,15 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>
       <span class="lang-en">Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</span>
       <span class="lang-id">Didesain untuk GitHub Pages. Dibuat oleh Tiara Dwi Ananda Saputri.</span>
     </p>
+    <button class="top-button" type="button" aria-label="Back to top">
+      <span class="lang-en">Top</span>
+      <span class="lang-id">Ke Atas</span>
+    </button>
   </footer>
 
 </body>
