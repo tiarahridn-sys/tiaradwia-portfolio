@@ -44,4 +44,48 @@ document.addEventListener('DOMContentLoaded', function() {
   // Adjust on initial load and resize
   adjustPhotoCardSize();
   window.addEventListener('resize', adjustPhotoCardSize);
+
+  // ── Lightbox Modal for Clickable Images ──
+  var lightbox = document.createElement('div');
+  lightbox.className = 'lightbox-modal';
+  lightbox.setAttribute('role', 'dialog');
+  lightbox.setAttribute('aria-label', 'Image preview');
+  lightbox.innerHTML = '<img class="lightbox-content" src="" alt="Enlarged preview" />';
+  document.body.appendChild(lightbox);
+
+  var lightboxImg = lightbox.querySelector('.lightbox-content');
+
+  // Close lightbox on click
+  lightbox.addEventListener('click', function() {
+    lightbox.classList.remove('active');
+    setTimeout(function() {
+      if (!lightbox.classList.contains('active')) {
+        lightboxImg.src = '';
+      }
+    }, 300);
+  });
+
+  // Close lightbox on Escape key
+  window.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      lightbox.classList.remove('active');
+      setTimeout(function() {
+        lightboxImg.src = '';
+      }, 300);
+    }
+  });
+
+  // Find all images within main sections or grids and make them clickable
+  var images = document.querySelectorAll('.certificate-card img, .gallery-item img, .case-study-block img, main img, article img');
+  images.forEach(function(img) {
+    // Exclude hero profile photo
+    if (img.closest('.photo-card')) return;
+    img.classList.add('clickable-image');
+    img.addEventListener('click', function(e) {
+      e.stopPropagation();
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || 'Enlarged preview';
+      lightbox.classList.add('active');
+    });
+  });
 });
