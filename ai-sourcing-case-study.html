@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css?v=multi-page-2" />
+    <script src="lang-switch.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -23,20 +24,30 @@
         <span>Tiara Saputri</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html#about">About Me</a>
-        <a href="services.html">Services</a>
-        <a class="active" href="projects.html">Projects</a>
+        <a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a>
+        <a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a>
+        <a class="active" href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a>
         <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a>
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
+          <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
+        </button>
       </nav>
     </header>
 
     <main>
       <section class="page-hero case-hero">
-        <p class="eyebrow">Recruitment Case Study</p>
-        <h1>AI-assisted sourcing workflow with human-led recruitment judgment.</h1>
+        <p class="eyebrow">
+          <span class="lang-en">Recruitment Case Study</span>
+          <span class="lang-id">Studi Kasus Rekrutmen</span>
+        </p>
+        <h1>
+          <span class="lang-en">AI-assisted sourcing workflow with human-led recruitment judgment.</span>
+          <span class="lang-id">Alur kerja sourcing berbantuan AI dengan keputusan rekrutmen dipimpin manusia.</span>
+        </h1>
         <p>
-          A structured portfolio case study showing how AI can support role analysis, keyword planning, Boolean search preparation, candidate comparison notes, and profile validation without replacing recruiter responsibility.
+          <span class="lang-en">A structured portfolio case study showing how AI can support role analysis, keyword planning, Boolean search preparation, candidate comparison notes, and profile validation without replacing recruiter responsibility.</span>
+          <span class="lang-id">Studi kasus portofolio terstruktur yang menunjukkan bagaimana AI dapat mendukung analisis posisi, perencanaan kata kunci, penyiapan Boolean search, catatan perbandingan kandidat, dan validasi profil tanpa menggantikan tanggung jawab perekrut.</span>
         </p>
       </section>
 
@@ -44,23 +55,35 @@
         <div class="case-study-grid">
           <article class="case-study-block">
             <span>01</span>
-            <h2>Problem</h2>
+            <h2>
+              <span class="lang-en">Problem</span>
+              <span class="lang-id">Masalah</span>
+            </h2>
             <p>
-              Early-stage recruitment work often needs quick role understanding, clean search keywords, and organized screening notes. Without a structure, sourcing can become scattered and difficult to explain.
+              <span class="lang-en">Early-stage recruitment work often needs quick role understanding, clean search keywords, and organized screening notes. Without a structure, sourcing can become scattered and difficult to explain.</span>
+              <span class="lang-id">Pekerjaan rekrutmen tahap awal sering kali membutuhkan pemahaman posisi yang cepat, kata kunci pencarian yang bersih, dan catatan penyaringan yang terorganisasi. Tanpa struktur, sourcing dapat menjadi tidak terarah dan sulit dijelaskan.</span>
             </p>
           </article>
           <article class="case-study-block">
             <span>02</span>
-            <h2>Goal</h2>
+            <h2>
+              <span class="lang-en">Goal</span>
+              <span class="lang-id">Tujuan</span>
+            </h2>
             <p>
-              Build a repeatable workflow that helps translate job requirements into search terms, screening criteria, candidate notes, and follow-up priorities.
+              <span class="lang-en">Build a repeatable workflow that helps translate job requirements into search terms, screening criteria, candidate notes, and follow-up priorities.</span>
+              <span class="lang-id">Membangun alur kerja berulang yang membantu menerjemahkan persyaratan pekerjaan menjadi istilah pencarian, kriteria penyaringan, catatan kandidat, dan prioritas tindak lanjut.</span>
             </p>
           </article>
           <article class="case-study-block">
             <span>03</span>
-            <h2>Role</h2>
+            <h2>
+              <span class="lang-en">Role</span>
+              <span class="lang-id">Peran</span>
+            </h2>
             <p>
-              I positioned myself as recruitment support: preparing research structure, organizing criteria, documenting candidate signals, and keeping the review process clear for human decision-making.
+              <span class="lang-en">I positioned myself as recruitment support: preparing research structure, organizing criteria, documenting candidate signals, and keeping the review process clear for human decision-making.</span>
+              <span class="lang-id">Saya memosisikan diri sebagai dukungan rekrutmen: menyiapkan struktur riset, mengorganisasi kriteria, mendokumentasikan sinyal kandidat, dan menjaga proses peninjauan tetap jelas untuk pengambilan keputusan manusia.</span>
             </p>
           </article>
         </div>
@@ -68,34 +91,70 @@
 
       <section class="section muted">
         <div class="section-heading">
-          <p class="section-kicker">Workflow</p>
-          <h2>From role requirements to structured screening notes.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Workflow</span>
+            <span class="lang-id">Alur Kerja</span>
+          </p>
+          <h2>
+            <span class="lang-en">From role requirements to structured screening notes.</span>
+            <span class="lang-id">Dari persyaratan posisi hingga catatan penyaringan terstruktur.</span>
+          </h2>
         </div>
         <div class="process-list">
           <article>
             <span>Step 1</span>
-            <h3>Role Breakdown</h3>
-            <p>Identify core responsibilities, must-have skills, nice-to-have skills, industry context, and possible job title variations.</p>
+            <h3>
+              <span class="lang-en">Role Breakdown</span>
+              <span class="lang-id">Analisis Posisi</span>
+            </h3>
+            <p>
+              <span class="lang-en">Identify core responsibilities, must-have skills, nice-to-have skills, industry context, and possible job title variations.</span>
+              <span class="lang-id">Mengidentifikasi tanggung jawab utama, keterampilan wajib, keterampilan pendukung, konteks industri, dan kemungkinan variasi judul pekerjaan.</span>
+            </p>
           </article>
           <article>
             <span>Step 2</span>
-            <h3>Keyword Mapping</h3>
-            <p>Group keywords into job titles, tools, industries, seniority level, location terms, and exclusion terms when needed.</p>
+            <h3>
+              <span class="lang-en">Keyword Mapping</span>
+              <span class="lang-id">Pemetaan Kata Kunci</span>
+            </h3>
+            <p>
+              <span class="lang-en">Group keywords into job titles, tools, industries, seniority level, location terms, and exclusion terms when needed.</span>
+              <span class="lang-id">Mengelompokkan kata kunci ke dalam judul pekerjaan, alat kerja, industri, tingkat senioritas, istilah lokasi, dan istilah pengecualian jika diperlukan.</span>
+            </p>
           </article>
           <article>
             <span>Step 3</span>
-            <h3>Boolean Search Planning</h3>
-            <p>Prepare search strings that can be adjusted for LinkedIn, job boards, databases, or manual candidate research.</p>
+            <h3>
+              <span class="lang-en">Boolean Search Planning</span>
+              <span class="lang-id">Perencanaan Boolean Search</span>
+            </h3>
+            <p>
+              <span class="lang-en">Prepare search strings that can be adjusted for LinkedIn, job boards, databases, or manual candidate research.</span>
+              <span class="lang-id">Menyiapkan formula pencarian yang dapat disesuaikan untuk LinkedIn, portal lowongan kerja, database, atau riset kandidat manual.</span>
+            </p>
           </article>
           <article>
             <span>Step 4</span>
-            <h3>Candidate Comparison Notes</h3>
-            <p>Use a consistent format to compare candidate profiles based on relevant experience, skills, role fit, and missing information.</p>
+            <h3>
+              <span class="lang-en">Candidate Comparison Notes</span>
+              <span class="lang-id">Catatan Perbandingan Kandidat</span>
+            </h3>
+            <p>
+              <span class="lang-en">Use a consistent format to compare candidate profiles based on relevant experience, skills, role fit, and missing information.</span>
+              <span class="lang-id">Menggunakan format yang konsisten untuk membandingkan profil kandidat berdasarkan pengalaman relevan, keterampilan, keselarasan peran, dan informasi yang kurang.</span>
+            </p>
           </article>
           <article>
             <span>Step 5</span>
-            <h3>Human Review</h3>
-            <p>Keep final screening judgment with the recruiter or hiring team, especially for context, communication quality, motivation, and fairness.</p>
+            <h3>
+              <span class="lang-en">Human Review</span>
+              <span class="lang-id">Peninjauan Manusia</span>
+            </h3>
+            <p>
+              <span class="lang-en">Keep final screening judgment with the recruiter or hiring team, especially for context, communication quality, motivation, and fairness.</span>
+              <span class="lang-id">Menjaga keputusan penyaringan akhir tetap pada perekrut atau tim perekrut, terutama untuk konteks, kualitas komunikasi, motivasi, dan keadilan.</span>
+            </p>
           </article>
         </div>
       </section>
@@ -103,15 +162,23 @@
       <section class="section">
         <div class="split">
           <div>
-            <p class="section-kicker">Output</p>
-            <h2>Reusable recruitment support structure.</h2>
+            <p class="section-kicker">
+              <span class="lang-en">Output</span>
+              <span class="lang-id">Hasil Kerja</span>
+            </p>
+            <h2>
+              <span class="lang-en">Reusable recruitment support structure.</span>
+              <span class="lang-id">Struktur dukungan rekrutmen yang dapat digunakan kembali.</span>
+            </h2>
           </div>
           <div class="about-copy">
             <p>
-              The output is a practical sourcing framework that can be reused for junior recruitment support tasks: role intake notes, keyword groups, Boolean search drafts, candidate comparison notes, and follow-up questions.
+              <span class="lang-en">The output is a practical sourcing framework that can be reused for junior recruitment support tasks: role intake notes, keyword groups, Boolean search drafts, candidate comparison notes, and follow-up questions.</span>
+              <span class="lang-id">Hasil kerjanya adalah kerangka sourcing praktis yang dapat digunakan kembali untuk tugas-tugas dukungan rekrutmen pemula: catatan pemahaman posisi, kelompok kata kunci, draf Boolean search, catatan perbandingan kandidat, dan pertanyaan tindak lanjut.</span>
             </p>
             <p>
-              This approach makes AI useful as a thinking and organization tool while keeping candidate evaluation careful, contextual, and human-led.
+              <span class="lang-en">This approach makes AI useful as a thinking and organization tool while keeping candidate evaluation careful, contextual, and human-led.</span>
+              <span class="lang-id">Pendekatan ini membuat AI berguna sebagai alat berpikir dan pengorganisasian dengan tetap menjaga evaluasi kandidat yang hati-hati, kontekstual, dan dipimpin oleh manusia.</span>
             </p>
             <div style="margin-top: 30px; max-width: 500px;" class="photo-frame">
               <img src="assets/testimonial-ai-recruitment.png?v=20260610" alt="Success Sourcing Testimonial" style="aspect-ratio: auto; width: 100%; object-fit: contain;" />
@@ -122,20 +189,41 @@
 
       <section class="contact-section">
         <div>
-          <p class="section-kicker">Ethical Note</p>
-          <h2>AI supports recruitment work, but it should not replace human judgment.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Ethical Note</span>
+            <span class="lang-id">Catatan Etis</span>
+          </p>
+          <h2>
+            <span class="lang-en">AI supports recruitment work, but it should not replace human judgment.</span>
+            <span class="lang-id">AI mendukung pekerjaan rekrutmen, tetapi tidak boleh menggantikan keputusan manusia.</span>
+          </h2>
         </div>
         <div class="contact-panel">
-          <a href="projects.html">Back to Projects</a>
-          <a href="resume.html">View Resume</a>
-          <a href="mailto:tiaradwia1506@gmail.com">Contact Tiara</a>
+          <a href="projects.html">
+            <span class="lang-en">Back to Projects</span>
+            <span class="lang-id">Kembali ke Proyek</span>
+          </a>
+          <a href="resume.html">
+            <span class="lang-en">View Resume</span>
+            <span class="lang-id">Lihat Resume</span>
+          </a>
+          <a href="mailto:tiaradwia1506@gmail.com">
+            <span class="lang-en">Contact Tiara</span>
+            <span class="lang-id">Hubungi Tiara</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</p>
-      <button class="top-button" type="button" aria-label="Back to top">Top</button>
+      <p>
+        <span class="lang-en">Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</span>
+        <span class="lang-id">Didesain untuk GitHub Pages. Dibuat oleh Tiara Dwi Ananda Saputri.</span>
+      </p>
+      <button class="top-button" type="button" aria-label="Back to top">
+        <span class="lang-en">Top</span>
+        <span class="lang-id">Ke Atas</span>
+      </button>
     </footer>
     <script src="script.js?v=2"></script>
   </body>
