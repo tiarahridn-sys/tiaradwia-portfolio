@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=multi-page-2" />
+    <link rel="stylesheet" href="styles.css?v=multi-page-3" />
     <script src="lang-switch.js"></script>
     <style>
       .odoo-gallery {
@@ -26,14 +26,20 @@
       .gallery-item {
         background: var(--soft);
         border: 1px solid var(--line);
-        border-radius: 12px;
+        border-radius: 5px;
         padding: 16px;
         box-shadow: var(--shadow);
+        transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+      }
+      .gallery-item:hover {
+        transform: translateY(-3px);
+        border-color: var(--teal);
+        box-shadow: 0 8px 25px rgba(200, 162, 200, 0.15), var(--shadow);
       }
       .gallery-item img {
         width: 100%;
         height: auto;
-        border-radius: 8px;
+        border-radius: 3px;
         display: block;
         margin-bottom: 12px;
         border: 1px solid rgba(255, 255, 255, 0.05);
