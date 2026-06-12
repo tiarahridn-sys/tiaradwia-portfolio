@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css?v=multi-page-2" />
+    <script src="lang-switch.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -23,20 +24,30 @@
         <span>Tiara Saputri</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html#about">About Me</a>
-        <a href="services.html">Services</a>
-        <a class="active" href="projects.html">Projects</a>
+        <a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a>
+        <a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a>
+        <a class="active" href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a>
         <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a>
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
+          <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
+        </button>
       </nav>
     </header>
 
     <main>
       <section class="page-hero case-hero">
-        <p class="eyebrow">Strategic HRM Case Study</p>
-        <h1>Mastering Talent, Performance, and Compensation Design.</h1>
+        <p class="eyebrow">
+          <span class="lang-en">Strategic HRM Case Study</span>
+          <span class="lang-id">Studi Kasus HRM Strategis</span>
+        </p>
+        <h1>
+          <span class="lang-en">Mastering Talent, Performance, and Compensation Design.</span>
+          <span class="lang-id">Menguasai Desain Talenta, Kinerja, dan Kompensasi.</span>
+        </h1>
         <p>
-          Sebuah studi kasus manajemen sumber daya manusia strategis (SHRM) yang menjabarkan bagaimana menyelaraskan bakat, kinerja, kompensasi, dan arsitektur organisasi untuk mendukung arah strategi pertumbuhan bisnis.
+          <span class="lang-en">A strategic human resource management (SHRM) case study outlining how to align talent, performance, compensation, and organizational architecture to support business growth strategy.</span>
+          <span class="lang-id">Sebuah studi kasus manajemen sumber daya manusia strategis (SHRM) yang menjabarkan bagaimana menyelaraskan bakat, kinerja, kompensasi, dan arsitektur organisasi untuk mendukung arah strategi pertumbuhan bisnis.</span>
         </p>
       </section>
 
@@ -44,23 +55,35 @@
         <div class="case-study-grid">
           <article class="case-study-block">
             <span>01</span>
-            <h2>Problem</h2>
+            <h2>
+              <span class="lang-en">Problem</span>
+              <span class="lang-id">Masalah</span>
+            </h2>
             <p>
-              Ketidakselarasan perencanaan SDM dengan bisnis—seperti merekrut profil konvensional untuk kebutuhan transformasi digital, tingginya turnover manajerial karena salah penempatan budaya, review kinerja tahunan yang terlambat, struktur organisasi yang birokratis, serta skema bonus rumit yang memboroskan anggaran tanpa memotivasi tim.
+              <span class="lang-en">Misalignment of HR planning with business strategy — such as hiring conventional profiles for digital transformation needs, high managerial turnover due to poor cultural fit, delayed annual performance reviews, bureaucratic organizational structures, and complex bonus schemes that waste budget without motivating the team.</span>
+              <span class="lang-id">Ketidakselarasan perencanaan SDM dengan bisnis—seperti merekrut profil konvensional untuk kebutuhan transformasi digital, tingginya turnover manajerial karena salah penempatan budaya, review kinerja tahunan yang terlambat, struktur organisasi yang birokratis, serta skema bonus rumit yang memboroskan anggaran tanpa memotivasi tim.</span>
             </p>
           </article>
           <article class="case-study-block">
             <span>02</span>
-            <h2>Goal</h2>
+            <h2>
+              <span class="lang-en">Goal</span>
+              <span class="lang-id">Tujuan</span>
+            </h2>
             <p>
-              Menggeser peran HR dari sekadar administratif klerikal ("Cost Center") menjadi pendorong nilai nyata ("Value Creator") dengan merancang sistem SDM proaktif yang menghubungkan motivasi karyawan dan ketangkasan tim langsung ke visi pertumbuhan bisnis masa depan.
+              <span class="lang-en">Shift the HR role from a purely administrative clerical function ("Cost Center") to a tangible value driver ("Value Creator") by designing proactive HR systems that connect employee motivation and team agility directly to future business growth vision.</span>
+              <span class="lang-id">Menggeser peran HR dari sekadar administratif klerikal ("Cost Center") menjadi pendorong nilai nyata ("Value Creator") dengan merancang sistem SDM proaktif yang menghubungkan motivasi karyawan dan ketangkasan tim langsung ke visi pertumbuhan bisnis masa depan.</span>
             </p>
           </article>
           <article class="case-study-block">
             <span>03</span>
-            <h2>Framework</h2>
+            <h2>
+              <span class="lang-en">Framework</span>
+              <span class="lang-id">Kerangka Kerja</span>
+            </h2>
             <p>
-              Mengadopsi 5 Pilar Utama HR Strategis untuk mengurangi hambatan kerja, mempermudah evaluasi berkala, menyederhanakan rewards, memfokuskan rekrutmen berbasis <i>Culture-Add</i> dan data, serta mempraktikkan akuntabilitas tinggi berbasis kepercayaan.
+              <span class="lang-en">Adopting 5 Core Pillars of Strategic HR to reduce workflow friction, simplify regular evaluations, streamline rewards, focus culture-add and data-driven recruitment, and practice high trust-based accountability.</span>
+              <span class="lang-id">Mengdoopsi 5 Pilar Utama HR Strategis untuk mengurangi hambatan kerja, mempermudah evaluasi berkala, menyederhanakan rewards, memfokuskan rekrutmen berbasis Culture-Add dan data, serta mempraktikkan akuntabilitas tinggi berbasis kepercayaan.</span>
             </p>
           </article>
         </div>
@@ -68,34 +91,70 @@
 
       <section class="section muted">
         <div class="section-heading">
-          <p class="section-kicker">The 5 Pillars</p>
-          <h2>Membangun arsitektur organisasi, budaya, dan insentif terpadu.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">The 5 Pillars</span>
+            <span class="lang-id">5 Pilar Utama</span>
+          </p>
+          <h2>
+            <span class="lang-en">Building an integrated organizational architecture, culture, and incentives.</span>
+            <span class="lang-id">Membangun arsitektur organisasi, budaya, dan insentif terpadu.</span>
+          </h2>
         </div>
         <div class="process-list">
           <article>
             <span>Pilar 1</span>
-            <h3>Organizational Design</h3>
-            <p>Membangun struktur agile dengan beralih dari birokrasi top-down kaku ke kolaborasi dinamis (seperti Agile Pods/Matrix) demi mengurangi hambatan komunikasi dan mempercepat pengambilan keputusan di pasar.</p>
+            <h3>
+              <span class="lang-en">Organizational Design</span>
+              <span class="lang-id">Desain Organisasi</span>
+            </h3>
+            <p>
+              <span class="lang-en">Building an agile structure by transitioning from rigid top-down bureaucracy to dynamic collaboration (such as Agile Pods/Matrix) to reduce communication barriers and speed up market decision-making.</span>
+              <span class="lang-id">Membangun struktur agile dengan beralih dari birokrasi top-down kaku ke kolaborasi dinamis (seperti Agile Pods/Matrix) demi mengurangi hambatan komunikasi dan mempercepat pengambilan keputusan di pasar.</span>
+            </p>
           </article>
           <article>
             <span>Pilar 2</span>
-            <h3>Talent Acquisition</h3>
-            <p>Menggeser pola pikir dari sekadar rekrutmen biasa ke konsep "Casting" peran (seperti Disney) dengan fokus pada <i>Culture-Add</i> (nilai baru) serta keputusan berbasis data perilaku retensi talenta jangka panjang.</p>
+            <h3>
+              <span class="lang-en">Talent Acquisition</span>
+              <span class="lang-id">Talent Acquisition</span>
+            </h3>
+            <p>
+              <span class="lang-en">Shifting the mindset from standard recruiting to role "Casting" (like Disney) with a focus on Culture-Add (new value) and data-driven decisions based on long-term talent retention behavior.</span>
+              <span class="lang-id">Menggeser pola pikir dari sekadar rekrutmen biasa ke konsep "Casting" peran (seperti Disney) dengan fokus pada Culture-Add (nilai baru) serta keputusan berbasis data perilaku retensi talenta jangka panjang.</span>
+            </p>
           </article>
           <article>
             <span>Pilar 3</span>
-            <h3>Performance Management</h3>
-            <p>Menghapus review tahunan konvensional yang menakutkan dan menggantinya dengan dialog feedback mingguan 15 menit. Menggeser peran manajer dari sekadar penilai (Judge) menjadi pelatih (Coach) perkembangan karyawan.</p>
+            <h3>
+              <span class="lang-en">Performance Management</span>
+              <span class="lang-id">Manajemen Kinerja</span>
+            </h3>
+            <p>
+              <span class="lang-en">Replacing scary conventional annual reviews with weekly 15-minute feedback dialogues. Shifting the manager role from judge to coach of employee development.</span>
+              <span class="lang-id">Menghapus review tahunan konvensional yang menakutkan dan menggantinya dengan dialog feedback mingguan 15 menit. Menggeser peran manajer dari sekadar penilai (Judge) menjadi pelatih (Coach) perkembangan karyawan.</span>
+            </p>
           </article>
           <article>
             <span>Pilar 4</span>
-            <h3>Total Rewards</h3>
-            <p>Penyederhanaan radikal sistem bonus agar transparan dan mudah dihitung langsung oleh karyawan. Memperluas reward dengan benefit non-finansial seperti jam kerja fleksibel (WFA) dan subsidi kursus/pendidikan.</p>
+            <h3>
+              <span class="lang-en">Total Rewards</span>
+              <span class="lang-id">Total Rewards</span>
+            </h3>
+            <p>
+              <span class="lang-en">Radical simplification of bonus systems to make them transparent and easily calculated directly by employees. Broadening rewards with non-financial benefits like flexible working hours (WFA) and course/education subsidies.</span>
+              <span class="lang-id">Penyederhanaan radikal sistem bonus agar transparan dan mudah dihitung langsung oleh karyawan. Memperluas reward dengan benefit non-finansial seperti jam kerja fleksibel (WFA) dan subsidi kursus/pendidikan.</span>
+            </p>
           </article>
           <article>
             <span>Pilar 5</span>
-            <h3>Culture & Values</h3>
-            <p>Mengadopsi budaya mandiri (seperti Netflix "Freedom & Responsibility") di mana nilai-nilai tecermin dari perilaku kolektif tim sehari-hari tanpa kebijakan kaku, melainkan mengedepankan kepercayaan dan akuntabilitas tinggi.</p>
+            <h3>
+              <span class="lang-en">Culture & Values</span>
+              <span class="lang-id">Budaya & Nilai</span>
+            </h3>
+            <p>
+              <span class="lang-en">Adopting an independent culture (like Netflix "Freedom & Responsibility") where values are reflected in collective daily team behavior without rigid policies, emphasizing trust and high accountability.</span>
+              <span class="lang-id">Mengadopsi budaya mandiri (seperti Netflix "Freedom & Responsibility") di mana nilai-nilai tecermin dari perilaku kolektif tim sehari-hari tanpa kebijakan kaku, melainkan mengedepankan kepercayaan dan akuntabilitas tinggi.</span>
+            </p>
           </article>
         </div>
       </section>
@@ -103,15 +162,23 @@
       <section class="section">
         <div class="split">
           <div>
-            <p class="section-kicker">Future Trend</p>
-            <h2>AI + Human Touch: HR in the Age of AI.</h2>
+            <p class="section-kicker">
+              <span class="lang-en">Future Trend</span>
+              <span class="lang-id">Tren Masa Depan</span>
+            </p>
+            <h2>
+              <span class="lang-en">AI + Human Touch: HR in the Age of AI.</span>
+              <span class="lang-id">AI + Sentuhan Manusia: HR di Era AI.</span>
+            </h2>
           </div>
           <div class="about-copy">
             <p>
-              Strategi masa depan memanfaatkan teknologi AI untuk mengotomatisasi pekerjaan administratif berulang (*busy work* seperti pengarsipan dokumen, pendataan, dan skrining awal CV) sehingga praktisi HR memiliki waktu penuh untuk fokus pada bimbingan empatik, resolusi konflik, dan kolaborasi strategis (*heart work*).
+              <span class="lang-en">Future strategies leverage AI technology to automate repetitive administrative work (busy work like document filing, data entry, and initial CV screening) so that HR practitioners have full time to focus on empathetic coaching, conflict resolution, and strategic collaboration (heart work).</span>
+              <span class="lang-id">Strategi masa depan memanfaatkan teknologi AI untuk mengotomatisasi pekerjaan administratif berulang (*busy work* seperti pengarsipan dokumen, pendataan, dan skrining awal CV) sehingga praktisi HR memiliki waktu penuh untuk fokus pada bimbingan empatik, resolusi konflik, dan kolaborasi strategis (*heart work*).</span>
             </p>
             <p>
-              Kasus ini didukung dengan sertifikasi kelulusan program pembelajaran Coursera di bidang <b>Strategic HRM: Talent, Performance, and Compensation Design</b>.
+              <span class="lang-en">This case is supported by the Coursera completion certificate in Strategic HRM: Talent, Performance, and Compensation Design.</span>
+              <span class="lang-id">Kasus ini didukung dengan sertifikasi kelulusan program pembelajaran Coursera di bidang Strategic HRM: Talent, Performance, and Compensation Design.</span>
             </p>
             <div style="margin-top: 30px; max-width: 500px;" class="photo-frame">
               <img src="assets/certificate-hrm.jpg?v=1" alt="Coursera Strategic HRM Certificate Evidence" style="aspect-ratio: auto; width: 100%; object-fit: contain;" />
@@ -122,20 +189,41 @@
 
       <section class="contact-section">
         <div>
-          <p class="section-kicker">Culture & Strategy</p>
-          <h2>"Culture eats strategy for breakfast. Strategic HRM makes sure they eat together."</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Culture & Strategy</span>
+            <span class="lang-id">Budaya & Strategi</span>
+          </p>
+          <h2>
+            <span class="lang-en">"Culture eats strategy for breakfast. Strategic HRM makes sure they eat together."</span>
+            <span class="lang-id">"Budaya memakan strategi saat sarapan. HRM Strategis memastikan mereka sarapan bersama."</span>
+          </h2>
         </div>
         <div class="contact-panel">
-          <a href="projects.html">Back to Projects</a>
-          <a href="resume.html">View Resume</a>
-          <a href="mailto:tiaradwia1506@gmail.com">Contact Tiara</a>
+          <a href="projects.html">
+            <span class="lang-en">Back to Projects</span>
+            <span class="lang-id">Kembali ke Proyek</span>
+          </a>
+          <a href="resume.html">
+            <span class="lang-en">View Resume</span>
+            <span class="lang-id">Lihat Resume</span>
+          </a>
+          <a href="mailto:tiaradwia1506@gmail.com">
+            <span class="lang-en">Contact Tiara</span>
+            <span class="lang-id">Hubungi Tiara</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</p>
-      <button class="top-button" type="button" aria-label="Back to top">Top</button>
+      <p>
+        <span class="lang-en">Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</span>
+        <span class="lang-id">Didesain untuk GitHub Pages. Dibuat oleh Tiara Dwi Ananda Saputri.</span>
+      </p>
+      <button class="top-button" type="button" aria-label="Back to top">
+        <span class="lang-en">Top</span>
+        <span class="lang-id">Ke Atas</span>
+      </button>
     </footer>
     <script src="script.js?v=2"></script>
   </body>
