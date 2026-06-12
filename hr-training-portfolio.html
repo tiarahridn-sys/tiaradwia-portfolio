@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css?v=multi-page-2" />
+    <script src="lang-switch.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -23,20 +24,30 @@
         <span>Tiara Saputri</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html#about">About Me</a>
-        <a href="services.html">Services</a>
-        <a class="active" href="projects.html">Projects</a>
+        <a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a>
+        <a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a>
+        <a class="active" href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a>
         <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a>
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
+          <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
+        </button>
       </nav>
     </header>
 
     <main>
       <section class="page-hero case-hero">
-        <p class="eyebrow">Learning Project & Sourcing Evidence</p>
-        <h1>HR Staff Training Portfolio (Quantum HR)</h1>
+        <p class="eyebrow">
+          <span class="lang-en">Learning Project & Sourcing Evidence</span>
+          <span class="lang-id">Proyek Belajar & Bukti Sourcing</span>
+        </p>
+        <h1>
+          <span class="lang-en">HR Staff Training Portfolio (Quantum HR)</span>
+          <span class="lang-id">Portofolio Pelatihan Staf HR (Quantum HR)</span>
+        </h1>
         <p>
-          Dokumentasi praktik mandiri dan deliverables pelatihan administrasi HR Staff, meliputi penyusunan payroll, legal drafting peraturan perusahaan (PP), perjanjian kerja (PKWT/PKWTT), serta penyusunan Standard Operating Procedures (SOP) operasional.
+          <span class="lang-en">Documentation of independent practice and deliverables for HR Staff administration training, covering payroll preparation, legal drafting of company regulations (PP), employment agreements (PKWT/PKWTT), and operational Standard Operating Procedures (SOPs).</span>
+          <span class="lang-id">Dokumentasi praktik mandiri dan deliverables pelatihan administrasi HR Staff, meliputi penyusunan payroll, legal drafting peraturan perusahaan (PP), perjanjian kerja (PKWT/PKWTT), serta penyusunan Standard Operating Procedures (SOP) operasional.</span>
         </p>
       </section>
 
@@ -44,32 +55,59 @@
         <div class="case-study-grid">
           <article class="case-study-block">
             <span>01</span>
-            <h2>Payroll & Compensation</h2>
+            <h2>
+              <span class="lang-en">Payroll & Compensation</span>
+              <span class="lang-id">Payroll & Kompensasi</span>
+            </h2>
             <p>
-              Merancang spreadsheet perhitungan payroll karyawan bulanan lengkap dengan absensi, lembur, insentif, pemotongan, perhitungan PPh 21, dan iuran BPJS Ketenagakerjaan/Kesehatan.
+              <span class="lang-en">Designed a spreadsheet for monthly employee payroll calculations, complete with attendance, overtime, incentives, deductions, PPh 21 calculation, and BPJS Employment/Health contributions.</span>
+              <span class="lang-id">Merancang spreadsheet perhitungan payroll karyawan bulanan lengkap dengan absensi, lembur, insentif, pemotongan, perhitungan PPh 21, dan iuran BPJS Ketenagakerjaan/Kesehatan.</span>
             </p>
-            <a class="text-link" style="margin-top: 14px; display: inline-flex;" href="https://docs.google.com/spreadsheets/d/1gW6cktntTnmw0PGg4OoXkBw8nEtlnVuYVv5rkx9Fsc4/edit?usp=sharing" target="_blank" rel="noopener">Lihat Google Sheets Payroll</a>
+            <a class="text-link" style="margin-top: 14px; display: inline-flex;" href="https://docs.google.com/spreadsheets/d/1gW6cktntTnmw0PGg4OoXkBw8nEtlnVuYVv5rkx9Fsc4/edit?usp=sharing" target="_blank" rel="noopener">
+              <span class="lang-en">View Google Sheets Payroll</span>
+              <span class="lang-id">Lihat Google Sheets Payroll</span>
+            </a>
           </article>
           <article class="case-study-block">
             <span>02</span>
-            <h2>Industrial Relations & Contracts</h2>
+            <h2>
+              <span class="lang-en">Industrial Relations & Contracts</span>
+              <span class="lang-id">Hubungan Industrial & Kontrak</span>
+            </h2>
             <p>
-              Menyusun draf legal Peraturan Perusahaan (PP) serta draf kontrak kerja karyawan kontrak (PKWT) dan karyawan tetap (PKWTT) yang selaras dengan regulasi ketenagakerjaan Indonesia.
+              <span class="lang-en">Drafted legal documents for Company Regulations (PP) and employment contracts for contract employees (PKWT) and permanent employees (PKWTT) aligned with Indonesian labor regulations.</span>
+              <span class="lang-id">Menyusun draf legal Peraturan Perusahaan (PP) serta draf kontrak kerja karyawan kontrak (PKWT) dan karyawan tetap (PKWTT) yang selaras dengan regulasi ketenagakerjaan Indonesia.</span>
             </p>
             <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 14px;">
-              <a class="text-link" style="margin-top: 0; display: inline-flex;" href="https://docs.google.com/document/d/1rtZUIduS-TlECl7-4DRa59SmAYLuHL3noAlLDmii2kw/edit?usp=drivesdk" target="_blank" rel="noopener">Draf Peraturan Perusahaan (PP)</a>
-              <a class="text-link" style="margin-top: 0; display: inline-flex;" href="https://docs.google.com/document/d/1gcH540-WcbDUXh-IqDUgP-CyCASuOIYQe7apBZ33H_c/edit?usp=drivesdk" target="_blank" rel="noopener">Draf PKWT & PKWTT</a>
+              <a class="text-link" style="margin-top: 0; display: inline-flex;" href="https://docs.google.com/document/d/1rtZUIduS-TlECl7-4DRa59SmAYLuHL3noAlLDmii2kw/edit?usp=drivesdk" target="_blank" rel="noopener">
+                <span class="lang-en">Company Regulations (PP) Draft</span>
+                <span class="lang-id">Draf Peraturan Perusahaan (PP)</span>
+              </a>
+              <a class="text-link" style="margin-top: 0; display: inline-flex;" href="https://docs.google.com/document/d/1gcH540-WcbDUXh-IqDUgP-CyCASuOIYQe7apBZ33H_c/edit?usp=drivesdk" target="_blank" rel="noopener">
+                <span class="lang-en">PKWT & PKWTT Draft</span>
+                <span class="lang-id">Draf PKWT & PKWTT</span>
+              </a>
             </div>
           </article>
           <article class="case-study-block">
             <span>03</span>
-            <h2>Operational SOPs</h2>
+            <h2>
+              <span class="lang-en">Operational SOPs</span>
+              <span class="lang-id">SOP Operasional</span>
+            </h2>
             <p>
-              Merancang alur proses kerja terstandarisasi untuk SOP pengunduran diri karyawan (resignation) serta pengurusan surat keterangan sakit guna menjaga ketertiban data dan akurasi rekaman absensi internal.
+              <span class="lang-en">Designed standardized workflow processes for employee resignation SOPs and medical leave certificates to maintain internal data order and attendance record accuracy.</span>
+              <span class="lang-id">Merancang alur proses kerja terstandarisasi untuk SOP pengunduran diri karyawan (resignation) serta pengurusan surat keterangan sakit guna menjaga ketertiban data dan akurasi rekaman absensi internal.</span>
             </p>
             <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 14px;">
-              <a class="text-link" style="margin-top: 0; display: inline-flex;" href="assets/Tugas_SOP_Pengunduran_diri_karyawan.docx" download>Unduh Draf SOP Pengunduran Diri (DOCX)</a>
-              <a class="text-link" style="margin-top: 0; display: inline-flex;" href="assets/portfolio-training-hr-staff-quantum-hr.csv" download>Unduh Daftar Dokumen Training (CSV)</a>
+              <a class="text-link" style="margin-top: 0; display: inline-flex;" href="assets/Tugas_SOP_Pengunduran_diri_karyawan.docx" download>
+                <span class="lang-en">Download Resignation SOP Draft (DOCX)</span>
+                <span class="lang-id">Unduh Draf SOP Pengunduran Diri (DOCX)</span>
+              </a>
+              <a class="text-link" style="margin-top: 0; display: inline-flex;" href="assets/portfolio-training-hr-staff-quantum-hr.csv" download>
+                <span class="lang-en">Download Training Document List (CSV)</span>
+                <span class="lang-id">Unduh Daftar Dokumen Training (CSV)</span>
+              </a>
             </div>
           </article>
         </div>
@@ -77,34 +115,70 @@
 
       <section class="section muted">
         <div class="section-heading">
-          <p class="section-kicker">Core Modules</p>
-          <h2>Struktur kompetensi praktis operasional HR yang dikuasai.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Core Modules</span>
+            <span class="lang-id">Modul Utama</span>
+          </p>
+          <h2>
+            <span class="lang-en">Practical HR operational competency structure mastered.</span>
+            <span class="lang-id">Struktur kompetensi praktis operasional HR yang dikuasai.</span>
+          </h2>
         </div>
         <div class="process-list">
           <article>
             <span>Modul 1</span>
-            <h3>Administrasi Payroll</h3>
-            <p>Memahami struktur penggajian, upah pokok, tunjangan tetap/tidak tetap, lembur (overtime), PPh 21, kalkulasi jaminan sosial (BPJS Kesehatan & Ketenagakerjaan), dan slip gaji.</p>
+            <h3>
+              <span class="lang-en">Payroll Administration</span>
+              <span class="lang-id">Administrasi Payroll</span>
+            </h3>
+            <p>
+              <span class="lang-en">Understanding payroll structure, basic salary, fixed/variable allowances, overtime, PPh 21, social security calculations (BPJS Health & Employment), and pay slips.</span>
+              <span class="lang-id">Memahami struktur penggajian, upah pokok, tunjangan tetap/tidak tetap, lembur (overtime), PPh 21, kalkulasi jaminan sosial (BPJS Kesehatan & Ketenagakerjaan), dan slip gaji.</span>
+            </p>
           </article>
           <article>
             <span>Modul 2</span>
-            <h3>Hubungan Industrial</h3>
-            <p>Menyusun pasal-pasal hak dan kewajiban pekerja/pengusaha, ketentuan waktu kerja, jam istirahat, prosedur disiplin karyawan, serta sanksi surat peringatan di Peraturan Perusahaan.</p>
+            <h3>
+              <span class="lang-en">Hubungan Industrial</span>
+              <span class="lang-id">Hubungan Industrial</span>
+            </h3>
+            <p>
+              <span class="lang-en">Drafting articles on rights and obligations of employees/employers, working hours provisions, rest periods, employee discipline procedures, and warning letter sanctions in Company Regulations.</span>
+              <span class="lang-id">Menyusun pasal-pasal hak dan kewajiban pekerja/pengusaha, ketentuan waktu kerja, jam istirahat, prosedur disiplin karyawan, serta sanksi surat peringatan di Peraturan Perusahaan.</span>
+            </p>
           </article>
           <article>
             <span>Modul 3</span>
-            <h3>Perjanjian Kerja</h3>
-            <p>Membuat draf PKWT (pekerja waktu tertentu) dan PKWTT (pekerja waktu tidak tertentu) dengan klausul masa percobaan, hak PHK, kompensasi, dan perlindungan hukum yang sah.</p>
+            <h3>
+              <span class="lang-en">Employment Agreement</span>
+              <span class="lang-id">Perjanjian Kerja</span>
+            </h3>
+            <p>
+              <span class="lang-en">Drafting PKWT (fixed-term agreement) and PKWTT (indefinite-term agreement) with probation clauses, termination rights, compensation, and valid legal protection.</span>
+              <span class="lang-id">Membuat draf PKWT (pekerja waktu tertentu) dan PKWTT (pekerja waktu tidak tertentu) dengan klausul masa percobaan, hak PHK, kompensasi, dan perlindungan hukum yang sah.</span>
+            </p>
           </article>
           <article>
             <span>Modul 4</span>
-            <h3>Standard Operating Procedures</h3>
-            <p>Menyusun SOP pengunduran diri karyawan secara terstruktur (handover aset, exit interview, surat keterangan kerja) dan SOP surat keterangan sakit agar rekaman absensi akurat.</p>
+            <h3>
+              <span class="lang-en">Standard Operating Procedures</span>
+              <span class="lang-id">Standard Operating Procedures</span>
+            </h3>
+            <p>
+              <span class="lang-en">Drafting structured employee resignation SOP (asset handover, exit interview, work reference letter) and medical certificate SOP for accurate attendance records.</span>
+              <span class="lang-id">Menyusun SOP pengunduran diri karyawan secara terstruktur (handover aset, exit interview, surat keterangan kerja) dan SOP surat keterangan sakit agar rekaman absensi akurat.</span>
+            </p>
           </article>
           <article>
             <span>Modul 5</span>
-            <h3>Sertifikasi Kompetensi</h3>
-            <p>Menyelesaikan seluruh modul evaluasi pelatihan kompetensi Quantum HR Staff Training dengan kelulusan program yang valid sebagai tanda keahlian operasional.</p>
+            <h3>
+              <span class="lang-en">Competency Certification</span>
+              <span class="lang-id">Sertifikasi Kompetensi</span>
+            </h3>
+            <p>
+              <span class="lang-en">Completing all Quantum HR Staff Training evaluation modules with valid program completion as a sign of operational expertise.</span>
+              <span class="lang-id">Menyelesaikan seluruh modul evaluasi pelatihan kompetensi Quantum HR Staff Training dengan kelulusan program yang valid sebagai tanda keahlian operasional.</span>
+            </p>
           </article>
         </div>
       </section>
@@ -112,15 +186,23 @@
       <section class="section">
         <div class="split">
           <div>
-            <p class="section-kicker">Training Completion</p>
-            <h2>Bukti Pelatihan & Kompetensi HR Staff.</h2>
+            <p class="section-kicker">
+              <span class="lang-en">Training Completion</span>
+              <span class="lang-id">Penyelesaian Pelatihan</span>
+            </p>
+            <h2>
+              <span class="lang-en">HR Staff Training & Competency Evidence.</span>
+              <span class="lang-id">Bukti Pelatihan & Kompetensi HR Staff.</span>
+            </h2>
           </div>
           <div class="about-copy">
             <p>
-              Portofolio ini disusun berdasarkan pengerjaan tugas-tugas terstruktur dalam **HR Staff Training by Quantum HR**. Melalui pelatihan ini, saya mempraktikkan langsung peran operasional HR dari hulu ke hilir untuk memastikan administrasi perusahaan berjalan efisien dan patuh regulasi.
+              <span class="lang-en">This portfolio was compiled based on structured tasks in the HR Staff Training by Quantum HR. Through this training, I practiced the HR operational role from end to end to ensure company administration runs efficiently and in compliance with regulations.</span>
+              <span class="lang-id">Portofolio ini disusun berdasarkan pengerjaan tugas-tugas terstruktur dalam **HR Staff Training by Quantum HR**. Melalui pelatihan ini, saya mempraktikkan langsung peran operasional HR dari hulu ke hilir untuk memastikan administrasi perusahaan berjalan efisien dan patuh regulasi.</span>
             </p>
             <p>
-              Tugas akhir dan draf dokumen lengkap disimpan sebagai bukti sertifikasi kompetensi **HR Completion** dan **HR Completion 33** atas nama Tiara Dwi Ananda Saputri.
+              <span class="lang-en">Final projects and complete draft documents are saved as competency certification evidence for HR Completion and HR Completion 33 under the name of Tiara Dwi Ananda Saputri.</span>
+              <span class="lang-id">Tugas akhir dan draf dokumen lengkap disimpan sebagai bukti sertifikasi kompetensi **HR Completion** dan **HR Completion 33** atas nama Tiara Dwi Ananda Saputri.</span>
             </p>
           </div>
         </div>
@@ -133,8 +215,14 @@
               alt="HR Completion 33 - Page 1"
             />
             <div>
-              <h3>Sertifikat HR Staff Training - Halaman 1</h3>
-              <p>Sertifikat Pelatihan HR Staff oleh Quantum HR atas nama Tiara Dwi Ananda Saputri.</p>
+              <h3>
+                <span class="lang-en">HR Staff Training Certificate - Page 1</span>
+                <span class="lang-id">Sertifikat HR Staff Training - Halaman 1</span>
+              </h3>
+              <p>
+                <span class="lang-en">HR Staff training certificate by Quantum HR under the name of Tiara Dwi Ananda Saputri.</span>
+                <span class="lang-id">Sertifikat Pelatihan HR Staff oleh Quantum HR atas nama Tiara Dwi Ananda Saputri.</span>
+              </p>
             </div>
           </article>
           <article class="certificate-card">
@@ -144,8 +232,14 @@
               alt="HR Completion 33 - Page 2"
             />
             <div>
-              <h3>Sertifikat HR Staff Training - Halaman 2</h3>
-              <p>Daftar materi kompetensi pelatihan HR Staff Quantum HR yang diselesaikan.</p>
+              <h3>
+                <span class="lang-en">HR Staff Training Certificate - Page 2</span>
+                <span class="lang-id">Sertifikat HR Staff Training - Halaman 2</span>
+              </h3>
+              <p>
+                <span class="lang-en">List of completed HR Staff training competency topics.</span>
+                <span class="lang-id">Daftar materi kompetensi pelatihan HR Staff Quantum HR yang diselesaikan.</span>
+              </p>
             </div>
           </article>
         </div>
@@ -153,21 +247,42 @@
 
       <section class="contact-section">
         <div>
-          <p class="section-kicker">Explore More</p>
-          <h2>"Good administration is the backbone of great people operations."</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Explore More</span>
+            <span class="lang-id">Jelajahi Lebih Lanjut</span>
+          </p>
+          <h2>
+            <span class="lang-en">"Good administration is the backbone of great people operations."</span>
+            <span class="lang-id">"Administrasi yang baik adalah tulang punggung operasional SDM yang hebat."</span>
+          </h2>
         </div>
         <div class="contact-panel">
-          <a href="projects.html">Back to Projects</a>
-          <a href="resume.html">View Resume</a>
-          <a href="mailto:tiaradwia1506@gmail.com">Contact Tiara</a>
+          <a href="projects.html">
+            <span class="lang-en">Back to Projects</span>
+            <span class="lang-id">Kembali ke Proyek</span>
+          </a>
+          <a href="resume.html">
+            <span class="lang-en">View Resume</span>
+            <span class="lang-id">Lihat Resume</span>
+          </a>
+          <a href="mailto:tiaradwia1506@gmail.com">
+            <span class="lang-en">Contact Tiara</span>
+            <span class="lang-id">Hubungi Tiara</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</p>
-      <button class="top-button" type="button" aria-label="Back to top">Top</button>
-    </header>
+      <p>
+        <span class="lang-en">Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</span>
+        <span class="lang-id">Didesain untuk GitHub Pages. Dibuat oleh Tiara Dwi Ananda Saputri.</span>
+      </p>
+      <button class="top-button" type="button" aria-label="Back to top">
+        <span class="lang-en">Top</span>
+        <span class="lang-id">Ke Atas</span>
+      </button>
+    </footer>
     <script src="script.js?v=2"></script>
   </body>
 </html>
