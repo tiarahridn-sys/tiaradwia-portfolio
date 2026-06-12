@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Services | Tiara Dwi Ananda Saputri</title>
   <meta name="description" content="HR and recruitment services by Tiara Dwi Ananda Saputri — AI-assisted sourcing, talent acquisition support, HR operations, program coordination, e-commerce admin, and virtual assistant services.">
+  <script src="lang-switch.js"></script>
   <style>
 
     /* ── Reset & Base ───────────────────────────── */
@@ -225,6 +226,57 @@
       .page-header h1 { font-size: 1.5rem; }
     }
 
+    /* Multi-language styling rules */
+    html[lang="en"] .lang-id {
+      display: none !important;
+    }
+    html[lang="id"] .lang-en {
+      display: none !important;
+    }
+
+    /* Language Switcher Button */
+    .lang-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--text-body);
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-family: inherit;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 150ms ease;
+      user-select: none;
+      gap: 3px;
+      margin-left: 0.5rem;
+    }
+
+    .lang-toggle-btn:hover {
+      color: var(--text-title);
+      border-color: var(--accent);
+      background: var(--card-bg);
+    }
+
+    html[lang="en"] .lang-toggle-btn .lang-text-en {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    html[lang="en"] .lang-toggle-btn .lang-text-id {
+      color: var(--text-body);
+      font-weight: normal;
+    }
+    html[lang="id"] .lang-toggle-btn .lang-text-id {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    html[lang="id"] .lang-toggle-btn .lang-text-en {
+      color: var(--text-body);
+      font-weight: normal;
+    }
+
   </style>
 </head>
 
@@ -236,18 +288,29 @@
       <span class="initials">TS</span> Tiara Saputri
     </a>
     <ul class="nav-links">
-      <li><a href="index.html#about">About Me</a></li>
-      <li><a href="services.html" class="active">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a></li>
+      <li><a href="services.html" class="active"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a></li>
+      <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a></li>
       <li><a href="resume.html">Resume</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a></li>
+      <li>
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
+          <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
+        </button>
+      </li>
     </ul>
   </nav>
 
   <!-- Page Header -->
   <header class="page-header">
-    <p class="section-label">What I offer</p>
-    <h1>Six areas of work, built from real experience.</h1>
+    <p class="section-label">
+      <span class="lang-en">What I offer</span>
+      <span class="lang-id">Apa yang saya tawarkan</span>
+    </p>
+    <h1>
+      <span class="lang-en">Six areas of work, built from real experience.</span>
+      <span class="lang-id">Enam bidang pekerjaan, dibangun dari pengalaman nyata.</span>
+    </h1>
   </header>
 
   <!-- Services Grid -->
@@ -257,87 +320,216 @@
       <!-- 01 ─ Recruitment & AI-Assisted Sourcing -->
       <div class="card">
         <p class="card-num">01</p>
-        <h2 class="card-title">Recruitment & AI-Assisted Sourcing</h2>
-        <p class="card-desc">End-to-end recruitment support — from job posting and talent sourcing to candidate screening, profile review, interview scheduling, and candidate communication. Sourcing is done using Boolean search, AI-assisted workflows, and prompt-based role breakdowns for better targeting.</p>
+        <h2 class="card-title">
+          <span class="lang-en">Talent Acquisition & AI-Assisted Sourcing</span>
+          <span class="lang-id">Sourcing Berbantuan AI & Talent Acquisition</span>
+        </h2>
+        <p class="card-desc">
+          <span class="lang-en">End-to-end talent acquisition support — from job posting and talent sourcing to candidate screening, profile review, interview scheduling, and candidate communication. Sourcing is done using Boolean search, AI-assisted workflows, and prompt-based role breakdowns for better targeting.</span>
+          <span class="lang-id">Dukungan talent acquisition ujung-ke-ujung (*end-to-end*) — mulai dari penayangan lowongan kerja dan pencarian talenta (*sourcing*) hingga penyaringan kandidat (*screening*), ulasan profil, penjadwalan wawancara, dan komunikasi kandidat. Sourcing dilakukan menggunakan Boolean search, alur kerja berbantuan AI, dan analisis kriteria posisi berbasis prompt untuk penargetan yang lebih baik.</span>
+        </p>
         <div class="chips">
-          <span class="chip">Talent Sourcing</span>
+          <span class="chip">
+            <span class="lang-en">Talent Sourcing</span>
+            <span class="lang-id">Sourcing Talenta</span>
+          </span>
           <span class="chip">Boolean Search</span>
-          <span class="chip">Candidate Screening</span>
-          <span class="chip">Job Posting</span>
-          <span class="chip">Interview Scheduling</span>
-          <span class="chip">AI-Assisted Sourcing</span>
+          <span class="chip">
+            <span class="lang-en">Candidate Screening</span>
+            <span class="lang-id">Penyaringan Kandidat</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Job Posting</span>
+            <span class="lang-id">Penayangan Lowongan</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Interview Scheduling</span>
+            <span class="lang-id">Penjadwalan Wawancara</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">AI-Assisted Sourcing</span>
+            <span class="lang-id">Sourcing Berbantuan AI</span>
+          </span>
         </div>
       </div>
 
       <!-- 02 ─ HR Operations -->
       <div class="card">
         <p class="card-num">02</p>
-        <h2 class="card-title">HR Operations</h2>
-        <p class="card-desc">HR documentation, attendance tracking, payroll case support, SOP references, and organised employee administration records.</p>
+        <h2 class="card-title">
+          <span class="lang-en">HR Operations</span>
+          <span class="lang-id">Operasional HR</span>
+        </h2>
+        <p class="card-desc">
+          <span class="lang-en">HR documentation, attendance tracking, payroll case support, SOP references, and organised employee administration records.</span>
+          <span class="lang-id">Dokumentasi HR, pelacakan absensi, dukungan administrasi payroll, penyusunan referensi SOP, dan kerapian catatan administrasi karyawan.</span>
+        </p>
         <div class="chips">
-          <span class="chip">HR Documentation</span>
-          <span class="chip">Attendance Tracking</span>
-          <span class="chip">Payroll Support</span>
-          <span class="chip">SOP References</span>
-          <span class="chip">Employee Records</span>
+          <span class="chip">
+            <span class="lang-en">HR Documentation</span>
+            <span class="lang-id">Dokumentasi HR</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Attendance Tracking</span>
+            <span class="lang-id">Pelacakan Kehadiran</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Payroll Support</span>
+            <span class="lang-id">Dukungan Payroll</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">SOP References</span>
+            <span class="lang-id">Referensi SOP</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Employee Records</span>
+            <span class="lang-id">Catatan Karyawan</span>
+          </span>
         </div>
       </div>
 
       <!-- 03 ─ Program Coordination -->
       <div class="card">
         <p class="card-num">03</p>
-        <h2 class="card-title">Program Coordination</h2>
-        <p class="card-desc">Webinar, bootcamp, class facilitation, participant flow management, attendance recap, and learning session support.</p>
+        <h2 class="card-title">
+          <span class="lang-en">Program Coordination</span>
+          <span class="lang-id">Koordinasi Program</span>
+        </h2>
+        <p class="card-desc">
+          <span class="lang-en">Webinar, bootcamp, class facilitation, participant flow management, attendance recap, and learning session support.</span>
+          <span class="lang-id">Fasilitasi kelas, webinar, dan bootcamp, manajemen alur peserta, rekap kehadiran, serta dukungan jalannya sesi pembelajaran.</span>
+        </p>
         <div class="chips">
-          <span class="chip">Webinar Support</span>
-          <span class="chip">Class Facilitation</span>
-          <span class="chip">Participant Flow</span>
-          <span class="chip">Attendance Recap</span>
-          <span class="chip">Learning Session Support</span>
+          <span class="chip">
+            <span class="lang-en">Webinar Support</span>
+            <span class="lang-id">Dukungan Webinar</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Class Facilitation</span>
+            <span class="lang-id">Fasilitasi Kelas</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Participant Flow</span>
+            <span class="lang-id">Alur Peserta</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Attendance Recap</span>
+            <span class="lang-id">Rekap Kehadiran</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Learning Session Support</span>
+            <span class="lang-id">Dukungan Sesi Belajar</span>
+          </span>
         </div>
       </div>
 
       <!-- 04 ─ E-Commerce Administration -->
       <div class="card">
         <p class="card-num">04</p>
-        <h2 class="card-title">E-Commerce Administration</h2>
-        <p class="card-desc">Product listing updates, stock monitoring, pricing checks, marketplace chat support, campaign setup, and backend order data maintenance.</p>
+        <h2 class="card-title">
+          <span class="lang-en">E-Commerce Administration</span>
+          <span class="lang-id">Administrasi E-Commerce</span>
+        </h2>
+        <p class="card-desc">
+          <span class="lang-en">Product listing updates, stock monitoring, pricing checks, marketplace chat support, campaign setup, and backend order data maintenance.</span>
+          <span class="lang-id">Pembaruan produk toko online, pemantauan stok, pemeriksaan harga promo, layanan chat pelanggan, pengaturan kampanye promosi, dan pemeliharaan data pesanan backend.</span>
+        </p>
         <div class="chips">
-          <span class="chip">Product Listing</span>
-          <span class="chip">Stock Monitoring</span>
-          <span class="chip">Marketplace Support</span>
-          <span class="chip">Campaign Setup</span>
-          <span class="chip">Order Management</span>
+          <span class="chip">
+            <span class="lang-en">Product Listing</span>
+            <span class="lang-id">Daftar Produk</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Stock Monitoring</span>
+            <span class="lang-id">Pemantauan Stok</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Marketplace Support</span>
+            <span class="lang-id">Dukungan Marketplace</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Campaign Setup</span>
+            <span class="lang-id">Pengaturan Kampanye</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Order Management</span>
+            <span class="lang-id">Manajemen Pesanan</span>
+          </span>
         </div>
       </div>
 
       <!-- 05 ─ Research & Admin Support -->
       <div class="card">
         <p class="card-num">05</p>
-        <h2 class="card-title">Research & Admin Support</h2>
-        <p class="card-desc">Market research, data collection, structured recap, document preparation, and operational follow-up support.</p>
+        <h2 class="card-title">
+          <span class="lang-en">Research & Admin Support</span>
+          <span class="lang-id">Riset & Dukungan Admin</span>
+        </h2>
+        <p class="card-desc">
+          <span class="lang-en">Market research, data collection, structured recap, document preparation, and operational follow-up support.</span>
+          <span class="lang-id">Riset pasar, pengumpulan data, rekap terstruktur, penyiapan dokumen, dan dukungan tindak lanjut operasional harian.</span>
+        </p>
         <div class="chips">
-          <span class="chip">Market Research</span>
-          <span class="chip">Data Collection</span>
-          <span class="chip">Document Prep</span>
-          <span class="chip">Structured Recap</span>
-          <span class="chip">Operational Support</span>
+          <span class="chip">
+            <span class="lang-en">Market Research</span>
+            <span class="lang-id">Riset Pasar</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Data Collection</span>
+            <span class="lang-id">Pengumpulan Data</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Document Prep</span>
+            <span class="lang-id">Penyiapan Dokumen</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Structured Recap</span>
+            <span class="lang-id">Rekap Terstruktur</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Operational Support</span>
+            <span class="lang-id">Dukungan Operasional</span>
+          </span>
         </div>
       </div>
 
       <!-- 06 ─ Virtual Assistant (NEW) -->
       <div class="card va">
         <p class="card-num">06</p>
-        <span class="badge-new">New</span>
-        <h2 class="card-title">Virtual Assistant</h2>
-        <p class="card-desc">Calendar and inbox management, task follow-up, research, document prep, and operational support — delivered with the admin discipline and structured workflows I bring across HR, recruitment, and e-commerce work.</p>
+        <span class="badge-new">
+          <span class="lang-en">New</span>
+          <span class="lang-id">Baru</span>
+        </span>
+        <h2 class="card-title">
+          <span class="lang-en">Virtual Assistant</span>
+          <span class="lang-id">Asisten Virtual</span>
+        </h2>
+        <p class="card-desc">
+          <span class="lang-en">Calendar and inbox management, task follow-up, research, document prep, and operational support — delivered with the admin discipline and structured workflows I bring across HR, recruitment, and e-commerce work.</span>
+          <span class="lang-id">Manajemen kalender dan email, tindak lanjut tugas, riset, penyiapan dokumen, dan dukungan operasional — disajikan dengan disiplin admin dan alur kerja terstruktur yang saya bawa dari pengalaman HR, rekrutmen, dan e-commerce.</span>
+        </p>
         <div class="chips">
-          <span class="chip">Calendar & Inbox</span>
-          <span class="chip">Recruitment Admin</span>
+          <span class="chip">
+            <span class="lang-en">Calendar & Inbox</span>
+            <span class="lang-id">Kalender & Email</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">Recruitment Admin</span>
+            <span class="lang-id">Admin Rekrutmen</span>
+          </span>
           <span class="chip">ATS & Screening</span>
-          <span class="chip">E-Commerce Admin</span>
-          <span class="chip">SOP & Docs</span>
-          <span class="chip">AI Workflows</span>
+          <span class="chip">
+            <span class="lang-en">E-Commerce Admin</span>
+            <span class="lang-id">Admin E-Commerce</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">SOP & Docs</span>
+            <span class="lang-id">SOP & Dokumen</span>
+          </span>
+          <span class="chip">
+            <span class="lang-en">AI Workflows</span>
+            <span class="lang-id">Alur Kerja AI</span>
+          </span>
         </div>
       </div>
 
@@ -345,7 +537,10 @@
   </main>
 
   <footer>
-    <p>Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</p>
+    <p>
+      <span class="lang-en">Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</span>
+      <span class="lang-id">Didesain untuk GitHub Pages. Dibuat oleh Tiara Dwi Ananda Saputri.</span>
+    </p>
   </footer>
 
 </body>
