@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CoreHR Connect with Odoo case study by Tiara Dwi Ananda Saputri, showcasing implementation of HRIS modules for employee database, recruitment pipelines, and compliance."
+    />
+    <title>CoreHR Connect with Odoo | Tiara Dwi Ananda Saputri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=multi-page-2" />
+    <script src="lang-switch.js"></script>
+    <style>
+      .odoo-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+      .gallery-item {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: var(--shadow);
+      }
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        margin-bottom: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        object-fit: contain;
+      }
+      .gallery-caption {
+        display: block;
+        font-size: 0.84rem;
+        color: var(--muted);
+        text-align: center;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <span class="brand-mark">TS</span>
+        <span>Tiara Saputri</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a>
+        <a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a>
+        <a class="active" href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a>
+        <a href="resume.html">Resume</a>
+        <a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a>
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
+          <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero case-hero">
+        <p class="eyebrow">
+          <span class="lang-en">HRIS Learning Project</span>
+          <span class="lang-id">Proyek Belajar HRIS</span>
+        </p>
+        <h1>
+          <span class="lang-en">CoreHR Connect with Odoo.</span>
+          <span class="lang-id">CoreHR Connect dengan Odoo.</span>
+        </h1>
+        <p>
+          <span class="lang-en">A comprehensive case study showcasing implementation of Odoo ERP modules to automate employee management, streamline recruitment, and ensure compliance with Indonesian labor regulations for SMEs.</span>
+          <span class="lang-id">Studi kasus komprehensif yang menampilkan implementasi modul ERP Odoo untuk mengotomatisasi manajemen karyawan, menyederhanakan rekrutmen, dan memastikan kepatuhan hukum ketenagakerjaan Indonesia bagi UMKM.</span>
+        </p>
+      </section>
+
+      <!-- Key Impact Metrics -->
+      <section class="stats-band" aria-label="Project metrics">
+        <article>
+          <strong>95%</strong>
+          <span>
+            <span class="lang-en">Data Accuracy</span>
+            <span class="lang-id">Akurasi Data</span>
+          </span>
+        </article>
+        <article>
+          <strong>25-30%</strong>
+          <span>
+            <span class="lang-en">Admin Task Reduction</span>
+            <span class="lang-id">Pengurangan Beban Admin</span>
+          </span>
+        </article>
+        <article>
+          <strong>30-40%</strong>
+          <span>
+            <span class="lang-en">Quicker Time-to-Hire</span>
+            <span class="lang-id">Rekrutmen Lebih Cepat</span>
+          </span>
+        </article>
+        <article>
+          <strong>100%</strong>
+          <span>
+            <span class="lang-en">Legal Compliance</span>
+            <span class="lang-id">Kepatuhan Hukum</span>
+          </span>
+        </article>
+      </section>
+
+      <!-- Module 1: Employee Management -->
+      <section class="section">
+        <div class="split">
+          <div>
+            <p class="section-kicker">
+              <span class="lang-en">Module 01</span>
+              <span class="lang-id">Modul 01</span>
+            </p>
+            <h2>
+              <span class="lang-en">Employee Connect: Centralized & Compliant Database.</span>
+              <span class="lang-id">Employee Connect: Database Terpusat & Patuh Regulasi.</span>
+            </h2>
+            <div style="margin-top: 24px;">
+              <h3 style="color: var(--rose); margin-bottom: 8px;">
+                <span class="lang-en">The Challenge</span>
+                <span class="lang-id">Tantangan</span>
+              </h3>
+              <p style="color: var(--muted); line-height: 1.6;">
+                <span class="lang-en">Indonesian SMEs face challenges with fragmented employee data scattered across files and spreadsheets. Managing complex compliance for diverse employment types (PKWT, PKWTT, Seasonal, Apprenticeship) under Indonesian labor laws, BPJS, and PPh 21 creates major operational and legal risks. Paper-heavy onboarding also slows down integration.</span>
+                <span class="lang-id">UMKM di Indonesia menghadapi tantangan berupa data karyawan yang terpencar di berbagai file dan spreadsheet. Mengelola kepatuhan hukum ketenagakerjaan yang rumit untuk berbagai jenis hubungan kerja (PKWT, PKWTT, Musiman, Magang), serta integrasi BPJS dan PPh 21 menciptakan risiko operasional dan kepatuhan yang besar. Proses onboarding manual juga memperlambat produktivitas.</span>
+              </p>
+            </div>
+          </div>
+          <div class="about-copy">
+            <h3 style="color: var(--teal); margin-bottom: 8px;">
+              <span class="lang-en">The Odoo Solution</span>
+              <span class="lang-id">Solusi Odoo</span>
+            </h3>
+            <p>
+              <span class="lang-en"><strong>Comprehensive Profiles & Skills Management:</strong> Established a unified employee database to store personal data, work history, and competencies (soft and hard skills), forming a single source of truth.</span>
+              <span class="lang-id"><strong>Profil Lengkap & Manajemen Keterampilan:</strong> Membangun database karyawan terpusat untuk menyimpan data pribadi, riwayat kerja, dan kompetensi (keterampilan teknis dan non-teknis) sebagai satu acuan utama data.</span>
+            </p>
+            <p>
+              <span class="lang-en"><strong>Clear Organizational Hierarchy:</strong> Visualized reporting lines and departmental structures directly in Odoo to improve team communication and strategic workforce planning.</span>
+              <span class="lang-id"><strong>Hierarki Organisasi yang Jelas:</strong> Memvisualisasikan jalur pelaporan dan struktur departemen langsung di Odoo untuk meningkatkan komunikasi tim dan perencanaan tenaga kerja strategis.</span>
+            </p>
+            <p>
+              <span class="lang-en"><strong>Indonesian Labor Law Integration:</strong> Configured contracts with PKWT and PKWTT templates, automating compliant contract generation and reducing administrative risk.</span>
+              <span class="lang-id"><strong>Integrasi Hukum Ketenagakerjaan Indonesia:</strong> Mengonfigurasi kontrak kerja dengan template PKWT dan PKWTT, mengotomatisasi pembuatan dokumen kontrak yang patuh regulasi dan meminimalkan risiko kepatuhan.</span>
+            </p>
+            <p>
+              <span class="lang-en"><strong>Digital Onboarding:</strong> Shifted paperwork to digital document collection, cutting new hire form completion time by 50%.</span>
+              <span class="lang-id"><strong>Onboarding Digital:</strong> Mengalihkan pengisian dokumen fisik ke sistem digital, mengurangi waktu pengisian dokumen onboarding hingga 50%.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="odoo-gallery">
+          <div class="gallery-item">
+            <img src="assets/Hierarchy_EMployees.png" alt="Dynamic Organizational Hierarchy in Odoo" />
+            <span class="gallery-caption">
+              <span class="lang-en">Visualized dynamic organizational hierarchy and reporting lines in Odoo.</span>
+              <span class="lang-id">Visualisasi hierarki organisasi dan jalur pelaporan dinamis dalam Odoo.</span>
+            </span>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/Employee.png" alt="Centralized Employee Profile Database in Odoo" />
+            <span class="gallery-caption">
+              <span class="lang-en">Centralized Employee Profile Dashboard showing work information and skills.</span>
+              <span class="lang-id">Dashboard Profil Karyawan terpusat menampilkan informasi kerja dan keterampilan.</span>
+            </span>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/Bima_Sakti.png" alt="Employee Record Example - Bima Sakti" />
+            <span class="gallery-caption">
+              <span class="lang-en">Detailed employee profile view with skills inventory (e.g., candidate Bima Sakti).</span>
+              <span class="lang-id">Tampilan profil karyawan detail dengan daftar keterampilan (contoh: profil Bima Sakti).</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="odoo-gallery" style="margin-top: 20px;">
+          <div class="gallery-item">
+            <img src="assets/Employment_Types.png" alt="Contract Types Configuration in Odoo" />
+            <span class="gallery-caption">
+              <span class="lang-en">Contract types configured for Indonesian labor laws (PKWT, PKWTT, Apprenticeship).</span>
+              <span class="lang-id">Jenis kontrak yang dikonfigurasi untuk hukum ketenagakerjaan Indonesia (PKWT, PKWTT, Magang).</span>
+            </span>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/Bima_Sakti_COntract.png" alt="Employee Contract Record in Odoo" />
+            <span class="gallery-caption">
+              <span class="lang-en">Employment contract details mapped with wage terms and durations.</span>
+              <span class="lang-id">Rincian kontrak kerja yang terintegrasi dengan durasi dan rincian upah.</span>
+            </span>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/Contract_Template.png" alt="Odoo Contract PDF Template Preview" />
+            <span class="gallery-caption">
+              <span class="lang-en">Pre-defined, compliant contract document templates integrated for direct PDF export.</span>
+              <span class="lang-id">Draf template dokumen kontrak patuh hukum yang terintegrasi untuk ekspor PDF langsung.</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Module 2: Recruitment & Candidate Sourcing -->
+      <section class="section muted">
+        <div class="split">
+          <div>
+            <p class="section-kicker">
+              <span class="lang-en">Module 02</span>
+              <span class="lang-id">Modul 02</span>
+            </p>
+            <h2>
+              <span class="lang-en">Recruitment Connect: Automated Sourcing Pipeline.</span>
+              <span class="lang-id">Recruitment Connect: Alur Kerja Rekrutmen Otomatis.</span>
+            </h2>
+            <div style="margin-top: 24px;">
+              <h3 style="color: var(--rose); margin-bottom: 8px;">
+                <span class="lang-en">The Challenge</span>
+                <span class="lang-id">Tantangan</span>
+              </h3>
+              <p style="color: var(--muted); line-height: 1.6;">
+                <span class="lang-en">Without structured tracking, SMEs experience chaotic candidate pipelines and extended hiring cycles. Manual resume screening and lack of automated communication create delays, while manual data entry limits data for strategic recruitment.</span>
+                <span class="lang-id">Tanpa pelacakan terstruktur, UMKM mengalami ketidakteraturan dalam mengelola pipeline kandidat dan siklus perekrutan menjadi lama. Penyaringan resume manual dan kurangnya komunikasi otomatis menyebabkan keterlambatan, sementara entry data manual membatasi analisis rekrutmen.</span>
+              </p>
+            </div>
+          </div>
+          <div class="about-copy">
+            <h3 style="color: var(--teal); margin-bottom: 8px;">
+              <span class="lang-en">The Odoo Solution</span>
+              <span class="lang-id">Solusi Odoo</span>
+            </h3>
+            <p>
+              <span class="lang-en"><strong>Multi-Stage Recruitment Pipeline:</strong> Designed an intuitive Kanban pipeline (New, Qualification, First Interview, Contract Proposal, Hired) to easily drag and drop applicants through stages.</span>
+              <span class="lang-id"><strong>Pipeline Rekrutmen Multi-Tahap:</strong> Merancang Kanban pipeline yang intuitif (Baru, Kualifikasi, Wawancara Pertama, Penawaran Kontrak, Diterima) untuk mempermudah pelacakan kandidat secara visual.</span>
+            </p>
+            <p>
+              <span class="lang-en"><strong>Automated Email Data Capture:</strong> Configured Odoo to monitor recruitment email inboxes. Resumes sent by applicants automatically generate centralized candidate records with attachments.</span>
+              <span class="lang-id"><strong>Pengambilan Data Email Otomatis:</strong> Mengonfigurasi Odoo untuk memantau email masuk rekrutmen. Resume yang dikirim pelamar otomatis membuat entri kandidat terpusat beserta lampirannya.</span>
+            </p>
+            <p>
+              <span class="lang-en"><strong>Streamlined Job Postings:</strong> Integrated job posting creation with our simulated website, facilitating instant publishing for specialized roles like Agronomist or Digital Specialist.</span>
+              <span class="lang-id"><strong>Publikasi Lowongan Cepat:</strong> Mengintegrasikan pembuatan lowongan dengan situs web simulasi, memfasilitasi publikasi instan untuk posisi spesifik seperti Agronomist atau Digital Specialist.</span>
+            </p>
+            <p>
+              <span class="lang-en"><strong>Interview Scheduling & Communication:</strong> Integrated calendars and automated email updates to enhance the candidate experience and reduce administrative overhead.</span>
+              <span class="lang-id"><strong>Penjadwalan Wawancara & Komunikasi:</strong> Integrasi kalender dan pembaruan email otomatis untuk meningkatkan kenyamanan kandidat serta mengurangi tugas administratif manual.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="odoo-gallery">
+          <div class="gallery-item">
+            <img src="assets/Applicator.png" alt="Recruitment Pipeline Kanban in Odoo" />
+            <span class="gallery-caption">
+              <span class="lang-en">Kanban view showing the applicant pipeline across job positions.</span>
+              <span class="lang-id">Tampilan Kanban menampilkan tahapan pelamar di berbagai lowongan kerja.</span>
+            </span>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/Applicator_Detail.png" alt="Odoo Candidate Profile Detail View" />
+            <span class="gallery-caption">
+              <span class="lang-en">Detailed view of a candidate profile (e.g. Bima Sakti) showing emails, logs, and stages.</span>
+              <span class="lang-id">Detail profil kandidat (contoh: Bima Sakti) menampilkan riwayat email, catatan log, dan tahapan.</span>
+            </span>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/photo-output_3.png" alt="Outreach Email Integration in Odoo" />
+            <span class="gallery-caption">
+              <span class="lang-en">Automated confirmation email thread integrated directly into the candidate record.</span>
+              <span class="lang-id">Rantai komunikasi email konfirmasi otomatis yang terintegrasi dalam data kandidat.</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation & Action Footer -->
+      <section class="contact-section">
+        <div>
+          <p class="section-kicker">
+            <span class="lang-en">CoreHR Connect</span>
+            <span class="lang-id">CoreHR Connect</span>
+          </p>
+          <h2>
+            <span class="lang-en">Automating workflows and ensuring compliance using Odoo ERP.</span>
+            <span class="lang-id">Mengotomatisasi alur kerja dan menjaga kepatuhan menggunakan ERP Odoo.</span>
+          </h2>
+        </div>
+        <div class="contact-panel">
+          <a href="projects.html">
+            <span class="lang-en">Back to Projects</span>
+            <span class="lang-id">Kembali ke Proyek</span>
+          </a>
+          <a href="resume.html">
+            <span class="lang-en">View Resume</span>
+            <span class="lang-id">Lihat Resume</span>
+          </a>
+          <a href="mailto:tiaradwia1506@gmail.com">
+            <span class="lang-en">Contact Tiara</span>
+            <span class="lang-id">Hubungi Tiara</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span class="lang-en">Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</span>
+        <span class="lang-id">Didesain untuk GitHub Pages. Dibuat oleh Tiara Dwi Ananda Saputri.</span>
+      </p>
+      <button class="top-button" type="button" aria-label="Back to top">
+        <span class="lang-en">Top</span>
+        <span class="lang-id">Ke Atas</span>
+      </button>
+    </footer>
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
