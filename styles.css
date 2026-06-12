@@ -964,3 +964,54 @@ h3 {
   font-weight: 700;
   letter-spacing: 0.02em;
 }
+
+/* Multi-language styling rules */
+html[lang="en"] .lang-id {
+  display: none !important;
+}
+html[lang="id"] .lang-en {
+  display: none !important;
+}
+
+/* Language Switcher Button */
+.lang-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--deep);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 160ms ease;
+  user-select: none;
+  gap: 4px;
+}
+
+.lang-toggle-btn:hover {
+  color: var(--teal);
+  border-color: var(--teal);
+  background: rgba(200, 162, 200, 0.08);
+}
+
+html[lang="en"] .lang-toggle-btn .lang-text-en {
+  color: var(--rose);
+  font-weight: 900;
+}
+html[lang="en"] .lang-toggle-btn .lang-text-id {
+  color: var(--muted);
+  font-weight: normal;
+}
+html[lang="id"] .lang-toggle-btn .lang-text-id {
+  color: var(--rose);
+  font-weight: 900;
+}
+html[lang="id"] .lang-toggle-btn .lang-text-en {
+  color: var(--muted);
+  font-weight: normal;
+}
+
