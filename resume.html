@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=multi-page-1" />
+    <script src="lang-switch.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -17,54 +18,106 @@
         <span>Tiara Saputri</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html#about">About Me</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
+        <a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a>
+        <a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a>
+        <a href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a>
         <a class="active" href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a>
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
+          <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
+        </button>
       </nav>
     </header>
 
     <main>
       <section class="page-hero">
         <p class="eyebrow">Resume</p>
-        <h1>Talent sourcer and early-career recruiter with hands-on experience in AI-assisted sourcing, Boolean search, and candidate screening — supported by admin, operations, and people program work.</h1>
+        <h1>
+          <span class="lang-en">Talent sourcer and early-career talent acquisition associate with hands-on experience in AI-assisted sourcing, Boolean search, and candidate screening — supported by admin, operations, and people program work.</span>
+          <span class="lang-id">Sourcer talenta dan talent acquisition associate pemula dengan pengalaman langsung dalam sourcing berbantuan AI, Boolean search, dan penyaringan kandidat — didukung oleh pekerjaan admin, operasional, dan program SDM.</span>
+        </h1>
         <p>
-          A focused view of my experience as an early-career recruiter and sourcing specialist across freelance recruitment,
-          marketplace operations, learning programs, HRIS exploration, and certificates.
+          <span class="lang-en">A focused view of my experience as an early-career recruiter and sourcing specialist across freelance recruitment, marketplace operations, learning programs, HRIS exploration, and certificates.</span>
+          <span class="lang-id">Tinjauan terfokus pada pengalaman saya sebagai perekrut pemula dan spesialis sourcing di rekrutmen freelance, operasional marketplace, program pembelajaran, eksplorasi HRIS, dan sertifikasi.</span>
         </p>
       </section>
 
       <section class="section muted">
         <div class="section-heading">
-          <p class="section-kicker">Experience</p>
-          <h2>Practical operations experience across marketplace and admin workflows.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Experience</span>
+            <span class="lang-id">Pengalaman Kerja</span>
+          </p>
+          <h2>
+            <span class="lang-en">Practical operations experience across marketplace and admin workflows.</span>
+            <span class="lang-id">Pengalaman operasional praktis di seluruh alur kerja marketplace dan admin.</span>
+          </h2>
         </div>
         <article class="feature-panel">
           <div>
-            <p class="eyebrow">Remote | Feb 2026 - Present</p>
-            <h3>Freelance Recruiter</h3>
+            <p class="eyebrow">Remote | Feb 2025 - Jun 2025</p>
+            <h3>
+              <span class="lang-en">Webinar & Class Assistant</span>
+              <span class="lang-id">Asisten Webinar & Kelas</span>
+            </h3>
             <p>
-              Supported end-to-end sourcing across multiple freelance roles — from role brief analysis and Boolean string planning to CV screening, candidate submission, and pipeline tracking.
+              <span class="lang-en">Coordinated virtual bootcamps and webinars for 20 to 50+ participants, managing Zoom room logistics, calendar schedules, session flows, and audience engagement activities.</span>
+              <span class="lang-id">Mengoordinasikan bootcamp dan webinar daring untuk 20 hingga 50+ peserta, mengelola logistik Zoom, jadwal kalender, alur sesi, dan aktivitas interaksi audiens.</span>
             </p>
             <p>
-              Used AI tools, Juicebox, LinkedIn Recruiter, and job portals to identify and shortlist qualified candidates. Multiple submitted candidates progressed through interviews and were hired, confirming sourcing quality beyond just quantity.
+              <span class="lang-en">Recapped attendance data, managed feedback forms, and supported class coordinators to achieve 40% higher participant satisfaction scores.</span>
+              <span class="lang-id">Merekap data kehadiran, mengelola formulir umpan balik, dan mendukung koordinator kelas untuk mencapai skor kepuasan peserta 40% lebih tinggi.</span>
             </p>
           </div>
         </article>
         <article class="feature-panel">
           <div>
-            <p class="eyebrow">Kick Avenue | Full-time | Oct 2025 - Dec 2025</p>
-            <h3>E-Commerce Associate</h3>
+            <p class="eyebrow">GAOTek Inc. | Internship | Jul 2025 - Oct 2025</p>
+            <h3>
+              <span class="lang-en">Human Resources & General Affair</span>
+              <span class="lang-id">Sumber Daya Manusia & General Affair</span>
+            </h3>
             <p>
-              Managed marketplace administration across Shopee and TikTok, including product listings,
-              pricing, stock availability, campaign setup, customer inquiries, order issue follow-up,
-              livestream product bags, and backend data accuracy.
+              <span class="lang-en">Supported human resources administration, employee record organization, and general affairs workflows during a four-month internship training program.</span>
+              <span class="lang-id">Mendukung administrasi sumber daya manusia, pengorganisasian catatan karyawan, dan alur kerja general affairs selama program magang pelatihan empat bulan.</span>
             </p>
             <p>
-              This role strengthened my attention to detail, customer communication, data maintenance,
-              cross-team coordination, and ability to support daily operations during high-traffic campaigns
-              such as 11.11 and 12.12.
+              <span class="lang-en">Assisted with training documentation, coordination of capability development files, and preparation of operational SOP references aligned with HR compliance.</span>
+              <span class="lang-id">Membantu dokumentasi pelatihan, koordinasi berkas pengembangan kemampuan karyawan, dan penyiapan referensi SOP operasional yang selaras dengan kepatuhan HR.</span>
+            </p>
+          </div>
+        </article>
+        <article class="feature-panel">
+          <div>
+            <p class="eyebrow">Kick Avenue | Oct 2025 - Dec 2025</p>
+            <h3>
+              <span class="lang-en">Marketplace & Customer Admin Support</span>
+              <span class="lang-id">Dukungan Admin Marketplace & Pelanggan</span>
+            </h3>
+            <p>
+              <span class="lang-en">Managed marketplace store listings, product descriptions, stock monitoring, promotional price updates, and livestream product setups across Shopee and TikTok.</span>
+              <span class="lang-id">Mengelola daftar produk toko online, deskripsi produk, pemantauan stok, pembaruan harga promosi, dan penyiapan produk live streaming di Shopee dan TikTok.</span>
+            </p>
+            <p>
+              <span class="lang-en">Processed customer orders, maintained transaction data on backend systems, resolved customer support inquiries, and resolved shipping or complaint issues.</span>
+              <span class="lang-id">Memproses pesanan pelanggan, memelihara data transaksi di sistem backend, melayani pertanyaan pelanggan, serta menyelesaikan masalah pengiriman atau keluhan.</span>
+            </p>
+          </div>
+        </article>
+        <article class="feature-panel">
+          <div>
+            <p class="eyebrow">Remote | Feb 2025 - Present</p>
+            <h3>
+              <span class="lang-en">Freelance Recruiter</span>
+              <span class="lang-id">Perekrut Freelance</span>
+            </h3>
+            <p>
+              <span class="lang-en">Handle end-to-end talent sourcing workflows including role analysis, Boolean search string planning, CV screening, and candidate submission.</span>
+              <span class="lang-id">Mengelola alur kerja sourcing talenta ujung-ke-ujung (end-to-end) termasuk analisis kriteria posisi, perencanaan formula Boolean search, screening CV, dan pengajuan kandidat.</span>
+            </p>
+            <p>
+              <span class="lang-en">Utilized sourcing platforms like LinkedIn, Juicebox, and local job portals to identify qualified profiles. Sourced candidates successfully progressed through interviews and were hired.</span>
+              <span class="lang-id">Menggunakan platform sourcing seperti LinkedIn, Juicebox, dan portal lowongan kerja lokal untuk mengidentifikasi profil berkualitas. Kandidat yang didapatkan berhasil maju melalui tahap wawancara hingga diterima bekerja.</span>
             </p>
           </div>
         </article>
@@ -74,57 +127,144 @@
         <div class="resume-grid">
           <article class="resume-item">
             <span>E-Commerce</span>
-            <h3>Marketplace Operations and Campaign Support</h3>
-            <p>Managed product listings, stock monitoring, pricing checks, campaign setup, livestream product bags, customer inquiries, and backend marketplace data across Shopee and TikTok.</p>
+            <h3>
+              <span class="lang-en">Marketplace Operations and Campaign Support</span>
+              <span class="lang-id">Operasional Marketplace & Dukungan Kampanye</span>
+            </h3>
+            <p>
+              <span class="lang-en">Managed product listings, stock monitoring, pricing checks, campaign setup, livestream product bags, customer inquiries, and backend marketplace data across Shopee and TikTok.</span>
+              <span class="lang-id">Mengelola daftar produk, pemantauan stok, pemeriksaan harga, pengaturan kampanye, produk live streaming, pertanyaan pelanggan, dan data marketplace backend di Shopee dan TikTok.</span>
+            </p>
           </article>
           <article class="resume-item">
-            <span>Recruitment</span>
-            <h3>Freelance Recruiting and Candidate Submission</h3>
-            <p>Used AI-assisted sourcing, Boolean search, LinkedIn, job portals, Juicebox, sourcing tools, and ATS/database workflows to screen, submit, and track qualified candidates.</p>
+            <span>
+              <span class="lang-en">Recruitment</span>
+              <span class="lang-id">Rekrutmen</span>
+            </span>
+            <h3>
+              <span class="lang-en">Freelance Recruiting and Candidate Submission</span>
+              <span class="lang-id">Perekrutan Freelance & Pengajuan Kandidat</span>
+            </h3>
+            <p>
+              <span class="lang-en">Used AI-assisted sourcing, Boolean search, LinkedIn, job portals, Juicebox, sourcing tools, and ATS/database workflows to screen, submit, and track qualified candidates.</span>
+              <span class="lang-id">Menggunakan sourcing berbantuan AI, Boolean search, LinkedIn, portal lowongan kerja, Juicebox, alat sourcing, dan alur kerja database/ATS untuk menyaring, mengajukan, dan melacak kandidat berkualitas.</span>
+            </p>
           </article>
           <article class="resume-item">
-            <span>AI Recruitment</span>
-            <h3>AI-Assisted Sourcing Exploration</h3>
-            <p>Practiced using AI to support role breakdown, keyword mapping, Boolean search planning, LinkedIn/job-portal sourcing, screening criteria, and candidate scoring drafts.</p>
+            <span>
+              <span class="lang-en">AI Recruitment</span>
+              <span class="lang-id">Rekrutmen AI</span>
+            </span>
+            <h3>
+              <span class="lang-en">AI-Assisted Sourcing Exploration</span>
+              <span class="lang-id">Eksplorasi Sourcing Berbantuan AI</span>
+            </h3>
+            <p>
+              <span class="lang-en">Practiced using AI to support role breakdown, keyword mapping, Boolean search planning, LinkedIn/job-portal sourcing, screening criteria, and candidate scoring drafts.</span>
+              <span class="lang-id">Mempraktikkan penggunaan AI untuk mendukung analisis kriteria posisi, pemetaan kata kunci, perencanaan Boolean search, sourcing LinkedIn/portal kerja, kriteria penyaringan, dan draf penilaian kandidat.</span>
+            </p>
           </article>
           <article class="resume-item">
-            <span>Strategic HRM</span>
-            <h3>Talent, Performance, and Compensation Design</h3>
-            <p>Completed Coursera Strategic HRM learning and developed a case study around talent planning, performance management, total rewards, organizational design, and culture alignment.</p>
-            <a class="text-link" style="margin-top: 12px; display: inline-flex;" href="strategic-hrm-case-study.html">Read Case Study</a>
+            <span>
+              <span class="lang-en">Strategic HRM</span>
+              <span class="lang-id">HRM Strategis</span>
+            </span>
+            <h3>
+              <span class="lang-en">Talent, Performance, and Compensation Design</span>
+              <span class="lang-id">Desain Talenta, Kinerja, dan Kompensasi</span>
+            </h3>
+            <p>
+              <span class="lang-en">Completed Coursera Strategic HRM learning and developed a case study around talent planning, performance management, total rewards, organizational design, and culture alignment.</span>
+              <span class="lang-id">Menyelesaikan pelatihan Coursera Strategic HRM dan mengembangkan studi kasus tentang perencanaan talenta, manajemen kinerja, total rewards, desain organisasi, dan keselarasan budaya.</span>
+            </p>
+            <a class="text-link" style="margin-top: 12px; display: inline-flex;" href="strategic-hrm-case-study.html">
+              <span class="lang-en">Read Case Study</span>
+              <span class="lang-id">Lihat Studi Kasus</span>
+            </a>
           </article>
           <article class="resume-item">
-            <span>Class Assistant</span>
-            <h3>Webinar and Bootcamp Facilitation</h3>
-            <p>Supported learning sessions from February 2025 to June 2025 through facilitation, participant coordination, and attendance recap.</p>
+            <span>
+              <span class="lang-en">Class Assistant</span>
+              <span class="lang-id">Asisten Kelas</span>
+            </span>
+            <h3>
+              <span class="lang-en">Webinar and Bootcamp Facilitation</span>
+              <span class="lang-id">Fasilitasi Webinar dan Bootcamp</span>
+            </h3>
+            <p>
+              <span class="lang-en">Supported learning sessions from February 2025 to June 2025 through facilitation, participant coordination, and attendance recap.</span>
+              <span class="lang-id">Mendukung sesi pembelajaran dari Februari 2025 hingga Juni 2025 melalui fasilitasi, koordinasi peserta, dan rekap kehadiran.</span>
+            </p>
           </article>
           <article class="resume-item">
-            <span>Operations</span>
-            <h3>HR Documentation and Attendance Flow</h3>
-            <p>Worked on payroll cases, attendance records, SOP references, admin documentation, and operational recaps.</p>
+            <span>
+              <span class="lang-en">Operations</span>
+              <span class="lang-id">Operasional</span>
+            </span>
+            <h3>
+              <span class="lang-en">HR Documentation and Attendance Flow</span>
+              <span class="lang-id">Dokumentasi HR & Alur Kehadiran</span>
+            </h3>
+            <p>
+              <span class="lang-en">Worked on payroll cases, attendance records, SOP references, admin documentation, and operational recaps.</span>
+              <span class="lang-id">Mengerjakan administrasi payroll, catatan kehadiran, referensi SOP, dokumentasi admin, dan rekap operasional.</span>
+            </p>
           </article>
           <article class="resume-item">
-            <span>Customer Support</span>
-            <h3>Marketplace Service and Issue Coordination</h3>
-            <p>Handled customer questions about product details, order status, payment, shipping, returns, refunds, and product complaints while coordinating with internal teams for resolution.</p>
+            <span>
+              <span class="lang-en">Customer Support</span>
+              <span class="lang-id">Layanan Pelanggan</span>
+            </span>
+            <h3>
+              <span class="lang-en">Marketplace Service and Issue Coordination</span>
+              <span class="lang-id">Layanan Marketplace & Koordinasi Masalah</span>
+            </h3>
+            <p>
+              <span class="lang-en">Handled customer questions about product details, order status, payment, shipping, returns, refunds, and product complaints while coordinating with internal teams for resolution.</span>
+              <span class="lang-id">Menangani pertanyaan pelanggan tentang detail produk, status pesanan, pembayaran, pengiriman, retur, pengembalian dana, dan keluhan produk serta berkoordinasi dengan tim internal.</span>
+            </p>
           </article>
           <article class="resume-item">
-            <span>Research</span>
-            <h3>Market Research and Data Collection</h3>
-            <p>Collected, organized, and documented market data to support analysis and project decision-making.</p>
+            <span>
+              <span class="lang-en">Research</span>
+              <span class="lang-id">Riset</span>
+            </span>
+            <h3>
+              <span class="lang-en">Market Research and Data Collection</span>
+              <span class="lang-id">Riset Pasar & Pengumpulan Data</span>
+            </h3>
+            <p>
+              <span class="lang-en">Collected, organized, and documented market data to support analysis and project decision-making.</span>
+              <span class="lang-id">Mengumpulkan, mengatur, dan mendokumentasikan data pasar untuk mendukung analisis dan pengambilan keputusan proyek.</span>
+            </p>
           </article>
           <article class="resume-item">
-            <span>Tools</span>
-            <h3>HRIS and Productivity Tools</h3>
-            <p>Explored Odoo HR workflows, CoreHR Connect concepts, structured documentation, spreadsheets, AI-supported workflow planning, and practical process optimization.</p>
+            <span>
+              <span class="lang-en">Tools</span>
+              <span class="lang-id">Alat Kerja</span>
+            </span>
+            <h3>
+              <span class="lang-en">HRIS and Productivity Tools</span>
+              <span class="lang-id">HRIS & Alat Produktivitas</span>
+            </h3>
+            <p>
+              <span class="lang-en">Explored Odoo HR workflows, CoreHR Connect concepts, structured documentation, spreadsheets, AI-supported workflow planning, and practical process optimization.</span>
+              <span class="lang-id">Mengeksplorasi alur kerja Odoo HR, konsep CoreHR Connect, dokumentasi terstruktur, spreadsheet, perencanaan alur kerja berbantuan AI, dan optimalisasi proses praktis.</span>
+            </p>
           </article>
         </div>
       </section>
 
       <section class="section muted">
         <div class="section-heading">
-          <p class="section-kicker">Certificates</p>
-          <h2>Training and internship evidence.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Certificates</span>
+            <span class="lang-id">Sertifikat</span>
+          </p>
+          <h2>
+            <span class="lang-en">Training and internship evidence.</span>
+            <span class="lang-id">Pengakuan dan bukti pelatihan.</span>
+          </h2>
         </div>
         <div class="certificate-grid">
           <article class="certificate-card">
@@ -134,8 +274,14 @@
               alt="GAOTek Human Resources Training certificate"
             />
             <div>
-              <h3>Human Resources Training</h3>
-              <p>GAOTek Inc. certificate for a four-month internship training program in Human Resources, issued July 3, 2025.</p>
+              <h3>
+                <span class="lang-en">Human Resources Training</span>
+                <span class="lang-id">Pelatihan Sumber Daya Manusia</span>
+              </h3>
+              <p>
+                <span class="lang-en">GAOTek Inc. certificate for a four-month internship training program in Human Resources, issued July 3, 2025.</span>
+                <span class="lang-id">Sertifikat GAOTek Inc. untuk program pelatihan magang empat bulan di bidang Sumber Daya Manusia, diterbitkan 3 Juli 2025.</span>
+              </p>
             </div>
           </article>
           <article class="certificate-card">
@@ -145,9 +291,18 @@
               alt="Coursera Strategic HRM certificate"
             />
             <div>
-              <h3>Strategic HRM: Talent, Performance, Compensation Design</h3>
-              <p>Coursera verification certificate completed by Tiara Dwi Ananda Saputri on March 8, 2026 (coursera.org/verify/6WJ8MDE7IUMA).</p>
-              <a class="text-link" style="margin-top: 12px; display: inline-flex;" href="strategic-hrm-case-study.html">View Case Study</a>
+              <h3>
+                <span class="lang-en">Strategic HRM: Talent, Performance, Compensation Design</span>
+                <span class="lang-id">HRM Strategis: Desain Talenta, Kinerja, dan Kompensasi</span>
+              </h3>
+              <p>
+                <span class="lang-en">Coursera verification certificate completed by Tiara Dwi Ananda Saputri on March 8, 2026 (coursera.org/verify/6WJ8MDE7IUMA).</span>
+                <span class="lang-id">Sertifikat verifikasi Coursera yang diselesaikan oleh Tiara Dwi Ananda Saputri pada 8 Maret 2026 (coursera.org/verify/6WJ8MDE7IUMA).</span>
+              </p>
+              <a class="text-link" style="margin-top: 12px; display: inline-flex;" href="strategic-hrm-case-study.html">
+                <span class="lang-en">View Case Study</span>
+                <span class="lang-id">Lihat Studi Kasus</span>
+              </a>
             </div>
           </article>
           <article class="certificate-card">
@@ -157,8 +312,14 @@
               alt="GAOTek Digital Marketing Training certificate"
             />
             <div>
-              <h3>Digital Marketing Training</h3>
-              <p>GAOTek Inc. certificate for a four-month internship training program in Digital Marketing, issued July 3, 2025.</p>
+              <h3>
+                <span class="lang-en">Digital Marketing Training</span>
+                <span class="lang-id">Pelatihan Digital Marketing</span>
+              </h3>
+              <p>
+                <span class="lang-en">GAOTek Inc. certificate for a four-month internship training program in Digital Marketing, issued July 3, 2025.</span>
+                <span class="lang-id">Sertifikat GAOTek Inc. untuk program pelatihan magang empat bulan di bidang Digital Marketing, diterbitkan 3 Juli 2025.</span>
+              </p>
             </div>
           </article>
           <article class="certificate-card">
@@ -168,8 +329,14 @@
               alt="Belajarsosmed Internship Batch 1 certificate"
             />
             <div>
-              <h3>Internship Batch 1</h3>
-              <p>Belajarsosmed.com internship recognition for the March to June 2025 program.</p>
+              <h3>
+                <span class="lang-en">Internship Batch 1</span>
+                <span class="lang-id">Magang Batch 1</span>
+              </h3>
+              <p>
+                <span class="lang-en">Belajarsosmed.com internship recognition for the March to June 2025 program.</span>
+                <span class="lang-id">Pengakuan magang Belajarsosmed.com untuk program Maret hingga Juni 2025.</span>
+              </p>
             </div>
           </article>
         </div>
@@ -177,20 +344,38 @@
 
       <section class="contact-section">
         <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Open to junior HR recruiter, talent sourcer, HR admin, e-commerce admin, and people operations opportunities.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Contact</span>
+            <span class="lang-id">Kontak</span>
+          </p>
+          <h2>
+            <span class="lang-en">Open to junior HR recruiter, talent sourcer, HR admin, e-commerce admin, and people operations opportunities.</span>
+            <span class="lang-id">Terbuka untuk peluang junior HR recruiter, talent sourcer, HR admin, e-commerce admin, dan operasional program SDM.</span>
+          </h2>
         </div>
         <div class="contact-panel">
           <a href="mailto:tiaradwia1506@gmail.com">tiaradwia1506@gmail.com</a>
-          <a href="https://www.linkedin.com/in/tiaradwia/">LinkedIn Profile</a>
-          <a href="https://www.canva.com/design/DAHA_JMOAJ0/Pv9Jrc1iC2WQ0aVnlMyojw/view?utm_content=DAHA_JMOAJ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">View CV</a>
+          <a href="https://www.linkedin.com/in/tiaradwia/">
+            <span class="lang-en">LinkedIn Profile</span>
+            <span class="lang-id">Profil LinkedIn</span>
+          </a>
+          <a href="https://www.canva.com/design/DAHA_JMOAJ0/Pv9Jrc1iC2WQ0aVnlMyojw/view?utm_content=DAHA_JMOAJ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+            <span class="lang-en">View CV</span>
+            <span class="lang-id">Lihat CV</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</p>
-      <button class="top-button" type="button" aria-label="Back to top">Top</button>
+      <p>
+        <span class="lang-en">Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</span>
+        <span class="lang-id">Didesain untuk GitHub Pages. Dibuat oleh Tiara Dwi Ananda Saputri.</span>
+      </p>
+      <button class="top-button" type="button" aria-label="Back to top">
+        <span class="lang-en">Top</span>
+        <span class="lang-id">Ke Atas</span>
+      </button>
     </footer>
     <script src="script.js?v=multi-page-1"></script>
   </body>
