@@ -903,3 +903,64 @@ h3 {
     flex-direction: column;
   }
 }
+
+/* Virtual Assistant Service Card & Badge Styles */
+.service-card.highlight-va {
+  border: 2px solid #2d6a4f;
+  position: relative;
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.service-card.highlight-va:hover {
+  border-color: #40916c;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(45, 106, 79, 0.15), var(--shadow);
+}
+
+.badge-new {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #2d6a4f;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow: 0 2px 8px rgba(45, 106, 79, 0.3);
+}
+
+.va-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.va-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  background: rgba(45, 106, 79, 0.08);
+  border: 1px solid rgba(45, 106, 79, 0.2);
+  border-radius: 16px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--muted);
+  transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease;
+}
+
+.va-badge:hover {
+  border-color: #40916c;
+  color: #f5f0f2;
+  background-color: rgba(45, 106, 79, 0.15);
+}
+
+.availability-note {
+  margin-top: 16px;
+  font-size: 0.82rem;
+  color: var(--rose);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
