@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portfolio of Tiara Dwi Ananda Saputri, an HR & Recruitment Virtual Assistant with AI-assisted workflows, talent sourcing, HR operations, and e-commerce admin support."
+      content="Portfolio of Tiara Dwi Ananda Saputri, an HR & Talent Acquisition Virtual Assistant with AI-assisted workflows, talent sourcing, HR operations, and e-commerce admin support."
     />
-    <title>Tiara Dwi Ananda Saputri | HR, People Operations & E-Commerce Admin</title>
+    <title>Tiara Dwi Ananda Saputri | HR & Talent Acquisition | Virtual Assistant</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css?v=multi-page-1" />
+    <script src="lang-switch.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -23,26 +24,42 @@
         <span>Tiara Saputri</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html#about">About Me</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
+        <a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a>
+        <a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a>
+        <a href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a>
         <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a>
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
+          <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
+        </button>
       </nav>
     </header>
 
     <main id="home">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Virtual Assistant | HR & Recruitment | E-Commerce Operations</p>
+          <p class="eyebrow">
+            <span class="lang-en">HR & Talent Acquisition | Virtual Assistant | E-Commerce Operations</span>
+            <span class="lang-id">Asisten Virtual | HR & Rekrutmen | Operasi E-Commerce</span>
+          </p>
           <h1 class="gradient-text">Tiara Dwi Ananda Saputri</h1>
-          <p class="hero-role">HR & Recruitment VA with AI-Assisted Workflows</p>
+          <p class="hero-role">
+            <span class="lang-en">HR & Talent Acquisition VA with AI-Assisted Workflows</span>
+            <span class="lang-id">VA HR & Rekrutmen dengan Alur Kerja Berbasis AI</span>
+          </p>
           <p class="hero-intro">
-            I help founders and small teams hire smarter, stay organised, and run operations without the overhead of a full-time hire. I bring admin discipline, recruitment instincts, and AI-assisted workflows together to ensure your hiring, operations, and daily tasks run with less friction and more clarity.
+            <span class="lang-en">I help founders and small teams hire smarter, stay organised, and run operations without the overhead of a full-time hire. I bring admin discipline, talent acquisition instincts, and AI-assisted workflows together to ensure your hiring, operations, and daily tasks run with less friction and more clarity.</span>
+            <span class="lang-id">Saya membantu founder dan tim kecil merekrut lebih cerdas, tetap teratur, dan menjalankan operasional tanpa beban biaya karyawan penuh waktu. Saya memadukan disiplin admin, insting talent acquisition, dan alur kerja berbasis AI agar proses rekrutmen, operasional, dan tugas harian Anda berjalan lebih lancar dan jelas.</span>
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="projects.html">View Projects</a>
-            <a class="button secondary" href="resume.html">View Resume</a>
+            <a class="button primary" href="projects.html">
+              <span class="lang-en">View Projects</span>
+              <span class="lang-id">Lihat Proyek</span>
+            </a>
+            <a class="button secondary" href="resume.html">
+              <span class="lang-en">View Resume</span>
+              <span class="lang-id">Lihat Resume</span>
+            </a>
           </div>
           <div class="social-row" aria-label="Profile links">
             <a href="https://www.linkedin.com/in/tiaradwia/">LinkedIn</a>
@@ -68,15 +85,24 @@
       <section class="stats-band" aria-label="Portfolio summary">
         <article>
           <strong>2+</strong>
-          <span>Years Admin Experience</span>
+          <span>
+            <span class="lang-en">Years Admin Experience</span>
+            <span class="lang-id">Tahun Pengalaman Admin</span>
+          </span>
         </article>
         <article>
           <strong>10</strong>
-          <span>Portfolio Projects</span>
+          <span>
+            <span class="lang-en">Portfolio Projects</span>
+            <span class="lang-id">Proyek Portofolio</span>
+          </span>
         </article>
         <article>
           <strong>AI</strong>
-          <span>Recruitment Case Study</span>
+          <span>
+            <span class="lang-en">TA Sourcing Case Study</span>
+            <span class="lang-id">Studi Kasus Sourcing TA</span>
+          </span>
         </article>
         <article>
           <strong>4</strong>
@@ -85,20 +111,29 @@
       </section>
 
       <section class="section about-section" id="about">
-        <div class="section-kicker">About Me</div>
+        <div class="section-kicker">
+          <span class="lang-en">About Me</span>
+          <span class="lang-id">Tentang Saya</span>
+        </div>
         <div class="split">
           <div>
-            <h2>Admin discipline shaped into practical HR, recruitment, and operations support.</h2>
+            <h2>
+              <span class="lang-en">Admin discipline shaped into practical HR, recruitment, and operations support.</span>
+              <span class="lang-id">Disiplin admin yang dibentuk menjadi dukungan praktis HR, rekrutmen, dan operasional.</span>
+            </h2>
           </div>
           <div class="about-copy">
             <p>
-              I'm an HR & Recruitment Virtual Assistant specialising in talent sourcing, candidate screening, and operational support. My work sits at the intersection of admin discipline and modern tools — I use AI, Boolean search, and sourcing platforms to help teams hire smarter, stay organised, and streamline their daily workflows.
+              <span class="lang-en">I'm an HR & Talent Acquisition Virtual Assistant specialising in talent sourcing, candidate screening, and operational support. My work sits at the intersection of admin discipline and modern tools — I use AI, Boolean search, and sourcing platforms to help teams hire smarter, stay organised, and streamline their daily workflows.</span>
+              <span class="lang-id">Saya adalah seorang Asisten Virtual HR & Talent Acquisition yang berspesialisasi dalam pencarian bakat (*talent sourcing*), penyaringan kandidat (*screening*), dan dukungan operasional. Pekerjaan saya memadukan disiplin admin dengan alat bantu modern — saya menggunakan AI, Boolean search, dan berbagai platform sourcing untuk membantu tim merekrut lebih cerdas, tetap teratur, dan menyederhanakan alur kerja harian mereka.</span>
             </p>
             <p>
-              My freelance recruiting experience is real: I've sourced, screened, and submitted candidates across multiple roles, with several progressing to hire. I document my sourcing process, build structured screening workflows, and share what I learn through LinkedIn content and portfolio case studies.
+              <span class="lang-en">My freelance recruiting experience is real: I've sourced, screened, and submitted candidates across multiple roles, with several progressing to hire. I document my sourcing process, build structured screening workflows, and share what I learn through LinkedIn content and portfolio case studies.</span>
+              <span class="lang-id">Pengalaman rekrutmen freelance saya nyata: saya telah mencari, menyaring, dan mengajukan kandidat untuk berbagai posisi, dengan beberapa di antaranya berhasil lolos hingga tahap diterima bekerja (*hired*). Saya mendokumentasikan proses sourcing saya, membangun alur kerja screening yang terstruktur, dan membagikan apa yang saya pelajari melalui konten LinkedIn serta studi kasus portofolio.</span>
             </p>
             <p>
-              Outside recruitment, I bring admin discipline and operational clarity from e-commerce and learning program work — which means I also understand how hiring connects to broader team and business needs.
+              <span class="lang-en">Outside recruitment, I bring admin discipline and operational clarity from e-commerce and learning program work — which means I also understand how hiring connects to broader team and business needs.</span>
+              <span class="lang-id">Di luar rekrutmen, saya membawa disiplin admin dan kejelasan operasional dari pekerjaan e-commerce dan pengelolaan program pembelajaran — yang berarti saya juga memahami bagaimana perekrutan terhubung dengan kebutuhan tim dan bisnis yang lebih luas.</span>
             </p>
           </div>
         </div>
@@ -106,8 +141,14 @@
 
       <section class="section skills-section" id="skills">
         <div class="section-heading">
-          <p class="section-kicker">Expertise</p>
-          <h2>Core Competencies & Tools</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Expertise</span>
+            <span class="lang-id">Keahlian</span>
+          </p>
+          <h2>
+            <span class="lang-en">Core Competencies & Tools</span>
+            <span class="lang-id">Kompetensi Utama & Alat Kerja</span>
+          </h2>
         </div>
         <div class="skills-grid">
           <div class="skills-card">
@@ -115,15 +156,30 @@
               <div class="skills-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
               </div>
-              <h3>Recruitment & Sourcing</h3>
+              <h3>
+                <span class="lang-en">Talent Acquisition & Sourcing</span>
+                <span class="lang-id">Talent Acquisition & Sourcing</span>
+              </h3>
             </div>
-            <p class="skills-card-desc">Identifying talent, planning Boolean strings, and screening candidates using modern ATS workflows.</p>
+            <p class="skills-card-desc">
+              <span class="lang-en">Identifying talent, planning Boolean strings, and screening candidates using modern ATS workflows.</span>
+              <span class="lang-id">Mengidentifikasi talenta, merancang formula Boolean search, dan menyaring kandidat menggunakan alur kerja ATS modern.</span>
+            </p>
             <div class="skill-badges">
-              <span class="skill-badge">Sourcing Support</span>
-              <span class="skill-badge">Candidate Screening</span>
+              <span class="skill-badge">
+                <span class="lang-en">Sourcing Support</span>
+                <span class="lang-id">Dukungan Sourcing</span>
+              </span>
+              <span class="skill-badge">
+                <span class="lang-en">Candidate Screening</span>
+                <span class="lang-id">Penyaringan Kandidat</span>
+              </span>
               <span class="skill-badge">Boolean Search</span>
               <span class="skill-badge">LinkedIn Sourcing</span>
-              <span class="skill-badge">ATS Management</span>
+              <span class="skill-badge">
+                <span class="lang-en">ATS Management</span>
+                <span class="lang-id">Manajemen ATS</span>
+              </span>
             </div>
           </div>
 
@@ -132,14 +188,32 @@
               <div class="skills-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
               </div>
-              <h3>HR Operations & Admin</h3>
+              <h3>
+                <span class="lang-en">HR Operations & Admin</span>
+                <span class="lang-id">Operasional & Administrasi HR</span>
+              </h3>
             </div>
-            <p class="skills-card-desc">Managing employee documentation, attendance tracking, SOP compilation, and learning class coordination.</p>
+            <p class="skills-card-desc">
+              <span class="lang-en">Managing employee documentation, attendance tracking, SOP compilation, and learning class coordination.</span>
+              <span class="lang-id">Mengelola dokumentasi karyawan, pelacakan absensi, penyusunan SOP, dan koordinasi kelas pembelajaran.</span>
+            </p>
             <div class="skill-badges">
-              <span class="skill-badge">HR Documentation</span>
-              <span class="skill-badge">Attendance Tracking</span>
-              <span class="skill-badge">SOP Reference</span>
-              <span class="skill-badge">Class Facilitation</span>
+              <span class="skill-badge">
+                <span class="lang-en">HR Documentation</span>
+                <span class="lang-id">Dokumentasi HR</span>
+              </span>
+              <span class="skill-badge">
+                <span class="lang-en">Attendance Tracking</span>
+                <span class="lang-id">Pelacakan Kehadiran</span>
+              </span>
+              <span class="skill-badge">
+                <span class="lang-en">SOP Reference</span>
+                <span class="lang-id">Referensi SOP</span>
+              </span>
+              <span class="skill-badge">
+                <span class="lang-en">Class Facilitation</span>
+                <span class="lang-id">Fasilitasi Kelas</span>
+              </span>
             </div>
           </div>
 
@@ -148,12 +222,24 @@
               <div class="skills-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
               </div>
-              <h3>E-Commerce & Tools</h3>
+              <h3>
+                <span class="lang-en">E-Commerce & Tools</span>
+                <span class="lang-id">E-Commerce & Alat Kerja</span>
+              </h3>
             </div>
-            <p class="skills-card-desc">Administering store operations, supporting customer inquiries, and managing seller platforms like Shopee Seller Center and TikTok Shop Center.</p>
+            <p class="skills-card-desc">
+              <span class="lang-en">Administering store operations, supporting customer inquiries, and managing seller platforms like Shopee Seller Center and TikTok Shop Center.</span>
+              <span class="lang-id">Mengelola operasional toko online, melayani pertanyaan pelanggan, dan mengoperasikan platform penjual seperti Shopee Seller Center dan TikTok Shop Center.</span>
+            </p>
             <div class="skill-badges">
-              <span class="skill-badge">Marketplace Operations</span>
-              <span class="skill-badge">Customer Support</span>
+              <span class="skill-badge">
+                <span class="lang-en">Marketplace Operations</span>
+                <span class="lang-id">Operasional Marketplace</span>
+              </span>
+              <span class="skill-badge">
+                <span class="lang-en">Customer Support</span>
+                <span class="lang-id">Layanan Pelanggan</span>
+              </span>
               <span class="skill-badge" style="display: inline-flex; align-items: center; gap: 6px; border-color: #ff5722; color: #ff5722;">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display: block;"><path d="M19 6h-1.7c-.8-2.3-2.9-4-5.3-4S7.5 3.7 6.7 6H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-2c1.4 0 2.6 1.1 3.1 2.5H8.9C9.4 5.1 10.6 4 12 4zm7 15H5V8h14v11zm-7-9c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
                 (Seller Center)
@@ -170,51 +256,92 @@
 
       <section class="section muted" id="featured-project">
         <div class="section-heading">
-          <p class="section-kicker">Featured Project</p>
-          <h2>AI-assisted recruitment case study.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Featured Project</span>
+            <span class="lang-id">Proyek Unggulan</span>
+          </p>
+          <h2>
+            <span class="lang-en">AI-assisted talent acquisition case study.</span>
+            <span class="lang-id">Studi kasus talent acquisition berbantuan AI.</span>
+          </h2>
         </div>
         <article class="feature-panel">
           <div>
-            <p class="eyebrow">Recruitment Case Study</p>
-            <h3>AI-Assisted Sourcing Workflow</h3>
+            <p class="eyebrow">
+              <span class="lang-en">Recruitment Case Study</span>
+              <span class="lang-id">Studi Kasus Rekrutmen</span>
+            </p>
+            <h3>
+              <span class="lang-en">AI-Assisted Sourcing Workflow</span>
+              <span class="lang-id">Alur Kerja Sourcing Berbantuan AI</span>
+            </h3>
             <p>
-              A recruitment workflow case study showing how AI can support keyword discovery,
-              Boolean search planning, candidate scoring, and profile validation while keeping
-              final judgment human-led.
+              <span class="lang-en">A recruitment workflow case study showing how AI can support keyword discovery, Boolean search planning, candidate scoring, and profile validation while keeping final judgment human-led.</span>
+              <span class="lang-id">Studi kasus alur kerja rekrutmen yang menunjukkan bagaimana AI dapat mendukung penemuan kata kunci, perencanaan Boolean search, penilaian kandidat, dan validasi profil dengan tetap mengutamakan penilaian akhir manusia.</span>
             </p>
           </div>
-          <a class="button primary" href="ai-sourcing-case-study.html">Read Project</a>
+          <a class="button primary" href="ai-sourcing-case-study.html">
+            <span class="lang-en">Read Project</span>
+            <span class="lang-id">Baca Proyek</span>
+          </a>
         </article>
       </section>
 
       <section class="section page-preview-section">
         <div class="section-heading">
-          <p class="section-kicker">Explore</p>
-          <h2>Portfolio areas, separated into focused pages.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Explore</span>
+            <span class="lang-id">Jelajahi</span>
+          </p>
+          <h2>
+            <span class="lang-en">Portfolio areas, separated into focused pages.</span>
+            <span class="lang-id">Area portofolio, dipisahkan ke dalam halaman terfokus.</span>
+          </h2>
         </div>
         <div class="page-card-grid">
           <a class="page-card" href="services.html">
             <span>01</span>
-            <h3>Services</h3>
-            <p>Virtual Assistant, recruitment support, HR operations, program coordination, and e-commerce admin.</p>
+            <h3>
+              <span class="lang-en">Services</span>
+              <span class="lang-id">Layanan</span>
+            </h3>
+            <p>
+              <span class="lang-en">Virtual Assistant, talent acquisition support, HR operations, program coordination, and e-commerce admin.</span>
+              <span class="lang-id">Asisten Virtual, dukungan talent acquisition, operasional HR, koordinasi program, dan admin e-commerce.</span>
+            </p>
           </a>
           <a class="page-card" href="projects.html">
             <span>02</span>
-            <h3>Projects</h3>
-            <p>Case studies across AI recruitment, HR operations, Odoo learning, marketplace work, and research support.</p>
+            <h3>
+              <span class="lang-en">Projects</span>
+              <span class="lang-id">Proyek</span>
+            </h3>
+            <p>
+              <span class="lang-en">Case studies across AI talent acquisition, HR operations, Odoo learning, marketplace work, and research support.</span>
+              <span class="lang-id">Studi kasus tentang talent acquisition AI, operasional HR, pembelajaran Odoo, pekerjaan marketplace, dan dukungan riset.</span>
+            </p>
           </a>
           <a class="page-card" href="resume.html">
             <span>03</span>
             <h3>Resume</h3>
-            <p>Career highlights, practical experience, certificates, and contact-ready profile details.</p>
+            <p>
+              <span class="lang-en">Career highlights, practical experience, certificates, and contact-ready profile details.</span>
+              <span class="lang-id">Sorotan karir, pengalaman praktis, sertifikat, dan detail profil siap kontak.</span>
+            </p>
           </a>
         </div>
       </section>
 
       <section class="section muted">
         <div class="section-heading">
-          <p class="section-kicker">Certificates</p>
-          <h2>Recognition and training evidence.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Certificates</span>
+            <span class="lang-id">Sertifikat</span>
+          </p>
+          <h2>
+            <span class="lang-en">Recognition and training evidence.</span>
+            <span class="lang-id">Pengakuan dan bukti pelatihan.</span>
+          </h2>
         </div>
         <div class="certificate-grid">
           <article class="certificate-card">
@@ -224,8 +351,14 @@
               alt="GAOTek Human Resources Training certificate"
             />
             <div>
-              <h3>Human Resources Training</h3>
-              <p>GAOTek Inc. certificate for a four-month internship training program in Human Resources, issued July 3, 2025.</p>
+              <h3>
+                <span class="lang-en">Human Resources Training</span>
+                <span class="lang-id">Pelatihan Sumber Daya Manusia</span>
+              </h3>
+              <p>
+                <span class="lang-en">GAOTek Inc. certificate for a four-month internship training program in Human Resources, issued July 3, 2025.</span>
+                <span class="lang-id">Sertifikat GAOTek Inc. untuk program pelatihan magang empat bulan di bidang Sumber Daya Manusia, diterbitkan 3 Juli 2025.</span>
+              </p>
             </div>
           </article>
           <article class="certificate-card">
@@ -235,9 +368,18 @@
               alt="Coursera Strategic HRM certificate"
             />
             <div>
-              <h3>Strategic HRM: Talent, Performance, Compensation Design</h3>
-              <p>Coursera verification certificate completed by Tiara Dwi Ananda Saputri on March 8, 2026 (coursera.org/verify/6WJ8MDE7IUMA).</p>
-              <a class="text-link" style="margin-top: 12px; display: inline-flex;" href="strategic-hrm-case-study.html">View Case Study</a>
+              <h3>
+                <span class="lang-en">Strategic HRM: Talent, Performance, Compensation Design</span>
+                <span class="lang-id">HRM Strategis: Desain Talenta, Kinerja, dan Kompensasi</span>
+              </h3>
+              <p>
+                <span class="lang-en">Coursera verification certificate completed by Tiara Dwi Ananda Saputri on March 8, 2026 (coursera.org/verify/6WJ8MDE7IUMA).</span>
+                <span class="lang-id">Sertifikat verifikasi Coursera yang diselesaikan oleh Tiara Dwi Ananda Saputri pada 8 Maret 2026 (coursera.org/verify/6WJ8MDE7IUMA).</span>
+              </p>
+              <a class="text-link" style="margin-top: 12px; display: inline-flex;" href="strategic-hrm-case-study.html">
+                <span class="lang-en">View Case Study</span>
+                <span class="lang-id">Lihat Studi Kasus</span>
+              </a>
             </div>
           </article>
           <article class="certificate-card">
@@ -247,8 +389,14 @@
               alt="GAOTek Digital Marketing Training certificate"
             />
             <div>
-              <h3>Digital Marketing Training</h3>
-              <p>GAOTek Inc. certificate for a four-month internship training program in Digital Marketing, issued July 3, 2025.</p>
+              <h3>
+                <span class="lang-en">Digital Marketing Training</span>
+                <span class="lang-id">Pelatihan Digital Marketing</span>
+              </h3>
+              <p>
+                <span class="lang-en">GAOTek Inc. certificate for a four-month internship training program in Digital Marketing, issued July 3, 2025.</span>
+                <span class="lang-id">Sertifikat GAOTek Inc. untuk program pelatihan magang empat bulan di bidang Digital Marketing, diterbitkan 3 Juli 2025.</span>
+              </p>
             </div>
           </article>
           <article class="certificate-card">
@@ -258,8 +406,14 @@
               alt="Belajarsosmed Internship Batch 1 certificate"
             />
             <div>
-              <h3>Internship Batch 1</h3>
-              <p>Belajarsosmed.com internship recognition for the March to June 2025 program.</p>
+              <h3>
+                <span class="lang-en">Internship Batch 1</span>
+                <span class="lang-id">Magang Batch 1</span>
+              </h3>
+              <p>
+                <span class="lang-en">Belajarsosmed.com internship recognition for the March to June 2025 program.</span>
+                <span class="lang-id">Pengakuan magang Belajarsosmed.com untuk program Maret hingga Juni 2025.</span>
+              </p>
             </div>
           </article>
         </div>
@@ -267,19 +421,34 @@
 
       <section class="contact-section" id="contact">
         <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Open to virtual assistant (VA), recruitment support, HR operations, and e-commerce admin opportunities.</h2>
+          <p class="section-kicker">
+            <span class="lang-en">Contact</span>
+            <span class="lang-id">Kontak</span>
+          </p>
+          <h2>
+            <span class="lang-en">Open to virtual assistant (VA), talent acquisition support, HR operations, and e-commerce admin opportunities.</span>
+            <span class="lang-id">Terbuka untuk peluang asisten virtual (VA), dukungan talent acquisition, operasional HR, dan admin e-commerce.</span>
+          </h2>
         </div>
         <div class="contact-panel">
           <a href="mailto:tiaradwia1506@gmail.com">tiaradwia1506@gmail.com</a>
-          <a href="https://www.linkedin.com/in/tiaradwia/">LinkedIn Profile</a>
+          <a href="https://www.linkedin.com/in/tiaradwia/">
+            <span class="lang-en">LinkedIn Profile</span>
+            <span class="lang-id">Profil LinkedIn</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</p>
-      <button class="top-button" type="button" aria-label="Back to top">Top</button>
+      <p>
+        <span class="lang-en">Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</span>
+        <span class="lang-id">Didesain untuk GitHub Pages. Dibuat oleh Tiara Dwi Ananda Saputri.</span>
+      </p>
+      <button class="top-button" type="button" aria-label="Back to top">
+        <span class="lang-en">Top</span>
+        <span class="lang-id">Ke Atas</span>
+      </button>
     </footer>
 
     <script src="script.js?v=multi-page-1"></script>
