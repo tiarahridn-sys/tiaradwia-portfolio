@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tiarahridn-sys.github.io/tiaradwia-portfolio/sitemap.xml
