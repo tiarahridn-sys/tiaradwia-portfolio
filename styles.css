@@ -209,7 +209,9 @@ a {
 
 .page-hero h1 {
   max-width: 1120px;
-  font-size: clamp(3rem, 7vw, 6.2rem);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  line-height: 1.15;
+  font-weight: normal;
 }
 
 .page-hero p:last-child {
@@ -241,8 +243,8 @@ h1 {
   font-weight: normal;
   margin: 0;
   max-width: 860px;
-  font-size: clamp(3rem, 8vw, 6.8rem);
-  line-height: 0.9;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 1.05;
   letter-spacing: 0;
 }
 
@@ -257,8 +259,8 @@ h2 {
   font-family: Georgia, 'Times New Roman', serif;
   font-weight: normal;
   margin: 0;
-  font-size: clamp(2rem, 5vw, 4.4rem);
-  line-height: 0.96;
+  font-size: clamp(1.6rem, 3vw, 2.8rem);
+  line-height: 1.1;
   letter-spacing: 0;
 }
 
