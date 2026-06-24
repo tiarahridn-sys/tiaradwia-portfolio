@@ -31,9 +31,13 @@
     <link rel="stylesheet" href="styles.css?v=multi-page-3" />
     <script src="lang-switch.js"></script>
     <style>
+      /* Language visibility rules */
+      html[lang="en"] .lang-id { display: none !important; }
+      html[lang="id"] .lang-en { display: none !important; }
+
       /* Blog Article Styles */
       .blog-article {
-        max-width: 660px; /* Lebar kolom ramping seperti blog Gitasav untuk kenyamanan membaca di PC */
+        max-width: 920px; /* Lebar kolom lebar seperti blog Gitasav di PC */
         margin: 0 auto;
         padding: 0 24px 80px;
         font-family: Georgia, 'Times New Roman', serif; /* Serif typography matching Gitasav */
@@ -45,47 +49,20 @@
         margin: 40px 0 60px;
       }
 
-      .pub-title {
-        font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+      .pub-date {
+        font-size: 0.78rem;
         font-family: Georgia, 'Times New Roman', serif;
-        font-weight: 400;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-        color: var(--ink);
-        margin: 0 0 6px;
-      }
-
-      .pub-author {
-        font-size: 0.72rem;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-weight: 500;
-        letter-spacing: 0.18em;
+        letter-spacing: 0.12em;
         color: var(--muted);
-        text-transform: uppercase;
-        margin-bottom: 20px;
+        text-align: center;
       }
 
-      .pub-divider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        margin: 18px 0;
-        color: var(--line);
-      }
-
-      .pub-divider-line {
-        flex: 1;
-        max-width: 140px;
+      .pub-hr {
+        border: none;
         height: 1px;
         background: var(--line);
-      }
-
-      .pub-date {
-        font-size: 0.75rem;
-        font-family: Georgia, 'Times New Roman', serif;
-        letter-spacing: 0.1em;
-        color: var(--muted);
+        margin: 12px 0 36px;
+        opacity: 0.8;
       }
 
       .blog-title {
@@ -95,8 +72,8 @@
         font-style: italic;
         line-height: 1.35;
         color: var(--ink);
-        margin: 32px auto 12px;
-        max-width: 580px;
+        margin: 0 auto 12px;
+        max-width: 780px;
         text-align: center;
       }
 
@@ -389,7 +366,7 @@
       .part-past    { background: rgba(99,102,241,0.15); color: #818cf8; }
       .part-future  { background: rgba(251,146,60,0.15); color: #fb923c; }
 
-      @media (max-width: 600px) {
+      @media (max-width: 800px) {
         .blog-article {
           padding: 0 16px 60px;
         }
@@ -420,191 +397,350 @@
 
     <main>
       <div class="blog-article">
-        <a class="back-link" href="blog.html" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">&#8592; Semua Artikel</a>
+        <a class="back-link" href="blog.html" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">&#8592; <span class="lang-id">Semua Artikel</span><span class="lang-en">All Articles</span></a>
 
-        <!-- Gita Savitri Inspired Blog Header -->
+        <!-- Gita Savitri Inspired Blog Header (Clean Date & HR) -->
         <header class="pub-header">
-          <div class="pub-title">PERSPEKTIF PRAKTISI</div>
-          <div class="pub-author">BY TIARA DWI ANANDA SAPUTRI</div>
-          <div class="pub-divider">
-            <span class="pub-divider-line"></span>
-            <span class="pub-date">24 JUNI 2026</span>
-            <span class="pub-divider-line"></span>
+          <div class="pub-date">
+            <span class="lang-id">24 JUNI 2026</span>
+            <span class="lang-en">JUNE 24, 2026</span>
           </div>
+          <hr class="pub-hr" />
           
-          <h1 class="blog-title">Cara Jawab "Tell Me About Yourself" Saat Interview</h1>
-          <p class="blog-subtitle">(Bukan Recite CV)</p>
+          <h1 class="blog-title">
+            <span class="lang-id">Cara Jawab "Tell Me About Yourself" Saat Interview</span>
+            <span class="lang-en">How to Answer "Tell Me About Yourself" in an Interview</span>
+          </h1>
+          <p class="blog-subtitle">
+            <span class="lang-id">(Bukan Recite CV)</span>
+            <span class="lang-en">(Stop Reciting Your Resume)</span>
+          </p>
           
           <div style="display: flex; align-items: center; justify-content: center; gap: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin-bottom: 24px;">
             <span class="blog-tag">Interview Tips</span>
-            <span style="font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase;">5 MENIT BACA</span>
+            <span style="font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase;">
+              <span class="lang-id">5 MENIT BACA</span>
+              <span class="lang-en">5 MIN READ</span>
+            </span>
           </div>
         </header>
 
         <!-- Body -->
         <div class="blog-body">
+          
+          <!-- ================= INDONESIAN CONTENT ================= -->
+          <div class="lang-id">
+            <p>Recruiter tidak butuh riwayat hidup kamu dari lahir sampai sekarang. Yang mereka butuhkan adalah jawaban atas satu pertanyaan: kenapa kamu relevan untuk posisi ini?</p>
 
-          <p>Recruiter tidak butuh riwayat hidup kamu dari lahir sampai sekarang. Yang mereka butuhkan adalah jawaban atas satu pertanyaan: kenapa kamu relevan untuk posisi ini?</p>
-
-          <div class="blog-stat-row">
-            <div class="blog-stat">
-              <div class="stat-number">7"</div>
-              <div class="stat-label">waktu rata-rata recruiter scan satu CV</div>
+            <div class="blog-stat-row">
+              <div class="blog-stat">
+                <div class="stat-number">7"</div>
+                <div class="stat-label">waktu rata-rata recruiter scan satu CV</div>
+              </div>
+              <div class="blog-stat">
+                <div class="stat-number">5'</div>
+                <div class="stat-label">kesan pertama terbentuk dalam menit pertama interview</div>
+              </div>
             </div>
-            <div class="blog-stat">
-              <div class="stat-number">5'</div>
-              <div class="stat-label">kesan pertama terbentuk dalam menit pertama interview</div>
+
+            <p>Riset dari The Ladders menunjukkan recruiter rata rata hanya butuh 7 detik untuk scan CV sebelum memutuskan apakah kandidat layak lanjut. Di tahap interview, kesan awal terbentuk dalam 5 menit pertama. Pertanyaan "tell me about yourself" adalah momen itu.</p>
+
+            <p>Artikel ini membahas framework yang bisa kamu pakai langsung, beserta contoh jawaban siap pakai.</p>
+
+            <h2>Apa yang Sebenarnya Recruiter Tanyakan Saat Bilang "Tell Me About Yourself"?</h2>
+
+            <p>Bukan riwayat pendidikan. Bukan daftar perusahaan tempat kamu pernah kerja.</p>
+
+            <p>Ada tiga hal yang recruiter evaluasi dari jawaban kamu:</p>
+            <ul>
+              <li>Kenapa percakapan ini perlu dilanjutkan?</li>
+              <li>Apakah background kamu relevan dengan role ini?</li>
+              <li>Bisakah kamu berkomunikasi dengan jelas?</li>
+            </ul>
+
+            <p>Mereka ingin tahu satu hal: kenapa kamu, untuk posisi ini, sekarang.</p>
+
+            <h2>Dua Pola Jawaban yang Paling Umum</h2>
+
+            <p>Sebelum masuk ke framework, ada baiknya kamu kenali dua pola yang paling sering muncul dan kenapa keduanya kurang efektif.</p>
+
+            <p><strong>Pola pertama, recite seluruh CV:</strong></p>
+            <div class="blog-quote">
+              <p>"Saya lulus tahun 2020, kemudian bekerja di Perusahaan A selama dua tahun, lalu pindah ke Perusahaan B di mana saya melakukan X, Y, Z..."</p>
             </div>
+
+            <p><strong>Pola kedua, cerita hidup dari awal:</strong></p>
+            <div class="blog-quote">
+              <p>"Saya lahir di Jakarta, bersekolah di sana, dan selalu tertarik dengan..."</p>
+            </div>
+
+            <p>Keduanya terdengar familiar karena memang umum dilakukan. Tapi keduanya melewatkan poin utama dari pertanyaan tersebut. Recruiter tidak butuh kronologi, mereka butuh relevansi.</p>
+
+            <h2>Framework Present-Past-Future: Cara Menjawab "Tell Me About Yourself" dalam 90 Detik</h2>
+
+            <p>Framework ini direkomendasikan oleh SHRM (Society for Human Resource Management), salah satu organisasi HR terbesar di dunia, sebagai cara terstruktur untuk menyampaikan value kandidat secara ringkas. Glints Indonesia juga menggunakan pendekatan yang sama sebagai panduan standar persiapan interview untuk pasar kerja lokal.</p>
+
+            <p>Cara kerjanya sederhana: bagi jawabanmu menjadi tiga bagian, masing masing sekitar 30 detik.</p>
+
+            <h3><span class="part-label part-present">Present</span><br>Bagian 1 (30 Detik)</h3>
+
+            <p>Mulai dari posisi atau fokus profesionalmu sekarang. Bukan dari awal perjalanan hidupmu.</p>
+
+            <div class="blog-quote">
+              <p>"Saat ini saya bekerja sebagai HR Associate dengan fokus pada rekrutmen dan optimasi proses. Saya sedang mengerjakan proyek untuk mempercepat hiring process dan meningkatkan pengalaman kandidat."</p>
+            </div>
+
+            <p>Sesuaikan dengan situasimu:</p>
+            <table class="blog-table">
+              <thead>
+                <tr>
+                  <th>Situasi</th>
+                  <th>Cara Memulai</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Sedang bekerja</td><td>Jabatan saat ini dan area fokus utama</td></tr>
+                <tr><td>Sedang mencari kerja</td><td>Profesi dan pengalaman terbaru yang relevan</td></tr>
+                <tr><td>Fresh graduate</td><td>Bidang studi dan pengalaman praktis</td></tr>
+              </tbody>
+            </table>
+
+            <h3><span class="part-label part-past">Past</span><br>Bagian 2 (30 Detik)</h3>
+
+            <p>Pilih pengalaman yang paling relevan dengan posisi yang kamu lamar. Bukan semua pengalaman tetapi yang relevan saja.</p>
+
+            <div class="blog-quote">
+              <p>"Sebelumnya saya bekerja di bidang operasional e-commerce. Di sana saya belajar banyak soal systems thinking dan memahami perilaku pengguna, dua hal yang ternyata sangat berguna untuk memahami kebutuhan kandidat dalam proses rekrutmen."</p>
+            </div>
+
+            <p>Yang membuat jawaban ini kuat adalah koneksi logisnya. Kamu tidak sekadar menyebut pengalaman lama, kamu menunjukkan kenapa pengalaman itu relevan untuk role yang kamu incar sekarang.</p>
+
+            <h3><span class="part-label part-future">Future</span><br>Bagian 3 (30 Detik)</h3>
+
+            <p>Bagian ini yang paling sering dilewatkan. Padahal ini yang paling diperhatikan recruiter.</p>
+
+            <div class="blog-quote">
+              <p>"Saya tertarik dengan posisi ini karena menggabungkan pengalaman rekrutmen yang saya miliki dengan minat saya dalam membangun sistem HR yang scalable, dan itulah yang sedang tim ini kerjakan."</p>
+            </div>
+
+            <p>Tunjukkan bahwa kamu datang dengan alasan yang spesifik. Bukan karena sedang aktif melamar ke mana mana, tapi karena posisi ini memang sesuai dengan arah yang kamu tuju.</p>
+
+            <h2>Satu Hal yang Biasanya Bikin Jawaban Ini Gagal</h2>
+
+            <p>Framework-nya sudah benar. Tapi banyak kandidat masih pakai jawaban yang sama persis untuk semua interview.</p>
+
+            <p>Padahal setiap role punya prioritas yang berbeda. Posisi HR di startup itu tidak sama dengan HR di perusahaan korporat. Kalau kamu pakai jawaban generik untuk keduanya, recruiter akan merasakannya.</p>
+
+            <p>Caranya mudah: sebelum interview, baca ulang job description-nya. Perhatikan kata kunci yang mereka tulis, apa yang mereka tekankan di bagian "requirements" dan "responsibilities". Lalu masukkan satu atau dua poin itu ke bagian Future dalam jawabanmu.</p>
+
+            <p>Contoh kecilnya: kalau job desc menyebut "fast-paced environment," kamu bisa sambungkan dengan pengalaman kamu yang pernah kerja di kondisi serupa. Itu yang namanya tailored answer, dan itu yang membedakan kamu dari kandidat lain yang jawabannya sudah terasa template.</p>
+
+            <h2>Kenapa Struktur Ini Bekerja</h2>
+
+            <p>Kamu tidak lagi sekadar menyebut riwayat kerja. Namun, kamu menceritakan kenapa pengalamanmu membuat kamu cocok untuk posisi ini. Itu yang disebut strategic storytelling, dan itu yang membedakan jawaban biasa dari jawaban yang diingat recruiter.</p>
+
+            <p>Tiga hal yang perlu kamu ingat:</p>
+
+            <p>Pertama, jaga di bawah 2 menit. Kalau recruiter ingin tahu lebih, mereka akan bertanya (seringnya seperti itu).</p>
+            <p>Kedua, sesuaikan dengan posisi yang dilamar. Highlight pengalaman yang relevan dengan kebutuhan role tersebut, bukan yang paling kamu banggakan.</p>
+            <p>Ketiga, akhiri dengan alasan kamu ada di sana. Ini menunjukkan kamu datang dengan tujuan yang jelas.</p>
           </div>
 
-          <p>Riset dari The Ladders menunjukkan recruiter rata rata hanya butuh 7 detik untuk scan CV sebelum memutuskan apakah kandidat layak lanjut. Di tahap interview, kesan awal terbentuk dalam 5 menit pertama. Pertanyaan "tell me about yourself" adalah momen itu.</p>
+          <!-- ================= ENGLISH CONTENT ================= -->
+          <div class="lang-en">
+            <p>Recruiters don't need your life story from birth to the present. What they need is an answer to one question: why are you relevant for this position?</p>
 
-          <p>Artikel ini membahas framework yang bisa kamu pakai langsung, beserta contoh jawaban siap pakai.</p>
+            <div class="blog-stat-row">
+              <div class="blog-stat">
+                <div class="stat-number">7"</div>
+                <div class="stat-label">average time a recruiter spends scanning a resume</div>
+              </div>
+              <div class="blog-stat">
+                <div class="stat-number">5'</div>
+                <div class="stat-label">first impressions are formed in the first minutes of an interview</div>
+              </div>
+            </div>
 
-          <h2>Apa yang Sebenarnya Recruiter Tanyakan Saat Bilang "Tell Me About Yourself"?</h2>
+            <p>Research from The Ladders shows that recruiters take an average of only 7 seconds to scan a resume before deciding if a candidate is worth pursuing. In an interview, first impressions are formed within the first 5 minutes. The "tell me about yourself" question is that exact moment.</p>
 
-          <p>Bukan riwayat pendidikan. Bukan daftar perusahaan tempat kamu pernah kerja.</p>
+            <p>This article discusses a framework you can use immediately, along with ready-to-use answer templates.</p>
 
-          <p>Ada tiga hal yang recruiter evaluasi dari jawaban kamu:</p>
-          <ul>
-            <li>Kenapa percakapan ini perlu dilanjutkan?</li>
-            <li>Apakah background kamu relevan dengan role ini?</li>
-            <li>Bisakah kamu berkomunikasi dengan jelas?</li>
-          </ul>
+            <h2>What are Recruiters Actually Asking When They Say "Tell Me About Yourself"?</h2>
 
-          <p>Mereka ingin tahu satu hal: kenapa kamu, untuk posisi ini, sekarang.</p>
+            <p>Not your educational background. Not the list of companies you've worked for.</p>
 
-          <h2>Dua Pola Jawaban yang Paling Umum</h2>
+            <p>There are three things recruiters evaluate from your answer:</p>
+            <ul>
+              <li>Why should we keep talking to you?</li>
+              <li>How does your background fit this role?</li>
+              <li>Can you communicate clearly and strategically?</li>
+            </ul>
 
-          <p>Sebelum masuk ke framework, ada baiknya kamu kenali dua pola yang paling sering muncul dan kenapa keduanya kurang efektif.</p>
+            <p>They want to know one thing: why you, for this role, right now.</p>
 
-          <p><strong>Pola pertama, recite seluruh CV:</strong></p>
-          <div class="blog-quote">
-            <p>"Saya lulus tahun 2020, kemudian bekerja di Perusahaan A selama dua tahun, lalu pindah ke Perusahaan B di mana saya melakukan X, Y, Z..."</p>
+            <h2>The Two Most Common Answer Patterns</h2>
+
+            <p>Before we dive into the framework, it's helpful to recognize the two most common patterns and why they are ineffective.</p>
+
+            <p><strong>The first pattern: reciting your entire resume:</strong></p>
+            <div class="blog-quote">
+              <p>"I graduated in 2020, then worked at Company A for two years, then moved to Company B where I did X, Y, Z..."</p>
+            </div>
+
+            <p><strong>The second pattern: giving your life story:</strong></p>
+            <div class="blog-quote">
+              <p>"I was born in Jakarta, went to school there, and I've always been interested in..."</p>
+            </div>
+
+            <p>Both sound familiar because they are extremely common. But both miss the main point of the question. Recruiters don't want a chronology; they want relevance.</p>
+
+            <h2>The Present-Past-Future Framework: How to Answer in 90 Seconds</h2>
+
+            <p>This framework is recommended by SHRM (Society for Human Resource Management), one of the world's largest HR organizations, as a structured way to convey candidate value concisely. Glints Indonesia also uses a similar approach as their standard interview preparation guide for the local job market.</p>
+
+            <p>The mechanism is simple: divide your answer into three parts, each lasting about 30 seconds.</p>
+
+            <h3><span class="part-label part-present">Present</span><br>Part 1 (30 Seconds)</h3>
+
+            <p>Start with your current professional position or focus. Not the beginning of your life story.</p>
+
+            <div class="blog-quote">
+              <p>"I am currently an HR Associate focused on recruitment and process optimization. I'm currently working on a project to speed up our hiring process and improve candidate experience."</p>
+            </div>
+
+            <p>Adapt it to your situation:</p>
+            <table class="blog-table">
+              <thead>
+                <tr>
+                  <th>Situation</th>
+                  <th>How to Start</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Currently employed</td><td>Current title and primary area of focus</td></tr>
+                <tr><td>Job seeker</td><td>Profession and most relevant recent experience</td></tr>
+                <tr><td>Fresh graduate</td><td>Field of study and practical projects/experience</td></tr>
+              </tbody>
+            </table>
+
+            <h3><span class="part-label part-past">Past</span><br>Part 2 (30 Seconds)</h3>
+
+            <p>Choose experience that is highly relevant to the position you are applying for. Focus on relevance, not chronology.</p>
+
+            <div class="blog-quote">
+              <p>"Before this, I worked in e-commerce operations. There, I learned a lot about systems thinking and understanding user behavior, both of which have been incredibly useful in understanding candidate needs during the recruitment process."</p>
+            </div>
+
+            <p>What makes this response strong is the logical connection. You aren't just listing old jobs; you are showing why that experience is useful for the role you want now.</p>
+
+            <h3><span class="part-label part-future">Future</span><br>Part 3 (30 Seconds)</h3>
+
+            <p>This is the part most candidates skip, yet it is the one recruiters pay closest attention to.</p>
+
+            <div class="blog-quote">
+              <p>"I'm interested in this role because it combines my recruitment experience with my passion for building scalable HR systems, which is exactly what your team is working on right now."</p>
+            </div>
+
+            <p>Show that you have a specific reason for being there. Not just because you are sending out resumes, but because this role aligns with your career direction.</p>
+
+            <h2>The One Thing That Usually Makes This Answer Fail</h2>
+
+            <p>The framework is solid. However, many candidates still use the exact same answer for every interview.</p>
+
+            <p>Every role has different priorities. An HR position at a startup is not the same as an HR position at a corporate company. If you use a generic answer for both, the recruiter will notice.</p>
+
+            <p>The solution is easy: before your interview, re-read the job description. Pay attention to the keywords they use, and what they emphasize in the "requirements" and "responsibilities" sections. Then, weave one or two of those points into the "Future" part of your answer.</p>
+
+            <p>For example: if the job description mentions a "fast-paced environment," connect it to your past experience working in a similar setting. This is a tailored answer, and it is what sets you apart from other candidates whose answers sound templated.</p>
+
+            <h2>Why This Structure Works</h2>
+
+            <p>You are no longer just reciting your job history. Instead, you are explaining why your experience makes you a perfect fit for this specific position. This is called strategic storytelling, and it's what separates average answers from memorable ones.</p>
+
+            <p>Three key takeaways to remember:</p>
+
+            <p>First, keep it under 2 minutes. If the recruiter wants to know more, they will ask.</p>
+            <p>Second, tailor it to the role. Highlight experience relevant to their needs, not just the achievements you are most proud of.</p>
+            <p>Third, end with why you are here. This shows you have a clear purpose.</p>
           </div>
-
-          <p><strong>Pola kedua, cerita hidup dari awal:</strong></p>
-          <div class="blog-quote">
-            <p>"Saya lahir di Jakarta, bersekolah di sana, dan selalu tertarik dengan..."</p>
-          </div>
-
-          <p>Keduanya terdengar familiar karena memang umum dilakukan. Tapi keduanya melewatkan poin utama dari pertanyaan tersebut. Recruiter tidak butuh kronologi, mereka butuh relevansi.</p>
-
-          <h2>Framework Present-Past-Future: Cara Menjawab "Tell Me About Yourself" dalam 90 Detik</h2>
-
-          <p>Framework ini direkomendasikan oleh SHRM (Society for Human Resource Management), salah satu organisasi HR terbesar di dunia, sebagai cara terstruktur untuk menyampaikan value kandidat secara ringkas. Glints Indonesia juga menggunakan pendekatan yang sama sebagai panduan standar persiapan interview untuk pasar kerja lokal.</p>
-
-          <p>Cara kerjanya sederhana: bagi jawabanmu menjadi tiga bagian, masing masing sekitar 30 detik.</p>
-
-          <h3><span class="part-label part-present">Present</span><br>Bagian 1 (30 Detik)</h3>
-
-          <p>Mulai dari posisi atau fokus profesionalmu sekarang. Bukan dari awal perjalanan hidupmu.</p>
-
-          <div class="blog-quote">
-            <p>"Saat ini saya bekerja sebagai HR Associate dengan fokus pada rekrutmen dan optimasi proses. Saya sedang mengerjakan proyek untuk mempercepat hiring process dan meningkatkan pengalaman kandidat."</p>
-          </div>
-
-          <p>Sesuaikan dengan situasimu:</p>
-          <table class="blog-table">
-            <thead>
-              <tr>
-                <th>Situasi</th>
-                <th>Cara Memulai</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Sedang bekerja</td><td>Jabatan saat ini dan area fokus utama</td></tr>
-              <tr><td>Sedang mencari kerja</td><td>Profesi dan pengalaman terbaru yang relevan</td></tr>
-              <tr><td>Fresh graduate</td><td>Bidang studi dan pengalaman praktis</td></tr>
-            </tbody>
-          </table>
-
-          <h3><span class="part-label part-past">Past</span><br>Bagian 2 (30 Detik)</h3>
-
-          <p>Pilih pengalaman yang paling relevan dengan posisi yang kamu lamar. Bukan semua pengalaman tetapi yang relevan saja.</p>
-
-          <div class="blog-quote">
-            <p>"Sebelumnya saya bekerja di bidang operasional e-commerce. Di sana saya belajar banyak soal systems thinking dan memahami perilaku pengguna, dua hal yang ternyata sangat berguna untuk memahami kebutuhan kandidat dalam proses rekrutmen."</p>
-          </div>
-
-          <p>Yang membuat jawaban ini kuat adalah koneksi logisnya. Kamu tidak sekadar menyebut pengalaman lama, kamu menunjukkan kenapa pengalaman itu relevan untuk role yang kamu incar sekarang.</p>
-
-          <h3><span class="part-label part-future">Future</span><br>Bagian 3 (30 Detik)</h3>
-
-          <p>Bagian ini yang paling sering dilewatkan. Padahal ini yang paling diperhatikan recruiter.</p>
-
-          <div class="blog-quote">
-            <p>"Saya tertarik dengan posisi ini karena menggabungkan pengalaman rekrutmen yang saya miliki dengan minat saya dalam membangun sistem HR yang scalable, dan itulah yang sedang tim ini kerjakan."</p>
-          </div>
-
-          <p>Tunjukkan bahwa kamu datang dengan alasan yang spesifik. Bukan karena sedang aktif melamar ke mana mana, tapi karena posisi ini memang sesuai dengan arah yang kamu tuju.</p>
-
-          <h2>Satu Hal yang Biasanya Bikin Jawaban Ini Gagal</h2>
-
-          <p>Framework-nya sudah benar. Tapi banyak kandidat masih pakai jawaban yang sama persis untuk semua interview.</p>
-
-          <p>Padahal setiap role punya prioritas yang berbeda. Posisi HR di startup itu tidak sama dengan HR di perusahaan korporat. Kalau kamu pakai jawaban generik untuk keduanya, recruiter akan merasakannya.</p>
-
-          <p>Caranya mudah: sebelum interview, baca ulang job description-nya. Perhatikan kata kunci yang mereka tulis, apa yang mereka tekankan di bagian "requirements" dan "responsibilities". Lalu masukkan satu atau dua poin itu ke bagian Future dalam jawabanmu.</p>
-
-          <p>Contoh kecilnya: kalau job desc menyebut "fast-paced environment," kamu bisa sambungkan dengan pengalaman kamu yang pernah kerja di kondisi serupa. Itu yang namanya tailored answer, dan itu yang membedakan kamu dari kandidat lain yang jawabannya sudah terasa template.</p>
-
-          <h2>Kenapa Struktur Ini Bekerja</h2>
-
-          <p>Kamu tidak lagi sekadar menyebut riwayat kerja. Namun, kamu menceritakan kenapa pengalamanmu membuat kamu cocok untuk posisi ini. Itu yang disebut strategic storytelling, dan itu yang membedakan jawaban biasa dari jawaban yang diingat recruiter.</p>
-
-          <p>Tiga hal yang perlu kamu ingat:</p>
-
-          <p>Pertama, jaga di bawah 2 menit. Kalau recruiter ingin tahu lebih, mereka akan bertanya (seringnya seperti itu).</p>
-          <p>Kedua, sesuaikan dengan posisi yang dilamar. Highlight pengalaman yang relevan dengan kebutuhan role tersebut, bukan yang paling kamu banggakan.</p>
-          <p>Ketiga, akhiri dengan alasan kamu ada di sana. Ini menunjukkan kamu datang dengan tujuan yang jelas.</p>
 
           <h2>FAQ</h2>
 
           <div class="blog-faq">
             <details class="faq-item">
-              <summary class="faq-question">Apakah jawaban ini perlu dihafal kata per kata?</summary>
+              <summary class="faq-question">
+                <span class="lang-id">Apakah jawaban ini perlu dihafal kata per kata?</span>
+                <span class="lang-en">Do I need to memorize this answer word for word?</span>
+              </summary>
               <div class="faq-answer">
-                <p>Tidak. Yang perlu dilatih adalah alurnya: Present, Past, Future. Detail di dalamnya bisa kamu sesuaikan untuk setiap interview yang berbeda.</p>
+                <p class="lang-id">Tidak. Yang perlu dilatih adalah alurnya: Present, Past, Future. Detail di dalamnya bisa kamu sesuaikan untuk setiap interview yang berbeda.</p>
+                <p class="lang-en">No. Focus on practicing the flow: Present, Past, Future. You can customize the details for each different interview.</p>
               </div>
             </details>
             <details class="faq-item">
-              <summary class="faq-question">Bagaimana kalau saya fresh graduate dan belum punya pengalaman kerja?</summary>
+              <summary class="faq-question">
+                <span class="lang-id">Bagaimana kalau saya fresh graduate dan belum punya pengalaman kerja?</span>
+                <span class="lang-en">What if I am a fresh graduate with no work experience?</span>
+              </summary>
               <div class="faq-answer">
-                <p>Gunakan pengalaman organisasi, magang, proyek kuliah, atau freelance. Pilih yang paling relevan dengan posisi yang kamu lamar, bukan yang paling besar atau paling terkesan.</p>
+                <p class="lang-id">Gunakan pengalaman organisasi, magang, proyek kuliah, atau freelance. Pilih yang paling relevan dengan posisi yang kamu lamar, bukan yang paling besar atau paling terkesan.</p>
+                <p class="lang-en">Use leadership experience, internships, college projects, or freelance work. Choose activities that are most relevant to the role you're applying for, rather than just the biggest or most impressive-sounding ones.</p>
               </div>
             </details>
             <details class="faq-item">
-              <summary class="faq-question">Berapa lama waktu yang dibutuhkan untuk latihan?</summary>
+              <summary class="faq-question">
+                <span class="lang-id">Berapa lama waktu yang dibutuhkan untuk latihan?</span>
+                <span class="lang-en">How much practice does it take?</span>
+              </summary>
               <div class="faq-answer">
-                <p>Satu sesi dengan merekam diri sendiri biasanya sudah cukup untuk menemukan ritme yang nyaman. Setelah itu, tinggal ganti detailnya sesuai posisi.</p>
+                <p class="lang-id">Satu sesi dengan merekam diri sendiri biasanya sudah cukup untuk menemukan ritme yang nyaman. Setelah itu, tinggal ganti detailnya sesuai posisi.</p>
+                <p class="lang-en">A single practice session where you record yourself is usually enough to find a comfortable rhythm. After that, just adjust the details depending on the position.</p>
               </div>
             </details>
             <details class="faq-item">
-              <summary class="faq-question">Apakah framework ini juga berlaku untuk interview dalam bahasa Inggris?</summary>
+              <summary class="faq-question">
+                <span class="lang-id">Apakah framework ini juga berlaku untuk interview dalam bahasa Inggris?</span>
+                <span class="lang-en">Does this framework apply to interviews in English?</span>
+              </summary>
               <div class="faq-answer">
-                <p>Ya. Strukturnya tetap sama. Kamu hanya perlu menyesuaikan kalimat dan istilah yang digunakan.</p>
+                <p class="lang-id">Ya. Strukturnya tetap sama. Kamu hanya perlu menyesuaikan kalimat dan istilah yang digunakan.</p>
+                <p class="lang-en">Yes. The structure remains exactly the same. You only need to adjust the phrasing and industry terms you use.</p>
               </div>
             </details>
             <details class="faq-item">
-              <summary class="faq-question">Kalau saya career changer, bagaimana cara menyampaikan bagian Past tanpa terdengar tidak relevan?</summary>
+              <summary class="faq-question">
+                <span class="lang-id">Kalau saya career changer, bagaimana cara menyampaikan bagian Past tanpa terdengar tidak relevan?</span>
+                <span class="lang-en">If I am a career changer, how do I explain my "Past" without sounding irrelevant?</span>
+              </summary>
               <div class="faq-answer">
-                <p>Fokus pada skill yang transferable, bukan title atau industri-nya. Misalnya, pengalaman di customer service bisa kamu framing sebagai "terbiasa memahami kebutuhan orang lain dengan cepat," yang sangat relevan untuk role HR atau rekrutmen. Recruiter menghargai kemampuan menghubungkan pengalaman yang berbeda, asalkan kamu bisa menjelaskan koneksinya dengan jelas.</p>
+                <p class="lang-id">Fokus pada skill yang transferable, bukan title atau industri-nya. Misalnya, pengalaman di customer service bisa kamu framing sebagai "terbiasa memahami kebutuhan orang lain dengan cepat," yang sangat relevan untuk role HR atau rekrutmen. Recruiter menghargai kemampuan menghubungkan pengalaman yang berbeda, asalkan kamu bisa menjelaskan koneksinya dengan jelas.</p>
+                <p class="lang-en">Focus on transferable skills rather than titles or industries. For example, customer service experience can be framed as "being accustomed to identifying people's needs quickly," which is highly relevant to HR or recruitment. Recruiters value the ability to connect different experiences, as long as you can explain the connection clearly.</p>
               </div>
             </details>
           </div>
 
           <!-- CTA -->
           <div class="blog-cta-box">
-            <p>Kalau kamu juga ingin memastikan CV-mu sudah mendukung jawaban interview tersebut, kamu bisa cek layanan CV Review di sini.</p>
-            <a class="text-link" href="services.html" style="display: inline-flex; margin: 0 auto;">Lihat Layanan CV Review &rarr;</a>
+            <p class="lang-id">Kalau kamu juga ingin memastikan CV-mu sudah mendukung jawaban interview tersebut, kamu bisa cek layanan CV Review di sini.</p>
+            <p class="lang-en">If you want to ensure your resume supports your interview answers, you can check my CV Review service here.</p>
+            
+            <a class="text-link" href="services.html" style="display: inline-flex; margin: 0 auto;">
+              <span class="lang-id">Lihat Layanan CV Review &rarr;</span>
+              <span class="lang-en">View CV Review Service &rarr;</span>
+            </a>
           </div>
 
-          <p style="font-size: 0.9rem; color: var(--muted);">Pertanyaan? Tulis di kolom komentar di bawah, atau hubungi saya langsung. ;)</p>
+          <p style="font-size: 0.9rem; color: var(--muted); text-align: center;">
+            <span class="lang-id">Pertanyaan? Tulis di kolom komentar di bawah, atau hubungi saya langsung. ;)</span>
+            <span class="lang-en">Questions? Leave them in the comments below or contact me directly. ;)</span>
+          </p>
 
           <!-- References -->
           <div class="blog-references">
-            <p><strong style="font-size: 0.82rem; color: var(--muted); opacity: 1;">Referensi</strong></p>
+            <p><strong style="font-size: 0.82rem; color: var(--muted); opacity: 1;">
+              <span class="lang-id">Referensi</span>
+              <span class="lang-en">References</span>
+            </strong></p>
             <p>The Ladders (2018). <a href="https://www.theladders.com/career-advice/you-only-get-6-seconds-of-fame-make-it-count" target="_blank" rel="noopener">Eye Tracking Study on Resume Review.</a></p>
             <p>SHRM. <a href="https://www.shrm.org" target="_blank" rel="noopener">Interview Preparation and Structured Response Guide.</a></p>
             <p>Glints Indonesia. <a href="https://glints.com/id/lowongan/cara-menjawab-ceritakan-tentang-diri-anda" target="_blank" rel="noopener">Cara Menjawab "Ceritakan Tentang Diri Anda".</a></p>
