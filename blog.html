@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="id">
   <head>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
@@ -28,6 +28,10 @@
     <link rel="stylesheet" href="styles.css?v=multi-page-3" />
     <script src="lang-switch.js"></script>
     <style>
+      /* Language visibility rules */
+      html[lang="en"] .lang-id { display: none !important; }
+      html[lang="id"] .lang-en { display: none !important; }
+
       .blog-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -147,8 +151,14 @@
     <main>
       <section class="page-hero">
         <p class="eyebrow">Blog</p>
-        <h1>Tips HR, rekrutmen, dan career development — dari perspektif praktisi.</h1>
-        <p>Artikel singkat dan praktis. Tidak ada teori yang tidak bisa dipakai langsung.</p>
+        <h1>
+          <span class="lang-id">Tips HR, rekrutmen, dan career development — dari perspektif praktisi.</span>
+          <span class="lang-en">HR, recruitment, and career development tips — from a practitioner's perspective.</span>
+        </h1>
+        <p>
+          <span class="lang-id">Artikel singkat dan praktis. Tidak ada teori yang tidak bisa dipakai langsung.</span>
+          <span class="lang-en">Short and practical articles. No theories that can't be put to work immediately.</span>
+        </p>
       </section>
 
       <section class="section">
@@ -157,33 +167,66 @@
           <!-- Article 1 — Published -->
           <a class="blog-card" href="blog-tell-me-about-yourself.html">
             <span class="blog-card-tag">Interview Tips</span>
-            <h2>Cara Jawab "Tell Me About Yourself" Saat Interview (Bukan Recite CV)</h2>
-            <p>Recruiter tidak butuh riwayat hidupmu dari awal. Pelajari framework Present-Past-Future yang bisa dipakai untuk setiap interview dalam 90 detik.</p>
+            <h2>
+              <span class="lang-id">Cara Jawab "Tell Me About Yourself" Saat Interview (Bukan Recite CV)</span>
+              <span class="lang-en">How to Answer "Tell Me About Yourself" in an Interview (Not Reciting Your Resume)</span>
+            </h2>
+            <p>
+              <span class="lang-id">Recruiter tidak butuh riwayat hidupmu dari awal. Pelajari framework Present-Past-Future yang bisa dipakai untuk setiap interview dalam 90 detik.</span>
+              <span class="lang-en">Recruiters don't need your resume from the start. Learn the Present-Past-Future framework you can use for any interview in 90 seconds.</span>
+            </p>
             <div class="blog-card-meta">
-              <span>24 Juni 2026</span>
+              <span>
+                <span class="lang-id">24 Juni 2026</span>
+                <span class="lang-en">June 24, 2026</span>
+              </span>
               <span>·</span>
-              <span>5 menit baca</span>
+              <span>
+                <span class="lang-id">5 menit baca</span>
+                <span class="lang-en">5 min read</span>
+              </span>
             </div>
-            <span class="blog-card-arrow">Baca artikel &rarr;</span>
+            <span class="blog-card-arrow">
+              <span class="lang-id">Baca artikel &rarr;</span>
+              <span class="lang-en">Read article &rarr;</span>
+            </span>
           </a>
 
           <!-- Article 2 — Coming Soon -->
           <div class="blog-card coming-soon-card">
             <span class="blog-card-tag">Sourcing</span>
-            <h2>Boolean Search untuk Rekrutmen: Panduan Lengkap <span class="coming-tag">Segera hadir</span></h2>
-            <p>Cara membuat Boolean search string yang efektif untuk menemukan kandidat di LinkedIn, job portal, dan database internal.</p>
+            <h2>
+              <span class="lang-id">Boolean Search untuk Rekrutmen: Panduan Lengkap <span class="coming-tag">Segera hadir</span></span>
+              <span class="lang-en">Boolean Search for Recruitment: A Complete Guide <span class="coming-tag">Coming soon</span></span>
+            </h2>
+            <p>
+              <span class="lang-id">Cara membuat Boolean search string yang efektif untuk menemukan kandidat di LinkedIn, job portal, dan database internal.</span>
+              <span class="lang-en">How to construct effective Boolean search strings to find candidates on LinkedIn, job portals, and internal databases.</span>
+            </p>
             <div class="blog-card-meta">
-              <span>Segera hadir</span>
+              <span>
+                <span class="lang-id">Segera hadir</span>
+                <span class="lang-en">Coming soon</span>
+              </span>
             </div>
           </div>
 
           <!-- Article 3 — Coming Soon -->
           <div class="blog-card coming-soon-card">
             <span class="blog-card-tag">CV Tips</span>
-            <h2>Cara Screen CV Fresh Graduate yang Benar <span class="coming-tag">Segera hadir</span></h2>
-            <p>Dari perspektif HR, ini yang sebenarnya recruiter lihat saat screening CV fresh graduate, dan bagaimana kamu bisa mempersiapkan CV yang lolos tahap pertama.</p>
+            <h2>
+              <span class="lang-id">Cara Screen CV Fresh Graduate yang Benar <span class="coming-tag">Segera hadir</span></span>
+              <span class="lang-en">How to Screen Fresh Graduate Resumes the Right Way <span class="coming-tag">Coming soon</span></span>
+            </h2>
+            <p>
+              <span class="lang-id">Dari perspektif HR, ini yang sebenarnya recruiter lihat saat screening CV fresh graduate, dan bagaimana kamu bisa mempersiapkan CV yang lolos tahap pertama.</span>
+              <span class="lang-en">From an HR perspective, this is what recruiters actually look for when screening fresh graduate resumes, and how to build one that passes the first screen.</span>
+            </p>
             <div class="blog-card-meta">
-              <span>Segera hadir</span>
+              <span>
+                <span class="lang-id">Segera hadir</span>
+                <span class="lang-en">Coming soon</span>
+              </span>
             </div>
           </div>
 
