@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="id">
+  <head>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN7CFTCV67"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NN7CFTCV67');
+  </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Artikel dan tips seputar HR, rekrutmen, interview, dan career development oleh Tiara Dwi Ananda Saputri, HR dan Talent Acquisition freelancer." />
+    <meta name="keywords" content="blog HR Indonesia, tips interview kerja, career tips fresh graduate, talent acquisition tips, HR freelancer blog" />
+    <meta name="author" content="Tiara Dwi Ananda Saputri" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://tiarahridn-sys.github.io/tiaradwia-portfolio/blog.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tiarahridn-sys.github.io/tiaradwia-portfolio/blog.html" />
+    <meta property="og:title" content="Blog | Tiara Saputri — HR dan Career Tips" />
+    <meta property="og:description" content="Artikel dan tips seputar HR, rekrutmen, interview, dan career development oleh Tiara Dwi Ananda Saputri." />
+    <meta property="og:image" content="https://tiarahridn-sys.github.io/tiaradwia-portfolio/assets/profile.png" />
+    <title>Blog | Tiara Saputri — HR dan Career Tips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=multi-page-3" />
+    <script src="lang-switch.js"></script>
+    <style>
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 24px;
+        margin-top: 40px;
+      }
+
+      .blog-card {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 14px;
+        padding: 28px 24px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        transition: border-color 0.25s, transform 0.25s, background 0.25s;
+      }
+
+      .blog-card:hover {
+        border-color: rgba(255,255,255,0.18);
+        background: rgba(255,255,255,0.05);
+        transform: translateY(-3px);
+      }
+
+      .blog-card-tag {
+        display: inline-block;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        padding: 3px 9px;
+        border-radius: 4px;
+        background: rgba(167,139,250,0.14);
+        color: #a78bfa;
+        width: fit-content;
+      }
+
+      .blog-card h2 {
+        font-size: clamp(1rem, 1.8vw, 1.1rem);
+        font-weight: 700;
+        color: var(--heading, #fff);
+        line-height: 1.4;
+        margin: 0;
+      }
+
+      .blog-card p {
+        font-size: 0.88rem;
+        line-height: 1.65;
+        color: var(--muted);
+        margin: 0;
+        flex: 1;
+      }
+
+      .blog-card-meta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.76rem;
+        color: var(--muted);
+        opacity: 0.7;
+        margin-top: 4px;
+      }
+
+      .blog-card-meta span { display: flex; align-items: center; gap: 4px; }
+
+      .blog-card-arrow {
+        font-size: 0.82rem;
+        color: var(--accent, #a78bfa);
+        font-weight: 600;
+        margin-top: auto;
+      }
+
+      .coming-soon-card {
+        opacity: 0.45;
+        pointer-events: none;
+        cursor: default;
+      }
+
+      .coming-soon-card .blog-card-tag {
+        background: rgba(255,255,255,0.06);
+        color: var(--muted);
+      }
+
+      .coming-tag {
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 2px 7px;
+        border-radius: 3px;
+        background: rgba(255,255,255,0.06);
+        color: var(--muted);
+        margin-left: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <span class="brand-mark">TS</span>
+        <span>Tiara Saputri</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html#about"><span class="lang-en">About Me</span><span class="lang-id">Tentang Saya</span></a>
+        <a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a>
+        <a href="projects.html"><span class="lang-en">Projects</span><span class="lang-id">Proyek</span></a>
+        <a href="resume.html">Resume</a>
+        <a class="active" href="blog.html">Blog</a>
+        <a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a>
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch Language / Ubah Bahasa">
+          <span class="lang-text-en">EN</span> | <span class="lang-text-id">ID</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Blog</p>
+        <h1>Tips HR, rekrutmen, dan career development — dari perspektif praktisi.</h1>
+        <p>Artikel singkat dan praktis. Tidak ada teori yang tidak bisa dipakai langsung.</p>
+      </section>
+
+      <section class="section">
+        <div class="blog-grid">
+
+          <!-- Article 1 — Published -->
+          <a class="blog-card" href="blog-tell-me-about-yourself.html">
+            <span class="blog-card-tag">Interview Tips</span>
+            <h2>Cara Jawab "Tell Me About Yourself" Saat Interview (Bukan Recite CV)</h2>
+            <p>Recruiter tidak butuh riwayat hidupmu dari awal. Pelajari framework Present-Past-Future yang bisa dipakai untuk setiap interview dalam 90 detik.</p>
+            <div class="blog-card-meta">
+              <span>24 Juni 2026</span>
+              <span>·</span>
+              <span>5 menit baca</span>
+            </div>
+            <span class="blog-card-arrow">Baca artikel &rarr;</span>
+          </a>
+
+          <!-- Article 2 — Coming Soon -->
+          <div class="blog-card coming-soon-card">
+            <span class="blog-card-tag">Sourcing</span>
+            <h2>Boolean Search untuk Rekrutmen: Panduan Lengkap <span class="coming-tag">Segera hadir</span></h2>
+            <p>Cara membuat Boolean search string yang efektif untuk menemukan kandidat di LinkedIn, job portal, dan database internal.</p>
+            <div class="blog-card-meta">
+              <span>Segera hadir</span>
+            </div>
+          </div>
+
+          <!-- Article 3 — Coming Soon -->
+          <div class="blog-card coming-soon-card">
+            <span class="blog-card-tag">CV Tips</span>
+            <h2>Cara Screen CV Fresh Graduate yang Benar <span class="coming-tag">Segera hadir</span></h2>
+            <p>Dari perspektif HR, ini yang sebenarnya recruiter lihat saat screening CV fresh graduate, dan bagaimana kamu bisa mempersiapkan CV yang lolos tahap pertama.</p>
+            <div class="blog-card-meta">
+              <span>Segera hadir</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span class="lang-en">Designed for GitHub Pages. Built by Tiara Dwi Ananda Saputri.</span>
+        <span class="lang-id">Didesain untuk GitHub Pages. Dibuat oleh Tiara Dwi Ananda Saputri.</span>
+      </p>
+      <button class="top-button" type="button" aria-label="Back to top">
+        <span class="lang-en">Top</span>
+        <span class="lang-id">Ke Atas</span>
+      </button>
+    </footer>
+    <script src="script.js?v=multi-page-1"></script>
+  </body>
+</html>
