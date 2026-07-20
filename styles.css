@@ -1240,4 +1240,179 @@ html[lang="id"] .lang-toggle-btn .lang-text-en {
   color: var(--text);
 }
 
+/* ── Real Work Impact Stats Grid ── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 clamp(18px, 6vw, 88px);
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: var(--shadow);
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--rose);
+  box-shadow: 0 12px 30px rgba(240, 184, 240, 0.12), var(--shadow);
+}
+
+.stat-number {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+
+.stat-label {
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.stat-label em {
+  display: block;
+  font-style: normal;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* ── Boolean Search Strings & Artifact Proofs ── */
+.boolean-code-box {
+  background: var(--deep);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.88rem;
+  color: var(--gold);
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+
+.pipeline-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.pipeline-metric-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.pipeline-metric-card h4 {
+  margin: 0 0 6px 0;
+  color: var(--rose);
+  font-size: 0.9rem;
+}
+
+.pipeline-metric-card p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+/* ── Before vs After Showcase (CV Review) ── */
+.review-example-card {
+  margin-top: 40px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: clamp(24px, 4vw, 36px);
+  box-shadow: var(--shadow);
+}
+
+.review-example-card h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  color: var(--ink);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.before-box,
+.after-box {
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid var(--line);
+}
+
+.before-box {
+  background: rgba(220, 53, 69, 0.08);
+  border-color: rgba(220, 53, 69, 0.3);
+}
+
+.after-box {
+  background: rgba(40, 167, 69, 0.08);
+  border-color: rgba(40, 167, 69, 0.3);
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.badge.red {
+  background: rgba(220, 53, 69, 0.2);
+  color: #ff8b94;
+}
+
+.badge.green {
+  background: rgba(40, 167, 69, 0.2);
+  color: #7bdcb5;
+}
+
+.before-box p,
+.after-box p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
 
