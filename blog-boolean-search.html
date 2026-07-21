@@ -2,6 +2,7 @@
 <html lang="id">
   <head>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN7CFTCV67"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -30,9 +31,11 @@
     <link rel="stylesheet" href="styles.css?v=renewal-v2" />
     <script src="lang-switch.js"></script>
     <style>
+      /* Language visibility rules */
       html[lang="en"] .lang-id { display: none !important; }
       html[lang="id"] .lang-en { display: none !important; }
 
+      /* Blog Article Styles */
       .blog-article {
         max-width: 920px;
         margin: 0 auto;
@@ -40,7 +43,11 @@
         font-family: Georgia, 'Times New Roman', serif;
       }
 
-      .pub-header { text-align: center; margin: 40px 0 60px; }
+      .pub-header {
+        text-align: center;
+        margin: 40px 0 60px;
+      }
+
       .pub-date {
         font-size: 0.78rem;
         font-family: Georgia, 'Times New Roman', serif;
@@ -48,137 +55,295 @@
         color: var(--muted);
         text-align: center;
       }
+
       .pub-hr {
-        border: none; height: 1px;
+        border: none;
+        height: 1px;
         background: var(--line);
-        margin: 12px 0 36px; opacity: 0.8;
+        margin: 12px 0 36px;
+        opacity: 0.8;
       }
+
       .blog-title {
         font-family: Georgia, 'Times New Roman', serif;
         font-size: clamp(1.5rem, 4vw, 2.3rem);
-        font-weight: normal; font-style: italic; line-height: 1.35;
-        color: var(--ink); margin: 0 auto 12px; max-width: 780px; text-align: center;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 1.35;
+        color: var(--ink);
+        margin: 0 auto 12px;
+        max-width: 780px;
+        text-align: center;
       }
+
       .blog-subtitle {
         font-family: Georgia, 'Times New Roman', serif;
         font-size: clamp(1.05rem, 2.5vw, 1.3rem);
-        font-weight: normal; color: var(--muted);
-        text-align: center; margin: 0 0 32px; font-style: italic;
+        font-weight: normal;
+        color: var(--muted);
+        text-align: center;
+        margin: 0 0 32px;
+        font-style: italic;
       }
+
       .blog-tag {
-        display: inline-block; font-size: 0.68rem; font-weight: 600;
+        display: inline-block;
+        font-size: 0.68rem;
+        font-weight: 600;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        letter-spacing: 0.08em; text-transform: uppercase;
-        padding: 4px 10px; border-radius: 4px;
-        background: rgba(200,162,200,0.12); color: var(--rose, #f0b8f0);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        border-radius: 4px;
+        background: rgba(200, 162, 200, 0.12);
+        color: var(--rose, #f0b8f0);
         margin: 0 4px 4px 0;
       }
+
       .blog-body h2 {
         font-family: Georgia, 'Times New Roman', serif;
         font-size: clamp(1.2rem, 2.5vw, 1.45rem);
-        font-weight: normal; margin: 2.2em 0 0.8em; line-height: 1.4;
-        color: var(--heading, #fff); border-bottom: 1px solid var(--line); padding-bottom: 8px;
+        font-weight: normal;
+        margin: 2.2em 0 0.8em;
+        line-height: 1.4;
+        color: var(--heading, #fff);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 8px;
       }
+
       .blog-body h3 {
         font-family: Georgia, 'Times New Roman', serif;
         font-size: clamp(1.05rem, 2vw, 1.2rem);
-        font-weight: normal; font-style: italic;
-        margin: 1.8em 0 0.6em; color: var(--heading, #fff);
+        font-weight: normal;
+        font-style: italic;
+        margin: 1.8em 0 0.6em;
+        color: var(--heading, #fff);
       }
+
       .blog-body p {
         font-size: clamp(0.95rem, 1.6vw, 1.05rem);
-        line-height: 1.85; color: var(--body, rgba(255,255,255,0.85));
-        margin-bottom: 1.5em; text-align: justify; text-justify: inter-word;
+        line-height: 1.85;
+        color: var(--body, rgba(255,255,255,0.85));
+        margin-bottom: 1.5em;
+        text-align: justify;
+        text-justify: inter-word;
       }
-      .blog-body ul, .blog-body ol { padding-left: 24px; margin-bottom: 1.5em; }
+
+      .blog-body ul,
+      .blog-body ol {
+        padding-left: 24px;
+        margin-bottom: 1.5em;
+      }
+
       .blog-body li {
         font-size: clamp(0.95rem, 1.6vw, 1.05rem);
-        line-height: 1.78; color: var(--body, rgba(255,255,255,0.85));
-        margin-bottom: 0.5em; text-align: left;
+        line-height: 1.78;
+        color: var(--body, rgba(255,255,255,0.85));
+        margin-bottom: 0.5em;
+        text-align: left;
       }
+
       .blog-quote {
         border-left: 3px solid var(--teal, #C8A2C8);
-        padding: 16px 22px; margin: 1.8em 0;
-        background: var(--surface); border-radius: 0 8px 8px 0; box-shadow: var(--shadow);
+        padding: 16px 22px;
+        margin: 1.8em 0;
+        background: var(--surface);
+        border-radius: 0 8px 8px 0;
+        box-shadow: var(--shadow);
       }
+
       .blog-quote p {
-        margin: 0 0 6px; font-style: italic; color: var(--muted);
-        font-size: 0.98rem; text-align: left; line-height: 1.65;
+        margin: 0 0 6px;
+        font-style: italic;
+        color: var(--muted);
+        font-size: 0.98rem;
+        text-align: left;
+        line-height: 1.65;
       }
-      .blog-quote a { font-size: 0.85rem; color: var(--accent, #a78bfa); font-style: normal; font-family: sans-serif; }
+
+      .blog-quote a {
+        font-size: 0.85rem;
+        color: var(--accent, #a78bfa);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-style: normal;
+      }
+
+      /* Code / Boolean string display */
       .bool-code {
-        display: block; background: rgba(255,255,255,0.04);
-        border: 1px solid rgba(255,255,255,0.08); border-radius: 10px;
-        padding: 18px 20px; margin: 1.2em 0 1.8em;
+        display: block;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 10px;
+        padding: 18px 20px;
+        margin: 1.4em 0;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 0.88rem; line-height: 1.8; color: #c4b5fd;
-        overflow-x: auto; white-space: pre;
+        font-size: 0.88rem;
+        line-height: 1.8;
+        color: #c4b5fd;
+        overflow-x: auto;
+        white-space: pre;
       }
+
       .bool-label {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em;
-        text-transform: uppercase; color: var(--muted); margin-bottom: 4px; display: block;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 6px;
+        display: block;
       }
+
+      /* Operator highlight cards */
       .operator-grid {
-        display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-        gap: 14px; margin: 1.4em 0 2em;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+        margin: 1.6em 0 2em;
       }
+
       .operator-card {
-        background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 12px; padding: 16px 14px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 12px;
+        padding: 18px 16px;
       }
+
       .operator-card-name {
         font-family: 'Courier New', Courier, monospace;
-        font-size: 1.05rem; font-weight: 700; color: #c4b5fd; margin-bottom: 6px; display: block;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #c4b5fd;
+        margin-bottom: 6px;
+        display: block;
       }
+
       .operator-card-desc {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 0.82rem; color: var(--muted); line-height: 1.5; margin: 0; text-align: left;
+        font-size: 0.82rem;
+        color: var(--muted);
+        line-height: 1.5;
+        margin: 0;
+        text-align: left;
       }
+
+      /* Info callout box */
       .blog-tip {
-        background: rgba(167,139,250,0.07); border: 1px solid rgba(167,139,250,0.18);
-        border-radius: 10px; padding: 16px 20px; margin: 1.8em 0;
+        background: rgba(167,139,250,0.07);
+        border: 1px solid rgba(167,139,250,0.18);
+        border-radius: 10px;
+        padding: 16px 20px;
+        margin: 1.8em 0;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 0.9rem; color: var(--body, rgba(255,255,255,0.85)); line-height: 1.65;
+        font-size: 0.9rem;
+        color: var(--body, rgba(255,255,255,0.85));
+        line-height: 1.65;
       }
-      .blog-tip strong { color: #c4b5fd; }
+
+      .blog-tip strong {
+        color: #c4b5fd;
+      }
+
+      /* Source table */
       .blog-table {
-        width: 100%; border-collapse: collapse; margin: 1.6em 0 2em;
-        font-size: 0.85rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.6em 0 2em;
+        font-size: 0.85rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       }
+
       .blog-table th {
-        text-align: left; padding: 10px 12px; font-weight: 600;
-        font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase;
-        color: var(--muted); border-bottom: 1px solid var(--line);
+        text-align: left;
+        padding: 10px 12px;
+        font-weight: 600;
+        font-size: 0.72rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--muted);
+        border-bottom: 1px solid var(--line);
       }
+
       .blog-table td {
-        padding: 10px 12px; color: var(--body, rgba(255,255,255,0.85));
-        border-bottom: 1px solid rgba(255,255,255,0.03); line-height: 1.55; vertical-align: top;
+        padding: 10px 12px;
+        color: var(--body, rgba(255,255,255,0.85));
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+        line-height: 1.55;
+        vertical-align: top;
       }
-      .blog-table a { color: var(--accent, #a78bfa); font-size: 0.82rem; }
+
+      .blog-table a {
+        color: var(--accent, #a78bfa);
+        font-size: 0.82rem;
+      }
+
+      /* Author bio */
       .blog-author-box {
-        display: flex; gap: 18px; align-items: flex-start;
-        background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);
-        border-radius: 14px; padding: 24px; margin-top: 3em;
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 14px;
+        padding: 24px;
+        margin-top: 3em;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       }
-      .blog-author-name { font-weight: 700; color: var(--heading); font-size: 0.95rem; margin-bottom: 6px; }
-      .blog-author-bio { font-size: 0.87rem; color: var(--muted); line-height: 1.65; margin: 0; text-align: left; }
-      .blog-author-bio a { color: var(--accent, #a78bfa); }
+
+      .blog-author-name {
+        font-weight: 700;
+        color: var(--heading);
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+      }
+
+      .blog-author-bio {
+        font-size: 0.87rem;
+        color: var(--muted);
+        line-height: 1.65;
+        margin: 0;
+        text-align: left;
+      }
+
+      .blog-author-bio a {
+        color: var(--accent, #a78bfa);
+      }
+
+      /* Back to blog link */
       .blog-back {
-        display: inline-flex; align-items: center; gap: 6px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 0.82rem; font-weight: 600; color: var(--muted);
-        text-decoration: none; letter-spacing: 0.03em; margin-bottom: 32px;
-        padding: 8px 14px; border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 8px; transition: color 0.2s, border-color 0.2s;
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--muted);
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        margin-bottom: 32px;
+        padding: 8px 14px;
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 8px;
+        transition: color 0.2s, border-color 0.2s;
       }
-      .blog-back:hover { color: var(--heading); border-color: rgba(255,255,255,0.18); }
+
+      .blog-back:hover {
+        color: var(--heading);
+        border-color: rgba(255,255,255,0.18);
+      }
+
       .divider-ornament {
-        text-align: center; color: var(--muted); font-size: 1rem;
-        opacity: 0.4; margin: 2.5em 0; letter-spacing: 0.5em;
+        text-align: center;
+        color: var(--muted);
+        font-size: 1rem;
+        opacity: 0.4;
+        margin: 2.5em 0;
+        letter-spacing: 0.5em;
       }
+
       .inline-code { font-family: 'Courier New', Courier, monospace; font-size: 0.88em; color: #c4b5fd; }
+
       @media (max-width: 600px) {
         .blog-article { padding: 0 16px 60px; }
         .bool-code { font-size: 0.78rem; }
@@ -209,192 +374,383 @@
     <main>
       <article class="blog-article">
 
-        <a class="blog-back" href="blog.html">&larr; Blog</a>
+        <a class="blog-back" href="blog.html">← <span class="lang-en">All Articles</span><span class="lang-id">Semua Artikel</span></a>
 
         <header class="pub-header">
           <span class="blog-tag">Sourcing</span>
           <span class="blog-tag">Recruitment Insight</span>
           <span class="blog-tag">Career Tips</span>
           <hr class="pub-hr" />
-          <h1 class="blog-title">Boolean Search &mdash; Kenapa Profil LinkedIn-mu Invisible di Mata Rekruter</h1>
-          <p class="blog-subtitle">Bukan karena kamu tidak kompeten. Tapi karena sistem pencarian tidak menemukan caramu mendeskripsikan dirimu.</p>
+          <h1 class="blog-title">
+            <span class="lang-id">Boolean Search — Kenapa Profil LinkedIn-mu Invisible di Mata Rekruter</span>
+            <span class="lang-en">Boolean Search — Why Your LinkedIn Profile is Invisible to Recruiters</span>
+          </h1>
+          <p class="blog-subtitle">
+            <span class="lang-id">Bukan karena kamu tidak kompeten. Tapi karena sistem pencarian tidak menemukan caramu mendeskripsikan dirimu.</span>
+            <span class="lang-en">Not because you are incompetent. But because the search system doesn't find the way you describe yourself.</span>
+          </p>
           <p class="pub-date">
-            <span class="lang-id">21 Juli 2026 &nbsp;&middot;&nbsp; 5&ndash;6 menit baca</span>
-            <span class="lang-en">July 21, 2026 &nbsp;&middot;&nbsp; 5&ndash;6 min read</span>
+            <span class="lang-id">21 Juli 2026 &nbsp;·&nbsp; 5–6 menit baca</span>
+            <span class="lang-en">July 21, 2026 &nbsp;·&nbsp; 5–6 min read</span>
           </p>
         </header>
 
         <div class="blog-body">
 
-          <p>Bayangkan ini.</p>
-          <p>Kamu sudah mengisi seluruh bagian profil LinkedIn. Pengalaman kerja, skills, education, sertifikasi &mdash; semuanya ada. CV-mu sudah diperbarui. Kamu apply ke puluhan lowongan.</p>
-          <p>Tapi tidak ada rekruter yang menghubungimu secara langsung.</p>
-          <p>Bukan karena profilmu jelek. Bukan karena pengalamanmu tidak relevan.</p>
-          <p><strong>Tapi karena caramu mendeskripsikan dirimu tidak cocok dengan cara rekruter mencarimu.</strong></p>
-          <p>Di situlah Boolean Search masuk &mdash; dan kebanyakan kandidat tidak tahu bahwa sistem ini sedang berjalan di balik layar setiap kali rekruter membuka halaman pencarian LinkedIn.</p>
+          <!-- ================= INDONESIAN CONTENT ================= -->
+          <div class="lang-id">
+            <p>Bayangkan ini.</p>
+            <p>Kamu sudah mengisi seluruh bagian profil LinkedIn. Pengalaman kerja, skills, education, sertifikasi — semuanya ada. CV-mu sudah diperbarui. Kamu apply ke puluhan lowongan.</p>
+            <p>Tapi tidak ada rekruter yang menghubungimu secara langsung.</p>
+            <p>Bukan karena profilmu jelek. Bukan karena pengalamanmu tidak relevan.</p>
+            <p><strong>Tapi karena caramu mendeskripsikan dirimu tidak cocok dengan cara rekruter mencarimu.</strong></p>
+            <p>Di situlah Boolean Search masuk — dan kebanyakan kandidat tidak tahu bahwa sistem ini sedang berjalan di balik layar setiap kali rekruter membuka halaman pencarian LinkedIn.</p>
 
-          <div class="divider-ornament">* * *</div>
+            <div class="divider-ornament">* * *</div>
 
-          <h2>Mengapa &ldquo;HR Generalist Jakarta&rdquo; Tidak Cukup</h2>
-          <p>Ketika seorang rekruter mengetik <em>&ldquo;HR Generalist Jakarta&rdquo;</em> di kolom pencarian LinkedIn biasa, yang terjadi bukan pencarian cerdas. LinkedIn hanya mencocokkan kata-kata tersebut secara literal &mdash; apakah kata itu muncul di profilmu atau tidak.</p>
-          <p>Artinya:</p>
-          <ul>
-            <li>Kalau kamu menulis <em>&ldquo;Human Resources Generalist&rdquo;</em> di profilmu, tapi rekruter mengetik <em>&ldquo;HR Generalist&rdquo;</em> &mdash; <strong>kamu mungkin tidak muncul.</strong></li>
-            <li>Kalau kamu menulis <em>&ldquo;Recruitment Staff&rdquo;</em> tapi posisi yang dicari adalah <em>&ldquo;Talent Acquisition&rdquo;</em> &mdash; <strong>kamu tidak terdeteksi.</strong></li>
-          </ul>
-          <p>Ini bukan masalah kualifikasimu. Ini adalah masalah <strong>keyword alignment</strong> &mdash; dan Boolean Search adalah solusinya.</p>
-          <div class="blog-quote">
-            <p><em>&ldquo;LinkedIn&rsquo;s search system matches terms based on indexed profile data, not semantic meaning in basic search mode.&rdquo;</em></p>
-            <a href="https://engineering.linkedin.com/blog" target="_blank" rel="noopener">&#128279; LinkedIn Engineering Blog</a>
-          </div>
-
-          <div class="divider-ornament">* * *</div>
-
-          <h2>Apa Itu Boolean Search?</h2>
-          <p>Boolean Search adalah metode pencarian menggunakan operator logika untuk mempersempit, memperluas, atau menyaring hasil. Metode ini pertama kali dikembangkan oleh matematikawan George Boole pada abad ke-19, dan kini digunakan secara luas oleh rekruter di seluruh dunia &mdash; mulai dari LinkedIn, Google Xray Search, hingga platform ATS seperti Greenhouse dan Workday.</p>
-          <div class="blog-quote">
-            <p><em>&ldquo;Lebih dari <strong>69% rekruter</strong> menggunakan teknik pencarian lanjutan (termasuk Boolean) untuk menemukan kandidat pasif yang tidak aktif melamar pekerjaan.&rdquo;</em></p>
-            <a href="https://business.linkedin.com/talent-solutions/global-talent-trends" target="_blank" rel="noopener">&#128279; LinkedIn Talent Solutions &mdash; Global Talent Trends 2024</a>
-          </div>
-
-          <div class="divider-ornament">* * *</div>
-
-          <h2>3 Operator Dasar yang Perlu Kamu Tahu</h2>
-          <p>Boolean string dibangun dari tiga operator utama. Memahami ini bukan hanya berguna bagi rekruter &mdash; tapi juga membantumu sebagai kandidat untuk <strong>mengoptimalkan profilmu agar bisa ditemukan</strong>.</p>
-          <div class="operator-grid">
-            <div class="operator-card">
-              <span class="operator-card-name">AND</span>
-              <p class="operator-card-desc">Kandidat harus memiliki <strong>semua</strong> kriteria ini. Mempersempit hasil.</p>
+            <h2>Mengapa &ldquo;HR Generalist Jakarta&rdquo; Tidak Cukup</h2>
+            <p>Ketika seorang rekruter mengetik <em>&ldquo;HR Generalist Jakarta&rdquo;</em> di kolom pencarian LinkedIn biasa, yang terjadi bukan pencarian cerdas. LinkedIn hanya mencocokkan kata-kata tersebut secara literal — apakah kata itu muncul di profilmu atau tidak.</p>
+            <p>Artinya:</p>
+            <ul>
+              <li>Kalau kamu menulis <em>&ldquo;Human Resources Generalist&rdquo;</em> di profilmu, tapi rekruter mengetik <em>&ldquo;HR Generalist&rdquo;</em> — <strong>kamu mungkin tidak muncul.</strong></li>
+              <li>Kalau kamu menulis <em>&ldquo;Recruitment Staff&rdquo;</em> tapi posisi yang dicari adalah <em>&ldquo;Talent Acquisition&rdquo;</em> — <strong>kamu tidak terdeteksi.</strong></li>
+            </ul>
+            <p>Ini bukan masalah kualifikasimu. Ini adalah masalah <strong>keyword alignment</strong> — dan Boolean Search adalah solusinya.</p>
+            
+            <div class="blog-quote">
+              <p><em>&ldquo;LinkedIn&rsquo;s search system matches terms based on indexed profile data, not semantic meaning in basic search mode.&rdquo;</em></p>
+              <a href="https://engineering.linkedin.com/blog" target="_blank" rel="noopener">🔗 LinkedIn Engineering Blog</a>
             </div>
-            <div class="operator-card">
-              <span class="operator-card-name">OR</span>
-              <p class="operator-card-desc">Kandidat bisa memiliki <strong>salah satu</strong> dari ini. Memperluas jangkauan.</p>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>Apa Itu Boolean Search?</h2>
+            <p>Boolean Search adalah metode pencarian menggunakan operator logika untuk mempersempit, memperluas, atau menyaring hasil. Metode ini pertama kali dikembangkan oleh matematikawan George Boole pada abad ke-19, dan kini digunakan secara luas oleh rekruter di seluruh dunia — mulai dari LinkedIn, Google Xray Search, hingga platform ATS seperti Greenhouse dan Workday.</p>
+            
+            <div class="blog-quote">
+              <p><em>&ldquo;Lebih dari <strong>69% rekruter</strong> menggunakan teknik pencarian lanjutan (termasuk Boolean) untuk menemukan kandidat pasif yang tidak aktif melamar pekerjaan.&rdquo;</em></p>
+              <a href="https://business.linkedin.com/talent-solutions/global-talent-trends" target="_blank" rel="noopener">🔗 LinkedIn Talent Solutions — Global Talent Trends 2024</a>
             </div>
-            <div class="operator-card">
-              <span class="operator-card-name">NOT</span>
-              <p class="operator-card-desc">Menyaring hasil yang <strong>tidak diinginkan</strong>. Membersihkan noise.</p>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>3 Operator Dasar yang Perlu Kamu Tahu</h2>
+            <p>Boolean string dibangun dari tiga operator utama. Memahami ini bukan hanya berguna bagi rekruter — tapi juga membantumu sebagai kandidat untuk <strong>mengoptimalkan profilmu agar bisa ditemukan</strong>.</p>
+
+            <div class="operator-grid">
+              <div class="operator-card">
+                <span class="operator-card-name">AND</span>
+                <p class="operator-card-desc">Kandidat harus memiliki <strong>semua</strong> kriteria ini. Mempersempit hasil.</p>
+              </div>
+              <div class="operator-card">
+                <span class="operator-card-name">OR</span>
+                <p class="operator-card-desc">Kandidat bisa memiliki <strong>salah satu</strong> dari ini. Memperluas jangkauan.</p>
+              </div>
+              <div class="operator-card">
+                <span class="operator-card-name">NOT</span>
+                <p class="operator-card-desc">Menyaring hasil yang <strong>tidak diinginkan</strong>. Membersihkan noise.</p>
+              </div>
+              <div class="operator-card">
+                <span class="operator-card-name">&ldquo; &rdquo;</span>
+                <p class="operator-card-desc">Mencari <strong>frasa persis</strong>, bukan kata per kata.</p>
+              </div>
             </div>
-            <div class="operator-card">
-              <span class="operator-card-name">&ldquo; &rdquo;</span>
-              <p class="operator-card-desc">Mencari <strong>frasa persis</strong>, bukan kata per kata.</p>
-            </div>
-          </div>
 
-          <h3>AND &mdash; Kandidat Harus Memiliki Semua Kriteria Ini</h3>
-          <span class="bool-label">Contoh string</span>
-          <code class="bool-code">HR AND Payroll AND BPJS</code>
-          <p>Hanya profil yang mencantumkan <strong>ketiganya</strong> akan muncul. Gunakan AND untuk mempersempit hasil ketika kamu ingin kandidat yang sangat spesifik.</p>
+            <h3>AND — Kandidat Harus Memiliki Semua Kriteria Ini</h3>
+            <span class="bool-label">Contoh string</span>
+            <code class="bool-code">HR AND Payroll AND BPJS</code>
+            <p>Hanya profil yang mencantumkan <strong>ketiganya</strong> akan muncul. Gunakan AND untuk mempersempit hasil ketika kamu ingin kandidat yang sangat spesifik.</p>
 
-          <h3>OR &mdash; Kandidat Bisa Memiliki Salah Satu dari Ini</h3>
-          <span class="bool-label">Contoh string</span>
-          <code class="bool-code">(Recruiter OR "Talent Acquisition" OR "Talent Sourcer")</code>
-          <p>Profil yang mencantumkan <strong>salah satu</strong> dari kata-kata di atas akan muncul. Gunakan OR untuk memperluas jangkauan dan menangkap variasi nama jabatan yang berbeda.</p>
+            <h3>OR — Kandidat Bisa Memiliki Salah Satu dari Ini</h3>
+            <span class="bool-label">Contoh string</span>
+            <code class="bool-code">(Recruiter OR "Talent Acquisition" OR "Talent Sourcer")</code>
+            <p>Profil yang mencantumkan <strong>salah satu</strong> dari kata-kata di atas akan muncul. Gunakan OR untuk memperluas jangkauan dan menangkap variasi nama jabatan yang berbeda.</p>
 
-          <h3>NOT &mdash; Saring yang Tidak Diinginkan</h3>
-          <span class="bool-label">Contoh string</span>
-          <code class="bool-code">NOT freelance NOT intern NOT magang</code>
-          <p>Profil dengan kata tersebut <strong>tidak akan muncul</strong>. Gunakan NOT untuk membersihkan hasil dari noise seperti peserta magang atau pekerja lepas.</p>
+            <h3>NOT — Saring yang Tidak Diinginkan</h3>
+            <span class="bool-label">Contoh string</span>
+            <code class="bool-code">NOT freelance NOT intern NOT magang</code>
+            <p>Profil dengan kata tersebut <strong>tidak akan muncul</strong>. Gunakan NOT untuk membersihkan hasil dari noise seperti peserta magang atau pekerja lepas.</p>
 
-          <h3>Tanda Kutip &ldquo; &rdquo; &mdash; Mencari Frasa Persis</h3>
-          <span class="bool-label">Contoh penggunaan</span>
-          <code class="bool-code">"end-to-end recruitment"
+            <h3>Tanda Kutip &ldquo; &rdquo; — Mencari Frasa Persis</h3>
+            <span class="bool-label">Contoh penggunaan</span>
+            <code class="bool-code">"end-to-end recruitment"
 "employee relations"
 "full cycle recruiting"</code>
-          <p>Tanda kutip memastikan LinkedIn mencari frasa secara utuh, bukan kata per kata.</p>
+            <p>Tanda kutip memastikan LinkedIn mencari frasa secara utuh, bukan kata per kata.</p>
 
-          <div class="blog-quote">
-            <p><em>&ldquo;Boolean search operators are a core skill in modern talent sourcing. LinkedIn supports AND, OR, NOT, parentheses, and quoted phrases in both its basic and Recruiter search interfaces.&rdquo;</em></p>
-            <a href="https://www.linkedin.com/help/linkedin/answer/a524335" target="_blank" rel="noopener">&#128279; LinkedIn Help Center &mdash; Using Boolean Search</a>
-          </div>
+            <div class="blog-quote">
+              <p><em>&ldquo;Boolean search operators are a core skill in modern talent sourcing. LinkedIn supports AND, OR, NOT, parentheses, and quoted phrases in both its basic and Recruiter search interfaces.&rdquo;</em></p>
+              <a href="https://www.linkedin.com/help/linkedin/answer/a524335" target="_blank" rel="noopener">🔗 LinkedIn Help Center — Using Boolean Search</a>
+            </div>
 
-          <div class="divider-ornament">* * *</div>
+            <div class="divider-ornament">* * *</div>
 
-          <h2>Template String Nyata &mdash; Yang Saya Pakai Langsung di Lapangan</h2>
-          <p>Berikut adalah dua contoh Boolean string yang saya gunakan sendiri dalam pekerjaan sourcing freelance:</p>
+            <h2>Template String Nyata — Yang Saya Pakai Langsung di Lapangan</h2>
+            <p>Berikut adalah dua contoh Boolean string yang saya gunakan sendiri dalam pekerjaan sourcing freelance:</p>
 
-          <h3>Template 1: HR Generalist</h3>
-          <span class="bool-label">Copy-paste langsung ke kolom pencarian LinkedIn &rarr; pilih tab &ldquo;People&rdquo;</span>
-          <code class="bool-code">("HR Generalist" OR "Human Resources Generalist" OR "HR Staff")
+            <h3>Template 1: HR Generalist</h3>
+            <span class="bool-label">Copy-paste langsung ke kolom pencarian LinkedIn &rarr; pilih tab &ldquo;People&rdquo;</span>
+            <code class="bool-code">("HR Generalist" OR "Human Resources Generalist" OR "HR Staff")
 AND (Payroll OR BPJS OR "employee relations" OR onboarding)
 AND (Jakarta OR "DKI Jakarta" OR Tangerang)
 NOT intern NOT magang NOT freelance</code>
 
-          <h3>Template 2: Talent Acquisition / Recruiter</h3>
-          <span class="bool-label">Tambahkan tools spesifik bila diperlukan</span>
-          <code class="bool-code">("Talent Acquisition" OR Recruiter OR "Talent Sourcer" OR "HR Recruiter")
+            <h3>Template 2: Talent Acquisition / Recruiter</h3>
+            <span class="bool-label">Tambahkan tools spesifik bila diperlukan</span>
+            <code class="bool-code">("Talent Acquisition" OR Recruiter OR "Talent Sourcer" OR "HR Recruiter")
 AND (sourcing OR "Boolean search" OR LinkedIn OR ATS)
 AND ("end-to-end" OR "full cycle" OR headhunting OR screening)
 NOT agency NOT "third party" NOT freelance</code>
 
-          <p>Jika kamu butuh kandidat yang sudah familiar dengan tools tertentu, tambahkan:</p>
-          <code class="bool-code">AND (Juicebox OR Greenhouse OR Workday OR "LinkedIn Recruiter")</code>
+            <p>Jika kamu butuh kandidat yang sudah familiar dengan tools tertentu, tambahkan:</p>
+            <code class="bool-code">AND (Juicebox OR Greenhouse OR Workday OR "LinkedIn Recruiter")</code>
 
-          <div class="blog-quote">
-            <p><em>Tentang Juicebox: Platform AI sourcing yang membantu rekruter menemukan kandidat menggunakan natural language queries dan Boolean strings secara bersamaan.</em></p>
-            <a href="https://www.juicebox.ai" target="_blank" rel="noopener">&#128279; Juicebox.ai &mdash; AI-Powered Talent Sourcing</a>
+            <div class="blog-quote">
+              <p><em>Tentang Juicebox: Platform AI sourcing yang membantu rekruter menemukan kandidat menggunakan natural language queries dan Boolean strings secara bersamaan.</em></p>
+              <a href="https://www.juicebox.ai" target="_blank" rel="noopener">🔗 Juicebox.ai — AI-Powered Talent Sourcing</a>
+            </div>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>Cara Kustomisasi Sesuai Role-mu</h2>
+            <p>Boolean Search bukan rumus mati. Ini adalah template hidup yang perlu disesuaikan dengan kebutuhan spesifik tiap rekruter atau tiap role.</p>
+            <p><strong>3 langkah kustomisasi:</strong></p>
+            <ol>
+              <li><strong>Ganti job title dengan variasi nama posisi yang relevan di industri kamu.</strong><br>Contoh: di startup sering disebut <em>&ldquo;People Ops&rdquo;</em>, di korporat disebut <em>&ldquo;HR Specialist&rdquo;</em>, di perusahaan multinasional mungkin <em>&ldquo;Talent Partner&rdquo;</em>.</li>
+              <li><strong>Tambahkan skills kunci yang wajib dimiliki kandidat.</strong><br>Contoh untuk HR di perusahaan finance: <span class="inline-code">AND (PPh 21 OR "pajak karyawan" OR "payroll system")</span></li>
+              <li><strong>Sesuaikan lokasi dengan kota target atau tambahkan remote.</strong><br>Contoh: <span class="inline-code">AND (Jakarta OR Surabaya OR "Jawa Timur" OR remote)</span></li>
+            </ol>
+            <div class="blog-tip">
+              <strong>Penting:</strong> Test string-mu dulu sebelum dipakai di lapangan. Jika hasil terlalu sedikit &rarr; kurangi filter AND. Jika terlalu banyak noise &rarr; tambahkan filter NOT.
+            </div>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>Implikasinya bagi Kamu sebagai Kandidat</h2>
+            <p>Ini yang paling kritis dan sering diabaikan:</p>
+            <p><strong>Rekruter yang baik tidak hanya mengetik nama posisimu.</strong> Mereka mengetik <em>kombinasi</em> dari: nama posisi + skill spesifik + tools + lokasi + filter pengecuali.</p>
+            <p>Artinya: kalau profilmu tidak mencantumkan <strong>kata-kata yang tepat</strong> &mdash; bukan kata yang kamu rasa paling keren, tapi kata yang <strong>rekruter di industrimu benar-benar ketik</strong> &mdash; kamu akan tetap invisible, meski profilmu sebenarnya relevan.</p>
+            <p><strong>Apa yang bisa kamu lakukan:</strong></p>
+            <ul>
+              <li>Pastikan nama jabatanmu menggunakan <strong>variasi yang umum dipakai</strong> di industrimu, bukan hanya versi formal dari perusahaan lamamu</li>
+              <li>Cantumkan nama tools dan sistem yang pernah kamu gunakan: ATS, HRIS, nama platform spesifik</li>
+              <li>Gunakan kata kunci dari job description posisi yang kamu targetkan sebagai referensi untuk mengoptimalkan profilmu</li>
+            </ul>
+            <div class="blog-quote">
+              <p><em>&ldquo;Profiles optimized with relevant keywords are 27x more likely to be found by recruiters in LinkedIn search.&rdquo;</em></p>
+              <a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/linkedin-profile-tips-get-recruited" target="_blank" rel="noopener">🔗 LinkedIn — Profile Optimization Guide</a>
+            </div>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>Penutup</h2>
+            <p>Boolean Search bukan ilmu roket. Tapi ia adalah perbedaan antara rekruter yang menemukan 500 profil tidak relevan dalam satu jam &mdash; dan rekruter yang menemukan 10 kandidat yang benar-benar sesuai dalam 30 menit.</p>
+            <p>Dan dari sisi kandidat: memahami cara rekruter mencarimu adalah salah satu hal paling strategis yang bisa kamu lakukan untuk karier &mdash; terlepas dari berapapun tahun pengalamanmu.</p>
+            <p>Karena kalau kamu tidak bisa ditemukan, tidak ada yang akan tahu bahwa kamu adalah kandidat terbaik untuk posisi itu.</p>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>Daftar Sumber</h2>
+            <table class="blog-table">
+              <thead>
+                <tr><th>#</th><th>Sumber</th><th>Organisasi</th><th>Link</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>LinkedIn Engineering Blog</td><td>LinkedIn Engineering</td><td><a href="https://engineering.linkedin.com/blog" target="_blank" rel="noopener">engineering.linkedin.com</a></td></tr>
+                <tr><td>2</td><td>Global Talent Trends Report 2024</td><td>LinkedIn Talent Solutions</td><td><a href="https://business.linkedin.com/talent-solutions/global-talent-trends" target="_blank" rel="noopener">LinkedIn Talent Solutions</a></td></tr>
+                <tr><td>3</td><td>Using Boolean Search on LinkedIn</td><td>LinkedIn Help Center</td><td><a href="https://www.linkedin.com/help/linkedin/answer/a524335" target="_blank" rel="noopener">LinkedIn Help</a></td></tr>
+                <tr><td>4</td><td>AI-Powered Talent Sourcing</td><td>Juicebox.ai</td><td><a href="https://www.juicebox.ai" target="_blank" rel="noopener">juicebox.ai</a></td></tr>
+                <tr><td>5</td><td>LinkedIn Profile Optimization Guide</td><td>LinkedIn Talent Blog</td><td><a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/linkedin-profile-tips-get-recruited" target="_blank" rel="noopener">LinkedIn Talent Blog</a></td></tr>
+                <tr><td>6</td><td>Talent Sourcing Best Practices</td><td>SHRM</td><td><a href="https://www.shrm.org/topics-tools/tools/toolkits/conducting-successful-searches-sourcing-talent" target="_blank" rel="noopener">SHRM</a></td></tr>
+                <tr><td>7</td><td>What is Boolean Search in Recruitment?</td><td>AIHR</td><td><a href="https://www.aihr.com/resources/recruitment/boolean-search/" target="_blank" rel="noopener">AIHR</a></td></tr>
+              </tbody>
+            </table>
+
+            <div class="blog-author-box">
+              <div>
+                <div class="blog-author-name">Tiara Dwi Ananda Saputri</div>
+                <p class="blog-author-bio">Talent Sourcer &amp; HR Freelancer yang mendokumentasikan proses sourcing nyata &mdash; dari Boolean strings hingga pipeline kandidat &mdash; di portofolionya. Kalau kamu punya role spesifik yang ingin dicoba string Boolean-nya, hubungi saya via <a href="https://www.linkedin.com/in/tiaradwia/" target="_blank" rel="noopener">LinkedIn</a>.<br><br>
+                🔗 <a href="ai-sourcing-case-study.html">Lihat proses sourcing saya selengkapnya &rarr; Recruitment Portfolio</a></p>
+              </div>
+            </div>
           </div>
 
-          <div class="divider-ornament">* * *</div>
 
-          <h2>Cara Kustomisasi Sesuai Role-mu</h2>
-          <p>Boolean Search bukan rumus mati. Ini adalah template hidup yang perlu disesuaikan dengan kebutuhan spesifik tiap rekruter atau tiap role.</p>
-          <p><strong>3 langkah kustomisasi:</strong></p>
-          <ol>
-            <li><strong>Ganti job title dengan variasi nama posisi yang relevan di industri kamu.</strong><br>Contoh: di startup sering disebut <em>&ldquo;People Ops&rdquo;</em>, di korporat disebut <em>&ldquo;HR Specialist&rdquo;</em>, di perusahaan multinasional mungkin <em>&ldquo;Talent Partner&rdquo;</em>.</li>
-            <li><strong>Tambahkan skills kunci yang wajib dimiliki kandidat.</strong><br>Contoh untuk HR di perusahaan finance: <span class="inline-code">AND (PPh 21 OR "pajak karyawan" OR "payroll system")</span></li>
-            <li><strong>Sesuaikan lokasi dengan kota target atau tambahkan remote.</strong><br>Contoh: <span class="inline-code">AND (Jakarta OR Surabaya OR "Jawa Timur" OR remote)</span></li>
-          </ol>
-          <div class="blog-tip">
-            <strong>Penting:</strong> Test string-mu dulu sebelum dipakai di lapangan. Jika hasil terlalu sedikit &rarr; kurangi filter AND. Jika terlalu banyak noise &rarr; tambahkan filter NOT.
-          </div>
+          <!-- ================= ENGLISH CONTENT ================= -->
+          <div class="lang-en">
+            <p>Imagine this.</p>
+            <p>You've filled out every section of your LinkedIn profile. Experience, skills, education, certifications — it's all there. Your resume is up to date. You've applied to jobs.</p>
+            <p>But not a single recruiter has reached out to you directly.</p>
+            <p>It's not because your profile is bad. It's not because your experience isn't relevant.</p>
+            <p><strong>It's because the way you describe yourself doesn't match the way recruiters are searching for you.</strong></p>
+            <p>That's where Boolean Search comes in — and most candidates don't know that this system is running behind the scenes every time a recruiter opens the LinkedIn search page.</p>
 
-          <div class="divider-ornament">* * *</div>
+            <div class="divider-ornament">* * *</div>
 
-          <h2>Implikasinya bagi Kamu sebagai Kandidat</h2>
-          <p>Ini yang paling kritis dan sering diabaikan:</p>
-          <p><strong>Rekruter yang baik tidak hanya mengetik nama posisimu.</strong> Mereka mengetik <em>kombinasi</em> dari: nama posisi + skill spesifik + tools + lokasi + filter pengecuali.</p>
-          <p>Artinya: kalau profilmu tidak mencantumkan <strong>kata-kata yang tepat</strong> &mdash; bukan kata yang kamu rasa paling keren, tapi kata yang <strong>rekruter di industrimu benar-benar ketik</strong> &mdash; kamu akan tetap invisible, meski profilmu sebenarnya relevan.</p>
-          <p><strong>Apa yang bisa kamu lakukan:</strong></p>
-          <ul>
-            <li>Pastikan nama jabatanmu menggunakan <strong>variasi yang umum dipakai</strong> di industrimu, bukan hanya versi formal dari perusahaan lamamu</li>
-            <li>Cantumkan nama tools dan sistem yang pernah kamu gunakan: ATS, HRIS, nama platform spesifik</li>
-            <li>Gunakan kata kunci dari job description posisi yang kamu targetkan sebagai referensi untuk mengoptimalkan profilmu</li>
-          </ul>
-          <div class="blog-quote">
-            <p><em>&ldquo;Profiles optimized with relevant keywords are 27x more likely to be found by recruiters in LinkedIn search.&rdquo;</em></p>
-            <a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/linkedin-profile-tips-get-recruited" target="_blank" rel="noopener">&#128279; LinkedIn &mdash; Profile Optimization Guide</a>
-          </div>
+            <h2>Why &ldquo;HR Generalist Jakarta&rdquo; is Not Enough</h2>
+            <p>When a recruiter types <em>&ldquo;HR Generalist Jakarta&rdquo;</em> into a basic LinkedIn search bar, it's not a smart search. LinkedIn simply matches those words literally — checking whether that exact word appears on your profile or not.</p>
+            <p>This means:</p>
+            <ul>
+              <li>If you wrote <em>&ldquo;Human Resources Generalist&rdquo;</em> on your profile, but the recruiter typed <em>&ldquo;HR Generalist&rdquo;</em> — <strong>you might not show up.</strong></li>
+              <li>If you wrote <em>&ldquo;Recruitment Staff&rdquo;</em> but the role they want is <em>&ldquo;Talent Acquisition&rdquo;</em> — <strong>you are not detected.</strong></li>
+            </ul>
+            <p>This is not a qualification problem. This is a <strong>keyword alignment</strong> problem — and Boolean Search is the solution.</p>
+            
+            <div class="blog-quote">
+              <p><em>&ldquo;LinkedIn&rsquo;s search system matches terms based on indexed profile data, not semantic meaning in basic search mode.&rdquo;</em></p>
+              <a href="https://engineering.linkedin.com/blog" target="_blank" rel="noopener">🔗 LinkedIn Engineering Blog</a>
+            </div>
 
-          <div class="divider-ornament">* * *</div>
+            <div class="divider-ornament">* * *</div>
 
-          <h2>Penutup</h2>
-          <p>Boolean Search bukan ilmu roket. Tapi ia adalah perbedaan antara rekruter yang menemukan 500 profil tidak relevan dalam satu jam &mdash; dan rekruter yang menemukan 10 kandidat yang benar-benar sesuai dalam 30 menit.</p>
-          <p>Dan dari sisi kandidat: memahami cara rekruter mencarimu adalah salah satu hal paling strategis yang bisa kamu lakukan untuk karier &mdash; terlepas dari berapapun tahun pengalamanmu.</p>
-          <p>Karena kalau kamu tidak bisa ditemukan, tidak ada yang akan tahu bahwa kamu adalah kandidat terbaik untuk posisi itu.</p>
+            <h2>What is Boolean Search?</h2>
+            <p>Boolean Search is a search method that uses logical operators to narrow, broaden, or filter results. First developed by mathematician George Boole in the 19th century, it is now widely used by recruiters worldwide — from LinkedIn, Google X-ray Search, to ATS platforms like Greenhouse and Workday.</p>
+            
+            <div class="blog-quote">
+              <p><em>&ldquo;According to LinkedIn Talent Solutions, over <strong>69% of recruiters</strong> use advanced search techniques (including Boolean) to find passive candidates who aren't actively applying for jobs.&rdquo;</em></p>
+              <a href="https://business.linkedin.com/talent-solutions/global-talent-trends" target="_blank" rel="noopener">🔗 LinkedIn Talent Solutions — Global Talent Trends 2024</a>
+            </div>
 
-          <div class="divider-ornament">* * *</div>
+            <div class="divider-ornament">* * *</div>
 
-          <h2>Daftar Sumber</h2>
-          <table class="blog-table">
-            <thead>
-              <tr><th>#</th><th>Sumber</th><th>Organisasi</th><th>Link</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>1</td><td>LinkedIn Engineering Blog</td><td>LinkedIn Engineering</td><td><a href="https://engineering.linkedin.com/blog" target="_blank" rel="noopener">engineering.linkedin.com</a></td></tr>
-              <tr><td>2</td><td>Global Talent Trends Report 2024</td><td>LinkedIn Talent Solutions</td><td><a href="https://business.linkedin.com/talent-solutions/global-talent-trends" target="_blank" rel="noopener">LinkedIn Talent Solutions</a></td></tr>
-              <tr><td>3</td><td>Using Boolean Search on LinkedIn</td><td>LinkedIn Help Center</td><td><a href="https://www.linkedin.com/help/linkedin/answer/a524335" target="_blank" rel="noopener">LinkedIn Help</a></td></tr>
-              <tr><td>4</td><td>AI-Powered Talent Sourcing</td><td>Juicebox.ai</td><td><a href="https://www.juicebox.ai" target="_blank" rel="noopener">juicebox.ai</a></td></tr>
-              <tr><td>5</td><td>LinkedIn Profile Optimization Guide</td><td>LinkedIn Talent Blog</td><td><a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/linkedin-profile-tips-get-recruited" target="_blank" rel="noopener">LinkedIn Talent Blog</a></td></tr>
-              <tr><td>6</td><td>Talent Sourcing Best Practices</td><td>SHRM</td><td><a href="https://www.shrm.org/topics-tools/tools/toolkits/conducting-successful-searches-sourcing-talent" target="_blank" rel="noopener">SHRM</a></td></tr>
-              <tr><td>7</td><td>What is Boolean Search in Recruitment?</td><td>AIHR</td><td><a href="https://www.aihr.com/resources/recruitment/boolean-search/" target="_blank" rel="noopener">AIHR</a></td></tr>
-            </tbody>
-          </table>
+            <h2>3 Basic Operators You Need to Know</h2>
+            <p>Boolean strings are built from three main operators. Understanding these is not just useful for recruiters — it also helps you as a candidate to <strong>optimize your profile to be found</strong>.</p>
 
-          <div class="blog-author-box">
-            <div>
-              <div class="blog-author-name">Tiara Dwi Ananda Saputri</div>
-              <p class="blog-author-bio">Talent Sourcer &amp; HR Freelancer yang mendokumentasikan proses sourcing nyata &mdash; dari Boolean strings hingga pipeline kandidat &mdash; di portofolionya. Kalau kamu punya role spesifik yang ingin dicoba string Boolean-nya, hubungi saya via <a href="https://www.linkedin.com/in/tiaradwia/" target="_blank" rel="noopener">LinkedIn</a>.<br><br>
-              &#128279; <a href="ai-sourcing-case-study.html">Lihat proses sourcing saya selengkapnya &rarr; Recruitment Portfolio</a></p>
+            <div class="operator-grid">
+              <div class="operator-card">
+                <span class="operator-card-name">AND</span>
+                <p class="operator-card-desc">Candidate must have <strong>all</strong> of these criteria. Narrows results.</p>
+              </div>
+              <div class="operator-card">
+                <span class="operator-card-name">OR</span>
+                <p class="operator-card-desc">Candidate can have <strong>either</strong> of these. Broadens results.</p>
+              </div>
+              <div class="operator-card">
+                <span class="operator-card-name">NOT</span>
+                <p class="operator-card-desc">Filter out the <strong>unwanted</strong> results. Cleans noise.</p>
+              </div>
+              <div class="operator-card">
+                <span class="operator-card-name">&ldquo; &rdquo;</span>
+                <p class="operator-card-desc">Search for an <strong>exact phrase</strong>, not word-by-word.</p>
+              </div>
+            </div>
+
+            <h3>AND — Candidate Must Have All of These Criteria</h3>
+            <span class="bool-label">Example string</span>
+            <code class="bool-code">HR AND Payroll AND BPJS</code>
+            <p>Only profiles containing <strong>all three</strong> will appear. Use AND to narrow down results when you want a highly specific candidate.</p>
+
+            <h3>OR — Candidate Can Have Either of These</h3>
+            <span class="bool-label">Example string</span>
+            <code class="bool-code">(Recruiter OR "Talent Acquisition" OR "Talent Sourcer")</code>
+            <p>Profiles containing <strong>at least one</strong> of the terms above will show up. Use OR to expand your reach and capture different variations of job titles.</p>
+
+            <h3>NOT — Filter Out the Unwanted</h3>
+            <span class="bool-label">Example string</span>
+            <code class="bool-code">NOT freelance NOT intern NOT magang</code>
+            <p>Profiles containing these words <strong>will not show up</strong>. Use NOT to filter out noise like interns or freelancers.</p>
+
+            <h3>Double Quotes &ldquo; &rdquo; — Exact Phrase Search</h3>
+            <span class="bool-label">Example usage</span>
+            <code class="bool-code">"end-to-end recruitment"
+"employee relations"
+"full cycle recruiting"</code>
+            <p>Quotes ensure LinkedIn searches for the phrase as a whole, not word by word.</p>
+
+            <div class="blog-quote">
+              <p><em>&ldquo;Boolean search operators are a core skill in modern talent sourcing. LinkedIn supports AND, OR, NOT, parentheses, and quoted phrases in both its basic and Recruiter search interfaces.&rdquo;</em></p>
+              <a href="https://www.linkedin.com/help/linkedin/answer/a524335" target="_blank" rel="noopener">🔗 LinkedIn Help Center — Using Boolean Search</a>
+            </div>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>Real-World String Templates — What I Use in the Field</h2>
+            <p>Here are two examples of Boolean strings that I use myself in freelance sourcing:</p>
+
+            <h3>Template 1: HR Generalist</h3>
+            <span class="bool-label">Copy-paste directly into LinkedIn search box &rarr; choose tab &ldquo;People&rdquo;</span>
+            <code class="bool-code">("HR Generalist" OR "Human Resources Generalist" OR "HR Staff")
+AND (Payroll OR BPJS OR "employee relations" OR onboarding)
+AND (Jakarta OR "DKI Jakarta" OR Tangerang)
+NOT intern NOT magang NOT freelance</code>
+
+            <h3>Template 2: Talent Acquisition / Recruiter</h3>
+            <span class="bool-label">Add specific tools if needed</span>
+            <code class="bool-code">("Talent Acquisition" OR Recruiter OR "Talent Sourcer" OR "HR Recruiter")
+AND (sourcing OR "Boolean search" OR LinkedIn OR ATS)
+AND ("end-to-end" OR "full cycle" OR headhunting OR screening)
+NOT agency NOT "third party" NOT freelance</code>
+
+            <p>If you need a candidate familiar with specific tools, add:</p>
+            <code class="bool-code">AND (Juicebox OR Greenhouse OR Workday OR "LinkedIn Recruiter")</code>
+
+            <div class="blog-quote">
+              <p><em>About Juicebox: An AI sourcing platform that helps recruiters find candidates using natural language queries and Boolean strings simultaneously.</em></p>
+              <a href="https://www.juicebox.ai" target="_blank" rel="noopener">🔗 Juicebox.ai — AI-Powered Talent Sourcing</a>
+            </div>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>How to Customize for Your Role</h2>
+            <p>Boolean Search is not a static formula. It is a living template that needs to be adapted to the specific needs of each recruiter or role.</p>
+            <p><strong>3 customization steps:</strong></p>
+            <ol>
+              <li><strong>Replace job titles with relevant title variations in your industry.</strong><br>Example: at startups it's often called <em>&ldquo;People Ops&rdquo;</em>, at corporates <em>&ldquo;HR Specialist&rdquo;</em>, and multinationally <em>&ldquo;Talent Partner&rdquo;</em>.</li>
+              <li><strong>Add core mandatory skills.</strong><br>Example for HR in finance companies: <span class="inline-code">AND (PPh 21 OR "pajak karyawan" OR "payroll system")</span></li>
+              <li><strong>Adjust the location to target cities or add "remote".</strong><br>Example: <span class="inline-code">AND (Jakarta OR Surabaya OR "Jawa Timur" OR remote)</span></li>
+            </ol>
+            <div class="blog-tip">
+              <strong>Important:</strong> Test your string before using it. If the results are too few &rarr; remove AND filters. If there is too much noise &rarr; add NOT filters.
+            </div>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>Implications for You as a Candidate</h2>
+            <p>This is the most critical and often ignored point:</p>
+            <p><strong>Good recruiters do not just type your job title.</strong> They type a <em>combination</em> of: job title + specific skills + tools + location + exclusion filters.</p>
+            <p>This means: if your profile doesn't list the <strong>right keywords</strong> &mdash; not the words you think sound coolest, but the words <strong>recruiters in your industry actually type</strong> &mdash; you will remain invisible, even if you are highly qualified.</p>
+            <p><strong>What you can do:</strong></p>
+            <ul>
+              <li>Make sure your job title uses <strong>common variations</strong> in your industry, not just the formal version from your former employer.</li>
+              <li>List the names of tools and systems you've used: ATS, HRIS, specific platform names.</li>
+              <li>Use keywords from the job descriptions of your target roles as a reference to optimize your profile.</li>
+            </ul>
+            <div class="blog-quote">
+              <p><em>&ldquo;Profiles optimized with relevant keywords are 27x more likely to be found by recruiters in LinkedIn search.&rdquo;</em></p>
+              <a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/linkedin-profile-tips-get-recruited" target="_blank" rel="noopener">🔗 LinkedIn — Profile Optimization Guide</a>
+            </div>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>Conclusion</h2>
+            <p>Boolean Search is not rocket science. But it is the difference between a recruiter finding 500 irrelevant profiles in an hour &mdash; and finding 10 highly qualified candidates in 30 minutes.</p>
+            <p>And from the candidate's perspective: understanding how recruiters search for you is one of the most strategic career moves you can make &mdash; regardless of your years of experience.</p>
+            <p>Because if you cannot be found, no one will know you are the best candidate for the job.</p>
+
+            <div class="divider-ornament">* * *</div>
+
+            <h2>Sources</h2>
+            <table class="blog-table">
+              <thead>
+                <tr><th>#</th><th>Source</th><th>Organization</th><th>Link</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>LinkedIn Engineering Blog</td><td>LinkedIn Engineering</td><td><a href="https://engineering.linkedin.com/blog" target="_blank" rel="noopener">engineering.linkedin.com</a></td></tr>
+                <tr><td>2</td><td>Global Talent Trends Report 2024</td><td>LinkedIn Talent Solutions</td><td><a href="https://business.linkedin.com/talent-solutions/global-talent-trends" target="_blank" rel="noopener">LinkedIn Talent Solutions</a></td></tr>
+                <tr><td>3</td><td>Using Boolean Search on LinkedIn</td><td>LinkedIn Help Center</td><td><a href="https://www.linkedin.com/help/linkedin/answer/a524335" target="_blank" rel="noopener">LinkedIn Help</a></td></tr>
+                <tr><td>4</td><td>AI-Powered Talent Sourcing</td><td>Juicebox.ai</td><td><a href="https://www.juicebox.ai" target="_blank" rel="noopener">juicebox.ai</a></td></tr>
+                <tr><td>5</td><td>LinkedIn Profile Optimization Guide</td><td>LinkedIn Talent Blog</td><td><a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/linkedin-profile-tips-get-recruited" target="_blank" rel="noopener">LinkedIn Talent Blog</a></td></tr>
+                <tr><td>6</td><td>Talent Sourcing Best Practices</td><td>SHRM</td><td><a href="https://www.shrm.org/topics-tools/tools/toolkits/conducting-successful-searches-sourcing-talent" target="_blank" rel="noopener">SHRM</a></td></tr>
+                <tr><td>7</td><td>What is Boolean Search in Recruitment?</td><td>AIHR</td><td><a href="https://www.aihr.com/resources/recruitment/boolean-search/" target="_blank" rel="noopener">AIHR</a></td></tr>
+              </tbody>
+            </table>
+
+            <div class="blog-author-box">
+              <div>
+                <div class="blog-author-name">Tiara Dwi Ananda Saputri</div>
+                <p class="blog-author-bio">Talent Sourcer &amp; HR Freelancer documenting real sourcing workflows &mdash; from Boolean strings to candidate pipelines &mdash; in her portfolio. If you want a custom Boolean string for a specific role, connect with me on <a href="https://www.linkedin.com/in/tiaradwia/" target="_blank" rel="noopener">LinkedIn</a>.<br><br>
+                🔗 <a href="ai-sourcing-case-study.html">View my full sourcing case study &rarr; Recruitment Portfolio</a></p>
+              </div>
             </div>
           </div>
 
