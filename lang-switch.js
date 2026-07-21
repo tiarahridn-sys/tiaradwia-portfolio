@@ -15,38 +15,19 @@ function togglePortfolioLanguage() {
   try {
     localStorage.setItem('portfolio-lang', newLang);
   } catch (e) {}
-  
-  if (typeof adjustPhotoCardSize === 'function') {
-    setTimeout(adjustPhotoCardSize, 50);
-  }
 }
 
-function initLangSwitch() {
-  var toggleBtn = document.getElementById('lang-toggle');
-  if (toggleBtn && !toggleBtn._hasLangListener) {
-    toggleBtn._hasLangListener = true;
-    toggleBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      togglePortfolioLanguage();
-    });
-  }
-}
-
-// Global delegated listener fallback
+// Single delegated click listener — only one, no duplicates
 document.addEventListener('click', function(e) {
   var btn = e.target.closest('#lang-toggle, .lang-toggle-btn');
   if (btn) {
     e.preventDefault();
+    e.stopPropagation();
     togglePortfolioLanguage();
   }
 });
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initLangSwitch);
-} else {
-  initLangSwitch();
-}
-
+// Adjust photo-card width to match the name text width (home page only)
 function adjustPhotoCardSize() {
   var nameEl = document.querySelector('.hero-copy h1');
   var photoCard = document.querySelector('.photo-card');
@@ -54,23 +35,22 @@ function adjustPhotoCardSize() {
     photoCard.style.maxWidth = '';
     var nameWidth = nameEl.getBoundingClientRect().width;
     var screenWidth = window.innerWidth;
-    
     if (screenWidth > 1100) {
       var finalWidth = Math.min(nameWidth, 620);
       if (finalWidth > 300) {
         photoCard.style.maxWidth = finalWidth + 'px';
       }
-    } else {
-      photoCard.style.maxWidth = '';
     }
   }
 }
 
 window.addEventListener('resize', adjustPhotoCardSize);
+document.addEventListener('DOMContentLoaded', adjustPhotoCardSize);
 
-function initLightbox() {
+// Lightbox Modal for Clickable Images
+document.addEventListener('DOMContentLoaded', function() {
   if (document.querySelector('.lightbox-modal')) return;
-  
+
   var lightbox = document.createElement('div');
   lightbox.className = 'lightbox-modal';
   lightbox.setAttribute('role', 'dialog');
@@ -92,9 +72,7 @@ function initLightbox() {
   window.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && lightbox.classList.contains('active')) {
       lightbox.classList.remove('active');
-      setTimeout(function() {
-        lightboxImg.src = '';
-      }, 300);
+      setTimeout(function() { lightboxImg.src = ''; }, 300);
     }
   });
 
@@ -109,10 +87,4 @@ function initLightbox() {
       lightbox.classList.add('active');
     });
   });
-}
-
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initLightbox);
-} else {
-  initLightbox();
-}
+});
