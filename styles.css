@@ -986,48 +986,60 @@ html[lang="id"] .lang-en {
   display: none !important;
 }
 
-/* Language Switcher Button */
+/* Language Switcher Segmented Control Button */
 .lang-toggle-btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: var(--deep);
-  color: var(--muted);
   border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 6px 12px;
+  border-radius: 20px;
+  padding: 3px;
   font-family: inherit;
-  font-size: 0.82rem;
-  font-weight: 800;
+  font-size: 0.78rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 160ms ease;
+  transition: all 200ms ease;
   user-select: none;
-  gap: 4px;
+  gap: 2px;
 }
 
 .lang-toggle-btn:hover {
-  color: var(--teal);
-  border-color: var(--teal);
-  background: rgba(200, 162, 200, 0.08);
+  border-color: var(--rose);
+  box-shadow: 0 0 12px rgba(240, 184, 240, 0.25);
+}
+
+.lang-toggle-btn .lang-text-en,
+.lang-toggle-btn .lang-text-id {
+  padding: 4px 10px;
+  border-radius: 14px;
+  transition: all 200ms ease;
+  display: inline-block;
 }
 
 html[lang="en"] .lang-toggle-btn .lang-text-en {
-  color: var(--rose);
-  font-weight: 900;
+  background: linear-gradient(135deg, #be123c 0%, #d946ef 100%);
+  color: #ffffff !important;
+  font-weight: 800;
+  box-shadow: 0 2px 8px rgba(217, 70, 239, 0.4);
 }
 html[lang="en"] .lang-toggle-btn .lang-text-id {
-  color: var(--muted);
-  font-weight: normal;
-}
-html[lang="id"] .lang-toggle-btn .lang-text-id {
-  color: var(--rose);
-  font-weight: 900;
-}
-html[lang="id"] .lang-toggle-btn .lang-text-en {
-  color: var(--muted);
-  font-weight: normal;
+  color: var(--muted) !important;
+  background: transparent;
+  font-weight: 600;
 }
 
+html[lang="id"] .lang-toggle-btn .lang-text-id {
+  background: linear-gradient(135deg, #be123c 0%, #d946ef 100%);
+  color: #ffffff !important;
+  font-weight: 800;
+  box-shadow: 0 2px 8px rgba(217, 70, 239, 0.4);
+}
+html[lang="id"] .lang-toggle-btn .lang-text-en {
+  color: var(--muted) !important;
+  background: transparent;
+  font-weight: 600;
+}
 /* ── Services Page Styles (Migrated from services.html) ── */
 .services-section {
   padding: 1.5rem clamp(18px, 6vw, 88px) 5rem;
